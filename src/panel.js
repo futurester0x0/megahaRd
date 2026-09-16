@@ -221,21 +221,12 @@ const getMicrosoftDomainsFromBackground = async() => {
   return [...FALLBACK_MICROSOFT_SITES];
 };
 
-// Deterministic hue per domain so each site row gets a stable avatar color
-// without fetching remote favicons (which would leak panel opens).
-const domainAvatarHue = (site) => {
-  let hash = 0;
-  for (let i = 0; i < site.length; i++) {
-    hash = (hash * 31 + site.charCodeAt(i)) % 360;
-  }
-  return hash;
-};
-
+// Neutral letter tile (themed via .site-avatar in panel.css). Deliberately no
+// per-domain colors and no remote favicons (which would leak panel opens).
 const addSiteAvatar = (row, site) => {
   const iconDiv = addDiv(row, "allowed-site-icon");
   iconDiv.classList.add("site-avatar");
   iconDiv.textContent = site.charAt(0).toUpperCase();
-  iconDiv.style.background = `hsl(${domainAvatarHue(site)} 55% 42%)`;
   return iconDiv;
 };
 

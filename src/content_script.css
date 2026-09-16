@@ -45,10 +45,11 @@ body {
 
 .mhc-badge-fence {
 	display: block;
-	box-shadow: 0 0 0 1px rgba(0, 0, 0, .15);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .35);
 	background-position: center center;
-	background-size: 16px auto, 100%;
-	background-image: url("img/fence-large.svg"), linear-gradient(-45deg, #004578, #0078d4);
+	background-size: 16px auto;
+	background-image: url("img/fence-large.svg");
+	background-color: #0078d4;
 	background-repeat: no-repeat;
 	border-radius: 100%;
 	width: 28px;
@@ -59,8 +60,8 @@ body {
 }
 
 .mhc-badge.mhc-badge-small .mhc-badge-fence {
-	background-size: 7px auto, 100%;
-	background-image: url("img/fence-small.svg"), linear-gradient(-45deg, #004578, #0078d4);
+	background-size: 7px auto;
+	background-image: url("img/fence-small.svg");
 	width: 17px;
 	height: 17px;
 }
@@ -281,7 +282,7 @@ body {
 /* Tooltip */
 .mhc-badge-tooltip {
 	display: none;
-	padding: 5px 10px 10px;
+	padding: 8px 12px;
 	width: 250px;
 	max-width: 250px;
 	background: var(--mhc-white);
@@ -291,9 +292,10 @@ body {
 	top: 50%;
 	color: black;
 	font-size: 13px;
-	line-height: 17px;
+	line-height: 1.45;
 	border: 1px solid #BEBEBF;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+	border-radius: 8px;
+	box-shadow: 0 4px 16px 0 rgba(0,0,0,0.18);
 	font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
