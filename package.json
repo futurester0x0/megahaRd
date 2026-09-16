@@ -1,6 +1,6 @@
 {
   "name": "megahard",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "megahaRd isolates your Microsoft activity from the rest of your web activity in order to prevent Microsoft from tracking you outside of the Microsoft website via third party cookies.",
   "author": "futurester0x0",
   "homepage": "https://github.com/futurester0x0/megahaRd#readme",
