@@ -39,7 +39,7 @@
     "nyc": "^17.1.0",
     "psl": "^1.15.0",
     "sinon": "^22.0.0",
-    "sinon-chai": "^3.7.0",
+    "sinon-chai": "^4.0.1",
     "web-ext": "^10.6.0",
     "webextensions-geckodriver": "^0.7.0",
     "webextensions-jsdom": "^1.4.1"
