@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
-    "message": "O Facebook Container isola a sua atividade do Facebook do resto da sua atividade na Internet de modo a impedir que o Facebook o monitorize fora do site do Facebook através de cookies de terceiros.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "O megahaRd isola a sua atividade do Microsoft do resto da sua atividade na Internet de modo a impedir que o Microsoft o monitorize fora do site do Microsoft através de cookies de terceiros.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ está no Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ está no megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "O Facebook agora pode monitorizar-lhe neste site. Para remover este site do Facebook Container, selecione Sites permitidos no Facebook Container e remova-o da lista."
+  "in-megahard-p1": {
+    "message": "O Microsoft agora pode monitorizar-lhe neste site. Para remover este site do megahaRd, selecione Sites permitidos no megahaRd e remova-o da lista."
   },
-  "on-facebook-subhead": {
-    "message": "No Facebook e sites na fronteira do Facebook Container",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "No Microsoft e sites na fronteira do megahaRd",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "Este ícone aparece na barra de endereço do Firefox quando visita sites pertencentes ao Facebook ou sites que adicionou ao Facebook Container.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "Este ícone aparece na barra de endereço do Firefox quando visita sites pertencentes ao Microsoft ou sites que adicionou ao megahaRd.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
-    "message": "Estes sites precisam de aceder à sua identidade do Facebook (ou saber quem é) de maneira a poderem trabalhar. Isto também significa que o Facebook pode monitorizar tudo o que faz nestes sites.",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  "on-microsoft-p2": {
+    "message": "Estes sites precisam de aceder à sua identidade do Microsoft (ou saber quem é) de maneira a poderem trabalhar. Isto também significa que o Microsoft pode monitorizar tudo o que faz nestes sites.",
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
-    "message": "$URL$ não está no Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "$URL$ não está no megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,77 +38,77 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "Este site está fora do Facebook Container. Isto torna mais difícil que o Facebook lhe monitorize pela web.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "Este site está fora do megahaRd. Isto torna mais difícil que o Microsoft lhe monitorize pela web.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "Este site não está no Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "Este site não está no megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "Utilizar o Facebook Container",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Utilizar o megahaRd",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "O Facebook pode monitorizar a sua navegação muito além de Facebook.com. Os botões Gostar e Partilhar do Facebook, por exemplo, podem monitorizar onde esteve — mesmo em páginas que nunca gosta ou partilha.",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "O Microsoft pode monitorizar a sua navegação muito além de Microsoft.com. Os botões Gostar e Partilhar do Microsoft, por exemplo, podem monitorizar onde esteve — mesmo em páginas que nunca gosta ou partilha.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
-    "message": "O Facebook Container cria uma fronteira entre os sites do Facebook e o resto da web, por isso é mais difícil para o Facebook monitorizar-lhe online.",
-    "description": "Please do not translate \"Facebook Container\""
+    "message": "O megahaRd cria uma fronteira entre os sites do Microsoft e o resto da web, por isso é mais difícil para o Microsoft monitorizar-lhe online.",
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "No Facebook e sites na fronteira do Facebook Container",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "No Microsoft e sites na fronteira do megahaRd",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "O ícone de cerca do Facebook Container",
+    "message": "O ícone de cerca do megahaRd",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Este ícone aparece na barra de endereço do Firefox quando visita sites, como Facebook.com, que estão na fronteira do Facebook Container.",
+    "message": "Este ícone aparece na barra de endereço do Firefox quando visita sites, como Microsoft.com, que estão na fronteira do megahaRd.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "Estes sites precisam de aceder à sua identidade do Facebook (ou saber quem é) de maneira a poderem trabalhar. Isto também significa que o Facebook pode monitorizar tudo o que faz nestes sites.",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Estes sites precisam de aceder à sua identidade do Microsoft (ou saber quem é) de maneira a poderem trabalhar. Isto também significa que o Microsoft pode monitorizar tudo o que faz nestes sites.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
-    "message": "Fora do Facebook",
+    "message": "Fora do Microsoft",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Mesmo quando não está no Facebook, o Facebook pode monitorizar o que faz na Internet. Os botões que permitem publicar coisas no Facebook ou iniciar sessão em sites utilizando a sua conta do Facebook contêm rastreadores. O contentor do Facebook irá bloquear estes rastreadores e irá apresentat o ícone da cerca para mostrar onde os rastreadores foram removidos.",
+    "message": "Mesmo quando não está no Microsoft, o Microsoft pode monitorizar o que faz na Internet. Os botões que permitem publicar coisas no Microsoft ou iniciar sessão em sites utilizando a sua conta do Microsoft contêm rastreadores. O contentor do Microsoft irá bloquear estes rastreadores e irá apresentat o ícone da cerca para mostrar onde os rastreadores foram removidos.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
-    "message": "Esta imagem mostra como o ícone de cerca do Facebook Containers irá aparecer na página ao lado de um botão de Gosto do Facebook.",
+    "message": "Esta imagem mostra como o ícone de cerca do megahaRds irá aparecer na página ao lado de um botão de Gosto do Microsoft.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-subhead": {
-    "message": "Iniciar sessão com o Facebook em outros sites",
+    "message": "Iniciar sessão com o Microsoft em outros sites",
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "Para utilizar as suas credenciais do Facebook em outros sites, é necessário mover os mesmos para dentro do contentor. Clique no ícone da cerca e selecione ‘Permitir site no contentor do Facebook’ na parte inferior.",
+    "message": "Para utilizar as suas credenciais do Microsoft em outros sites, é necessário mover os mesmos para dentro do contentor. Clique no ícone da cerca e selecione ‘Permitir site no contentor do Microsoft’ na parte inferior.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
-    "message": "Esta imagem mostra como o botão para adicionar um site ao contentor do Facebook irá aparecer no painel.",
+    "message": "Esta imagem mostra como o botão para adicionar um site ao contentor do Microsoft irá aparecer no painel.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "Isto permite que inicie sessão com o Facebook, mas também permite que o Facebook rastreie sua atividade nesse site.",
+    "message": "Isto permite que inicie sessão com o Microsoft, mas também permite que o Microsoft rastreie sua atividade nesse site.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Permitir",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "Cancelar",
@@ -131,48 +131,48 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "Ir para Como funciona o Facebook Container",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "Ir para Como funciona o megahaRd",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Nenhum tracker do Facebook detetado",
+    "message": "Nenhum tracker do Microsoft detetado",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "O Facebook Container não detetou nenhum tracker do Facebook nesta página. No entanto, a página ainda pode conter outros tipos de trackers.",
+    "message": "O megahaRd não detetou nenhum tracker do Microsoft nesta página. No entanto, a página ainda pode conter outros tipos de trackers.",
     "description": ""
   },
   "learn-more": {
     "message": "Saber mais",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "Como funciona o Facebook Container",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "Como funciona o megahaRd",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "Protegemos-lhe do Facebook.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "Protegemos-lhe do Microsoft.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
-    "message": "Os botões do Facebook que aparecem em sites de compras, notícias e outros sites contêm trackers que informam o Facebook de onde esteve na web. Mesmo que nunca utilize estes botões para gostar ou partilhar, os trackers ainda irão poder recolher dados acerca da sua navegação. O Facebook Container bloqueia estes trackers.",
+    "message": "Os botões do Microsoft que aparecem em sites de compras, notícias e outros sites contêm trackers que informam o Microsoft de onde esteve na web. Mesmo que nunca utilize estes botões para gostar ou partilhar, os trackers ainda irão poder recolher dados acerca da sua navegação. O megahaRd bloqueia estes trackers.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "O Facebook Container bloqueia estes trackers. No entanto, se clicar em qualquer um destes botões, o Facebook irá poder monitorizar-lhe.",
+    "message": "O megahaRd bloqueia estes trackers. No entanto, se clicar em qualquer um destes botões, o Microsoft irá poder monitorizar-lhe.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "Cerca com escudo do Facebook Container.",
+    "message": "Cerca com escudo do megahaRd.",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "Sites permitidos no Facebook Container",
+    "message": "Sites permitidos no megahaRd",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "SITES INCLUÍDOS",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "Nenhum",
@@ -180,61 +180,61 @@
   },
   "sites-allowed": {
     "message": "SITES QUE PERMITIU",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "O Facebook Container coloca sites pertencentes ao Facebook dentro da fronteira. Pode permitir que outros sites entrem na fronteira, mas isso irá permitir com que o Facebook monitorize mais a sua navegação web."
+    "message": "O megahaRd coloca sites pertencentes ao Microsoft dentro da fronteira. Pode permitir que outros sites entrem na fronteira, mas isso irá permitir com que o Microsoft monitorize mais a sua navegação web."
   },
   "remove": {
     "message": "Remover",
     "description": ""
   },
   "button-allow-site": {
-    "message": "Permitir site no contentor do Facebook",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "Permitir site no contentor do Microsoft",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "Remover site do contentor do Facebook",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "Remover site do contentor do Microsoft",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Porque este site é propriedade do Facebook, o mesmo não pode ser removido do contentor do Facebook.",
+    "message": "Porque este site é propriedade do Microsoft, o mesmo não pode ser removido do contentor do Microsoft.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Remover site do Facebook Container?",
+    "message": "Remover site do megahaRd?",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "Remover este site do Facebook Container significa que a funcionalidade Iniciar sessão com o Facebook não irá funcionar mais e os cookies de monitorização do Facebook irão ser eliminados.",
+    "message": "Remover este site do megahaRd significa que a funcionalidade Iniciar sessão com o Microsoft não irá funcionar mais e os cookies de monitorização do Microsoft irão ser eliminados.",
     "description": ""
   },
   "remove-site-p2": {
-    "message": " Se quiser utilizar Iniciar sessão com o Facebook novamente, irá precisar de adicioná-lo de volta ao Facebook Container.",
+    "message": " Se quiser utilizar Iniciar sessão com o Microsoft novamente, irá precisar de adicioná-lo de volta ao megahaRd.",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Permitir a monitorização do Facebook neste site?",
+    "message": "Permitir a monitorização do Microsoft neste site?",
     "description": ""
   },
   "add-site-p1": {
-    "message": "Isto permite que inicie sessão com o Facebook, mas também permite que o Facebook monitorize o que faz neste site.",
+    "message": "Isto permite que inicie sessão com o Microsoft, mas também permite que o Microsoft monitorize o que faz neste site.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "O Facebook Container desativou este botão e bloqueou o Facebook de monitorizar a sua visita a esta página.",
+    "message": "O megahaRd desativou este botão e bloqueou o Microsoft de monitorizar a sua visita a esta página.",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "O Facebook Container bloqueou trackers do Facebook. Se utiliza Iniciar sessão com o Facebook neste site, o Facebook irá poder monitorizar-lhe.",
+    "message": "O megahaRd bloqueou trackers do Microsoft. Se utiliza Iniciar sessão com o Microsoft neste site, o Microsoft irá poder monitorizar-lhe.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Permitir que o Facebook lhe monitorize aqui?",
+    "message": "Permitir que o Microsoft lhe monitorize aqui?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Se quiser utilizar Iniciar sessão com o Facebook então o Facebook irá poder monitorizar a sua atividade neste site. Isto pode ajudá-los a criar uma imagem mais completa da sua vida online.",
+    "message": "Se quiser utilizar Iniciar sessão com o Microsoft então o Microsoft irá poder monitorizar a sua atividade neste site. Isto pode ajudá-los a criar uma imagem mais completa da sua vida online.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -242,19 +242,19 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "Se clicar neste botão, o Facebook poderá monitorizar a sua visita neste site.",
+    "message": "Se clicar neste botão, o Microsoft poderá monitorizar a sua visita neste site.",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "Se utilizar o seu endereço de e-mail real aqui, o Facebook poderá monitorizar o que faz. Clique para saber mais.",
+    "message": "Se utilizar o seu endereço de e-mail real aqui, o Microsoft poderá monitorizar o que faz. Clique para saber mais.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "Permitir que o Facebook o monitorize aqui?",
+    "message": "Permitir que o Microsoft o monitorize aqui?",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Este site pode partilhar o seu endereço de e-mail com o Facebook, o que permite que o Facebook o monitorize. Utilize um serviço como o Firefox Relay para ocultar o seu endereço de e-mail real.",
+    "message": "Este site pode partilhar o seu endereço de e-mail com o Microsoft, o que permite que o Microsoft o monitorize. Utilize um serviço como o Firefox Relay para ocultar o seu endereço de e-mail real.",
     "description": ""
   },
   "btn-relay-dismiss": {

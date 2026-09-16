@@ -1,28 +1,28 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container ina seernda dille maa e Facebook e ko heddii e dille maa e geese ngam haɗde Facebook rewindaade ma boowal geese Facebook rewrude e kuukiije janane.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "megahaRd ina seernda dille maa e Microsoft e ko heddii e dille maa e geese ngam haɗde Microsoft rewindaade ma boowal geese Microsoft rewrude e kuukiije janane.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ ina e nder Facebook Container oo.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ ina e nder megahaRd oo.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "Facebook ina waawi rewindaade ma jooni e ndee lowre. Ngam ittude ndee lowre e Facebook Container, suɓo Lowe jamiraaɗe nder Facebook Container etee ittu ɗum e doggol ngol."
+  "in-megahard-p1": {
+    "message": "Microsoft ina waawi rewindaade ma jooni e ndee lowre. Ngam ittude ndee lowre e megahaRd, suɓo Lowe jamiraaɗe nder megahaRd etee ittu ɗum e doggol ngol."
   },
-  "on-facebook-subhead": {
-    "message": "E Facebook e lowe nder keerol Facebook Container ngol",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "E Microsoft e lowe nder keerol megahaRd ngol",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "notOnFacebookHeader": {
-    "message": "$URL$ alaa e nder Facebook Container oo.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "$URL$ alaa e nder megahaRd oo.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -30,41 +30,41 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "Ndee lowre woni ko boowal Facebook Container. Ɗuum ina saɗ-tinana Facebook rewindaade ma e nder geese ɗee.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "Ndee lowre woni ko boowal megahaRd. Ɗuum ina saɗ-tinana Microsoft rewindaade ma e nder geese ɗee.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "Ndee lowre alaa e Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "Ndee lowre alaa e megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "Kuuturogol Facebook Container",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Kuuturogol megahaRd",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "E Facebook e lowe nder keerol Facebook Container ngol",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "E Microsoft e lowe nder keerol megahaRd ngol",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
-    "message": "Boowal Facebook",
+    "message": "Boowal Microsoft",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding5-subhead": {
-    "message": "Ceŋorogol Facebook e lowe goɗɗe",
+    "message": "Ceŋorogol Microsoft e lowe goɗɗe",
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "Ɗuum ma woppe ceŋoroɗaa Facebook, kono ina yamira Facebook rewindaade dille maa e ndee lowre.",
+    "message": "Ɗuum ma woppe ceŋoroɗaa Microsoft, kono ina yamira Microsoft rewindaade dille maa e ndee lowre.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Yamir",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "Haaytu",
@@ -87,32 +87,32 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "Yah to hol no Facebook Container gollortoo",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "Yah to hol no megahaRd gollortoo",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Alaa Rewindotooɓe Facebook njiytaa",
+    "message": "Alaa Rewindotooɓe Microsoft njiytaa",
     "description": ""
   },
   "learn-more": {
     "message": "Ɓeydu humpito",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "Hol no Facebook Container gollortoo",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "Hol no megahaRd gollortoo",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "Min ndeeniima e bone Facebook",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "Min ndeeniima e bone Microsoft",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "sites-added-subhead": {
-    "message": "Lowe jamiraaɗe e Facebook Container",
+    "message": "Lowe jamiraaɗe e megahaRd",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "Lowe jeyaaɗe heen",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "Ndiga",
@@ -120,38 +120,38 @@
   },
   "sites-allowed": {
     "message": "Lowe ɗe njamirɗaa",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "remove": {
     "message": "Ittu",
     "description": ""
   },
   "button-allow-site": {
-    "message": "Yamir lowre ndee e Facebook Container",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "Yamir lowre ndee e megahaRd",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "Ittu lowre ndee e Facebook Container",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "Ittu lowre ndee e megahaRd",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Sabu ndee lowre ko Facebook jeyi nde, ndeɓcb waawaa itteede e Facebook Container.",
+    "message": "Sabu ndee lowre ko Microsoft jeyi nde, ndeɓcb waawaa itteede e megahaRd.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Ittude lowre ndee e Facebook Container?",
+    "message": "Ittude lowre ndee e megahaRd?",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Yamirde Dewindol Facebook e ndee lowre?",
+    "message": "Yamirde Dewindol Microsoft e ndee lowre?",
     "description": ""
   },
   "add-site-p1": {
-    "message": "Ɗuum ma woppe ceŋoroɗaa Facebook, kono ina yamira Facebook rewde e ko mbaɗataa  e ndee lowre.",
+    "message": "Ɗuum ma woppe ceŋoroɗaa Microsoft, kono ina yamira Microsoft rewde e ko mbaɗataa  e ndee lowre.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Yamirde Facebook rewindaade ma ɗoo?",
+    "message": "Yamirde Microsoft rewindaade ma ɗoo?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {

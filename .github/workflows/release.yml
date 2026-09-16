@@ -1,0 +1,32 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: ./node_modules/.bin/web-ext lint -s src
+      - run: ./node_modules/.bin/web-ext build --overwrite-dest -s src --artifacts-dir web-ext-artifacts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: unsigned-addon
+          path: web-ext-artifacts/*.zip
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: web-ext-artifacts/*.zip
+          generate_release_notes: true
+# AMO signing is manual for now: web-ext sign --api-key=... --api-secret=...
+# then upload the signed .xpi to https://addons.mozilla.org/developers/

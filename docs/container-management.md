@@ -1,23 +1,37 @@
-# Manage non-Facebook sites that are loaded inside the Facebook Container
+# Manage sites in the megahaRd Container
 
-### Add a site
+The panel is a single-screen dashboard. Its status card reflects the current
+tab (`on-microsoft`, `in-megahard`, `about`, `trackers-detected`,
+`no-trackers`, driven by `CURRENT_PANEL` in `background.js`).
 
-To **add** a site to the Facebook Container, open the panel on whichever page you wish to include, and click "Allow site in Facebook Container" button. First, it will confirm this action and then add it and reload the page.
+## Included vs. allowed sites
 
-_Note that `about:` system pages cannot be added_. 
+- **SITES INCLUDED** lists every Microsoft-owned domain the extension contains.
+  This list is rendered from `MICROSOFT_DOMAINS` in `src/background.js` (via
+  the `get-microsoft-domains` message), so it cannot drift out of sync.
+- **SITES YOU'VE ALLOWED** lists the custom domains you added. Hover a row and
+  click the `X` to remove it.
 
-![image](https://user-images.githubusercontent.com/2692333/74570315-f891e180-4f41-11ea-8523-a3e22e647861.png)
+_*Microsoft-owned domains cannot be removed.*_
 
-### Remove a site
+## Add a site
 
-To **remove** a site from the Facebook Container, you can do the inverse, by navigating to a page within the Facebook Container<sup>*</sup>, open the panel and click: 
+1. Navigate to the site.
+2. Open the megahaRd panel.
+3. Click **Allow Site in megahaRd Container**.
 
-![image](https://user-images.githubusercontent.com/2692333/74570952-c92fa480-4f42-11ea-99ee-b88578d934dc.png)
+The page reloads inside the container. From then on, Microsoft resources on
+that site are allowed and Microsoft can track your activity there.
 
-Additionally, you can manage all the custom sites that have been added by clicking on "Sites Allowed in Facebook Container".  
+_Note that `about:` system pages cannot be added._
 
-_*Note that [Facebook-owned domains](https://github.com/mozilla/contain-facebook/blob/main/src/background.js#L7-L23)_ cannot be removed. 
+## Remove a site
 
-Once on that panel page, click the `X` next to the domain you would like to remove. 
+1. Navigate to a site you previously allowed (or pick it from
+   **SITES YOU'VE ALLOWED**).
+2. Open the megahaRd panel.
+3. Click **Remove Site from megahaRd Container**, or the `X` next to the
+   domain in the list.
 
-![image](https://user-images.githubusercontent.com/2692333/74570327-fc256880-4f41-11ea-9ef3-d96786e949d3.png)
+Removing a site means Log in with Microsoft stops working there and
+Microsoft tracking cookies for it are deleted on next cleanup.

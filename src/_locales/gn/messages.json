@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container omoha’eño ne rembiapo Facebook pegua ambue mba’e ñandutípe rejapóvagui, omboyke hag̃ua Facebook ohapykuehóvo okápe oikóva  iñanduti rendágui kookie mbohapyháva rupive.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "megahaRd omoha’eño ne rembiapo Microsoft pegua ambue mba’e ñandutípe rejapóvagui, omboyke hag̃ua Microsoft ohapykuehóvo okápe oikóva  iñanduti rendágui kookie mbohapyháva rupive.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ oĩ Facebook Container-pe.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ oĩ megahaRd-pe.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "Facebook ikatu ohapykueho ko tenda ko’ag̃aite. Embogueséramo Facebook oguerekohágui, eiporavo “Tenda Facebook guerekoha moneĩmbyre” ha emboguete tysýigui."
+  "in-megahard-p1": {
+    "message": "Microsoft ikatu ohapykueho ko tenda ko’ag̃aite. Embogueséramo Microsoft oguerekohágui, eiporavo “Tenda Microsoft guerekoha moneĩmbyre” ha emboguete tysýigui."
   },
-  "on-facebook-subhead": {
-    "message": "Facebook ha tenda oĩ Facebook Container mboypýri gotyo",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "Microsoft ha tenda oĩ megahaRd mboypýri gotyo",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "Ko ta’ãngachu’i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com mba’épe térã embojuajúramo Facebook Container rehe.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "Ko ta’ãngachu’i ejuhúta Firefox kundaharape rendápe eikévo tenda Microsoft.com mba’épe térã embojuajúramo megahaRd rehe.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
-    "message": "Oiko porã hag̃ua, ko’ã tenda oikotevẽ oike heratee Facebook pegua ndive, he’iséva avei Facebook ikatuha nde rapykueho ejapóva guivépe.",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  "on-microsoft-p2": {
+    "message": "Oiko porã hag̃ua, ko’ã tenda oikotevẽ oike heratee Microsoft pegua ndive, he’iséva avei Microsoft ikatuha nde rapykueho ejapóva guivépe.",
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
-    "message": "$URL$ ndaipóri Facebook Container ryepýpe.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "$URL$ ndaipóri megahaRd ryepýpe.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,77 +38,77 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "Ko tenda ndaipóri Facebook Container ryepýpe. Upéicha rupi asyve Facebook ohapykuehóvo ñandutípe.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "Ko tenda ndaipóri megahaRd ryepýpe. Upéicha rupi asyve Microsoft ohapykuehóvo ñandutípe.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "Ko tenda ndaipóri Facebook Container ryepýpe.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "Ko tenda ndaipóri megahaRd ryepýpe.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "Mba’éicha eiporúta Facebook Container",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Mba’éicha eiporúta megahaRd",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "Facebook ikatu nde rapykueho Facebook.com-gui esẽ rire. Techapyrã, umi votõ “Ahayhu” ha “Moherakuã” ikatu ohapykueho moõpa eikéra’e, umi kuatiarogue ehayhu’ỹva ha neremoherakuãiva’ekue.",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Microsoft ikatu nde rapykueho Microsoft.com-gui esẽ rire. Techapyrã, umi votõ “Ahayhu” ha “Moherakuã” ikatu ohapykueho moõpa eikéra’e, umi kuatiarogue ehayhu’ỹva ha neremoherakuãiva’ekue.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
-    "message": "Facebook Container omoheñói opaha tendakuéra Facebook ha ambue ñandutigua, péicha Facebook-pe hasyve nderapykueho hag̃ua eikundahahápe.",
-    "description": "Please do not translate \"Facebook Container\""
+    "message": "megahaRd omoheñói opaha tendakuéra Microsoft ha ambue ñandutigua, péicha Microsoft-pe hasyve nderapykueho hag̃ua eikundahahápe.",
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "Facebook ha tenda oĩ Facebook Container mboypýri",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Microsoft ha tenda oĩ megahaRd mboypýri",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "Facebook Container korajere ra’ãnga’i",
+    "message": "megahaRd korajere ra’ãnga’i",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Ko ta’ãngachu’i ejuhúta Firefox kundaharape rendápe eikévo tenda Facebook.com-pe, oĩva Facebook Container mboypýri gotyo.",
+    "message": "Ko ta’ãngachu’i ejuhúta Firefox kundaharape rendápe eikévo tenda Microsoft.com-pe, oĩva megahaRd mboypýri gotyo.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "Oiko porã hag̃ua, ko’ã tenda oikotevẽ oike heratee Facebook pegua ndive, he’iséva avei Facebook ikatu nde rapykueho ejapóva guivépe.",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Oiko porã hag̃ua, ko’ã tenda oikotevẽ oike heratee Microsoft pegua ndive, he’iséva avei Microsoft ikatu nde rapykueho ejapóva guivépe.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
-    "message": "Okápe Facebook-gui",
+    "message": "Okápe Microsoft-gui",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Ndereikéirõ jepe Facebook-pe, kóva nde rapykuehokuaa ñandutípe. Umi votõ omoneĩva ehupi hag̃ua Facebook-pe térã emoñepyrũvo tembiapo ñanduti rendápe eiporúvo mba’ete Facebook pegua oreko tapykuehoha. Facebook Container ojoko ko’ã tapykuehoha ha ohechauka ta’ãnga’i ehecha hag̃ua moõpa oñemboguekuaa.",
+    "message": "Ndereikéirõ jepe Microsoft-pe, kóva nde rapykuehokuaa ñandutípe. Umi votõ omoneĩva ehupi hag̃ua Microsoft-pe térã emoñepyrũvo tembiapo ñanduti rendápe eiporúvo mba’ete Microsoft pegua oreko tapykuehoha. megahaRd ojoko ko’ã tapykuehoha ha ohechauka ta’ãnga’i ehecha hag̃ua moõpa oñemboguekuaa.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
-    "message": "Ko ta’ãnga ohechauka mba’éichapa ehecháta Facebook Containers ra’ãnga’i kuatiaroguépe votõ Ahayhu Facebook pegua ykére.",
+    "message": "Ko ta’ãnga ohechauka mba’éichapa ehecháta megahaRds ra’ãnga’i kuatiaroguépe votõ Ahayhu Microsoft pegua ykére.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-subhead": {
-    "message": "Eñepyrũ tembiapo Facebook ndive ambue tendápe",
+    "message": "Eñepyrũ tembiapo Microsoft ndive ambue tendápe",
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "Eiporu hag̃ua ne rembiapo ñepyrũ Facebook-pe ambue tendápe, emongu’ekuaa ikatuha peve. Eikutu pe ta’ãnga’i ha eiporavo ‘Emoneĩ tenda Facebook Container-pe’ iguypeve gotyo.",
+    "message": "Eiporu hag̃ua ne rembiapo ñepyrũ Microsoft-pe ambue tendápe, emongu’ekuaa ikatuha peve. Eikutu pe ta’ãnga’i ha eiporavo ‘Emoneĩ tenda megahaRd-pe’ iguypeve gotyo.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
-    "message": "Ko ta’ãnga ohechauka mba’éichapa ojehecháta pe votõ embojuaju hag̃ua tenda Facebook Container rehe ta’ãngarupápe.",
+    "message": "Ko ta’ãnga ohechauka mba’éichapa ojehecháta pe votõ embojuaju hag̃ua tenda megahaRd rehe ta’ãngarupápe.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "Kóva omoneĩ oñepyrũvo tembiapo Facebook ndive, avei omoneĩ Facebook-pe ohapykuehóvo ne rembiapo.",
+    "message": "Kóva omoneĩ oñepyrũvo tembiapo Microsoft ndive, avei omoneĩ Microsoft-pe ohapykuehóvo ne rembiapo.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Moneĩ",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "Heja",
@@ -131,48 +131,48 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "Ehecha mba’éicha oiko Facebook Container",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "Ehecha mba’éicha oiko megahaRd",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Ndojehechái Facebook rapykuehoha",
+    "message": "Ndojehechái Microsoft rapykuehoha",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container ndohechái Facebook rapykuehoha ko kuatiaroguépe. Peicharamojepe, ko kuatiarogue ikatu oreko ambue jehapykuehoha.",
+    "message": "megahaRd ndohechái Microsoft rapykuehoha ko kuatiaroguépe. Peicharamojepe, ko kuatiarogue ikatu oreko ambue jehapykuehoha.",
     "description": ""
   },
   "learn-more": {
     "message": "Eikuaave",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "Mba’éicha oiko Facebook Container",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "Mba’éicha oiko megahaRd",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "Ore romo’ã ndéve Facebook-gui.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "Ore romo’ã ndéve Microsoft-gui.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
-    "message": "Umi votõ Facebook pegua ojehecháva kuatiarogue jejoguaha, marandu, ha ambue, oreko tapykuehoha omombe’úva Facebook-pe umi kuatiarogue eike hague. Ndereiporúiramo jepe ko’ã votõ, umi tapykuehoha ikatu ombyaty marandu ne ñeikundaha rehegua. Facebook Container ojoko umi tapykuehoha.",
+    "message": "Umi votõ Microsoft pegua ojehecháva kuatiarogue jejoguaha, marandu, ha ambue, oreko tapykuehoha omombe’úva Microsoft-pe umi kuatiarogue eike hague. Ndereiporúiramo jepe ko’ã votõ, umi tapykuehoha ikatu ombyaty marandu ne ñeikundaha rehegua. megahaRd ojoko umi tapykuehoha.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook Container ojoko ko’ã jehapykuehoha. Hákatu eikutúramo oimeraẽva votõ, Facebook ikatukuaa ohapykueho.",
+    "message": "megahaRd ojoko ko’ã jehapykuehoha. Hákatu eikutúramo oimeraẽva votõ, Microsoft ikatukuaa ohapykueho.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "Kora ñemboty Facebook Container ndive.",
+    "message": "Kora ñemboty megahaRd ndive.",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "Tenda moneĩmbyre Facebook Container-pe",
+    "message": "Tenda moneĩmbyre megahaRd-pe",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "TENDA MOINGEPYRE",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "Mavave",
@@ -180,61 +180,61 @@
   },
   "sites-allowed": {
     "message": "TENDA EMONEĨVA’EKUE",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Facebook Container omohenda Facebook mba’etee kora ryepýpe. Ikatu omoneĩ ambue tenda kora ryepýpe, hákatu kóva omoneĩta Facebook-pe ohapykuehovévo ne ñeikundaha ñandutípe."
+    "message": "megahaRd omohenda Microsoft mba’etee kora ryepýpe. Ikatu omoneĩ ambue tenda kora ryepýpe, hákatu kóva omoneĩta Microsoft-pe ohapykuehovévo ne ñeikundaha ñandutípe."
   },
   "remove": {
     "message": "Mboguete",
     "description": ""
   },
   "button-allow-site": {
-    "message": "Emoneĩ tenda Facebook Container-pe",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "Emoneĩ tenda megahaRd-pe",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "Embogue tenda de Facebook Container-pe",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "Embogue tenda de megahaRd-pe",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Ko tenda ha’e rupi Facebook mba’e, ndaikatumo’ãi oñembogue Facebook Container-gui.",
+    "message": "Ko tenda ha’e rupi Microsoft mba’e, ndaikatumo’ãi oñembogue megahaRd-gui.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "¿Emboguete tenda Facebook Container-gui?",
+    "message": "¿Emboguete tenda megahaRd-gui?",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "Emboguévo ko tenda Facebook Container-gui Tembiapo Ñepyrũ rembiapoite Facebook pegua ndoikomo’ãvéima ha umi kookie tapykuehoha Facebook rehegua oguepáta.",
+    "message": "Emboguévo ko tenda megahaRd-gui Tembiapo Ñepyrũ rembiapoite Microsoft pegua ndoikomo’ãvéima ha umi kookie tapykuehoha Microsoft rehegua oguepáta.",
     "description": ""
   },
   "remove-site-p2": {
-    "message": "Emoñepyrũjey hag̃ua tembiapo Facebook ndive ipyahúva, eikotevẽta embojuajujey Facebook Container rehe.",
+    "message": "Emoñepyrũjey hag̃ua tembiapo Microsoft ndive ipyahúva, eikotevẽta embojuajujey megahaRd rehe.",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "¿Eipota Facebook rapykuehoha ko tendápe?",
+    "message": "¿Eipota Microsoft rapykuehoha ko tendápe?",
     "description": ""
   },
   "add-site-p1": {
-    "message": "Kóva omoneĩta emoñepyrũvo tembiapo Facebook ndive, omoneĩta Facebook-pe ohapykuehóvo ne rembiapo ko tendápe.",
+    "message": "Kóva omoneĩta emoñepyrũvo tembiapo Microsoft ndive, omoneĩta Microsoft-pe ohapykuehóvo ne rembiapo ko tendápe.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container oipe’a ko votõ ha ojoko og̃uahẽva jehapykueho ko kuatiarogue pegua Facebook guive.",
+    "message": "megahaRd oipe’a ko votõ ha ojoko og̃uahẽva jehapykueho ko kuatiarogue pegua Microsoft guive.",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container ojokóma ijehapykuehoha. Eiporúramo tembiapo ñepyrũ Facebook ndive ko tendápe, ikatu nde rapykueho.",
+    "message": "megahaRd ojokóma ijehapykuehoha. Eiporúramo tembiapo ñepyrũ Microsoft ndive ko tendápe, ikatu nde rapykueho.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "¿ Emoneĩ Facebook-pe nde rapykuehóvo ápe?",
+    "message": "¿ Emoneĩ Microsoft-pe nde rapykuehóvo ápe?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Eiporúramo tembiapo ñepyrũ Facebook ndive, Facebook ikatu ohapykueho ne rembiapo ko tendápe. Kóva ikatu ne pytyvõ ehechauka hag̃ua nde rekove porãha eikundahávo ñandutípe.",
+    "message": "Eiporúramo tembiapo ñepyrũ Microsoft ndive, Microsoft ikatu ohapykueho ne rembiapo ko tendápe. Kóva ikatu ne pytyvõ ehechauka hag̃ua nde rekove porãha eikundahávo ñandutípe.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -242,19 +242,19 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "Eikutúvo ko votõ, Facebook ikatukuaa ohapykueho nde jeike ko tendápe.",
+    "message": "Eikutúvo ko votõ, Microsoft ikatukuaa ohapykueho nde jeike ko tendápe.",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "Eiporúramo ne ñanduti vevete ko’ápe, ikatu Facebook ohapykueho ndehegui. Eikutu eikuaasevéramo.",
+    "message": "Eiporúramo ne ñanduti vevete ko’ápe, ikatu Microsoft ohapykueho ndehegui. Eikutu eikuaasevéramo.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "¿Emoneĩ Facebook-pe nde rapykuehóvo ápe?",
+    "message": "¿Emoneĩ Microsoft-pe nde rapykuehóvo ápe?",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Ko tenda omoherakuãkuaa ñanduti veve kundaharape Facebook ndive, omoneĩva Facebook-pe nde rapykuehóvo. Eiporu Firefox Relay eñomi hag̃ua ne ñanduti veve.",
+    "message": "Ko tenda omoherakuãkuaa ñanduti veve kundaharape Microsoft ndive, omoneĩva Microsoft-pe nde rapykuehóvo. Eiporu Firefox Relay eñomi hag̃ua ne ñanduti veve.",
     "description": ""
   },
   "btn-relay-dismiss": {

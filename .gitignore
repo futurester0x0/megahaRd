@@ -3,4 +3,4 @@
 /.nyc_output
 /coverage
 /build
-/.web-ext-artifacts
+.DS_Store

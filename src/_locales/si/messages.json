@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
     "message": "තෙවන පාර්ශ්ව දත්තකඩ හරහා ෆේස්බුක් අඩවියෙන් පිටත ඔබව ලුහුබැඳීම වළක්වා ගැනීම සඳහා, ෆේස්බුක් කන්ටේනර් ඔබගේ ෆේස්බුක් ක්‍රියාකාරකම් අනෙක් වියමන ක්‍රියාකාරකම් වලින් හුදකලා කරයි.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
+  "in-megahard-subhead": {
     "message": "ෆේස්බුක් කන්ටේනර් තුළ $URL$ තිබේ.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
+  "in-megahard-p1": {
     "message": "දැන් ෆේස්බුක් සේවාවට මෙම අඩවිය හරහා ඔබව නිරීක්‍ෂණය කිරීමට හැකිය. ෆේස්බුක් කන්ටේනර් වෙතින් මෙම අඩවිය ඉවත් කිරීමට, ෆේස්බුක් කන්ටේනර් තුළ ඉඩ දී තිබෙන අඩවි තේරීමෙන් පසු ඒවා ලේඛනයෙන් ඉවත් කරන්න."
   },
-  "on-facebook-subhead": {
+  "on-microsoft-subhead": {
     "message": "ෆේස්බුක් හි සහ ෆේස්බුක් කන්ටේනර් මාඉම තිබෙන අඩවි",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
+  "on-microsoft-p1": {
     "message": "ෆේස්බුක් සතු අඩවියකට හෝ ෆේස්බුක් කන්ටේනර් තුළට එක් කළ අඩවි වෙත ඔබ ගිය විට මෙම නිරූපකය ෆයර්ෆොක්ස් ලිපින තීරුවේ දිස් වේ.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
+  "on-microsoft-p2": {
     "message": "මෙම අඩවි නිවරදිව ක්‍රියාත්මක වීමට ඔබගේ ෆේස්බුක් අනන්‍යතාව වෙත ප්‍රවේශ විය යුතුය (හෝ ඔබ කවුද යන්න දැන ගන්න). මෙම අඩවිවල ඔබ සිදු කරන සෑම දෙයක්ම ෆේස්බුක් සඳහා නිරීක්‍ෂණය කළ හැකි බව මෙයින් අදහස් වේ.",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
+  "notOnMicrosoftHeader": {
     "message": "ෆේස්බුක් කන්ටේනර් තුළ $URL$ නැත.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,45 +38,45 @@
       }
     }
   },
-  "notOnFacebookText": {
+  "notOnMicrosoftText": {
     "message": "මෙම අඩවිය ෆේස්බුක් කන්ටේනර් මෙවලමෙන් පිටත ය. මෙමගින් ෆේස්බුක් සේවාවට ඔබව වියමන පුරා ලුහුබැඳීම අපහසු කරයි.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
     "message": "මෙම අඩවිය ෆේස්බුක් කන්ටේනර් තුළ නැත.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
+  "megahardContainer": {
     "message": "ෆේස්බුක් කන්ටේනර්",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
     "message": "ෆේස්බුක් කන්ටේනර් භාවිතයෙන්",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "ෆේස්බුක් සේවාවට ඔවුන්ගේ Facebook.com අඩවියෙන් ඔබ්බට ඔබගේ පිරික්සුම් නිරීක්‍ෂණය කළ හැකිය. විවිධ අඩවිවල තිබෙන ෆේස්බුක් ලයික් සහ බෙදාගැනීමේ බොත්තම් — කිසි විටෙක භාවිතා නොකළ ද එමගින් ඔබ භාවිතා කළ සේවා හා පිටු නිරීක්‍ෂණය කිරීමට හැකිය.",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "ෆේස්බුක් සේවාවට ඔවුන්ගේ Microsoft.com අඩවියෙන් ඔබ්බට ඔබගේ පිරික්සුම් නිරීක්‍ෂණය කළ හැකිය. විවිධ අඩවිවල තිබෙන ෆේස්බුක් ලයික් සහ බෙදාගැනීමේ බොත්තම් — කිසි විටෙක භාවිතා නොකළ ද එමගින් ඔබ භාවිතා කළ සේවා හා පිටු නිරීක්‍ෂණය කිරීමට හැකිය.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
     "message": "ෆේස්බුක් කන්ටේනර් මගින් ෆේස්බුක් අඩවි සහ සෙසු අඩවි අතර මාඉම ක් සාදයි, එමගින් ෆෙස්බුක් සඳහා ඔබව මාර්ගගතව ලුහුබැඳීමට අපහසු වේ.",
-    "description": "Please do not translate \"Facebook Container\""
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
     "message": "ෆේස්බුක් හි සහ ෆේස්බුක් කන්ටේනර් මාඉම තිබෙන අඩවි",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
     "message": "ෆේස්බුක් කන්ටේනර් වැට නිරූපකය",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "ඔබ ෆේස්බුක් කන්ටේනර් මාඉම තිබෙන Facebook.com වැනි අඩවි වලට ගොඩවදින විට මෙම නිරූපකය ෆයර්ෆොක්ස් ලිපින තීරුවේ දිස් වේ.",
+    "message": "ඔබ ෆේස්බුක් කන්ටේනර් මාඉම තිබෙන Microsoft.com වැනි අඩවි වලට ගොඩවදින විට මෙම නිරූපකය ෆයර්ෆොක්ස් ලිපින තීරුවේ දිස් වේ.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
     "message": "මෙම අඩවි නිවරදිව ක්‍රියාත්මක වීමට ඔබගේ ෆේස්බුක් අනන්‍යතාව වෙත ප්‍රවේශ විය යුතුය (හෝ ඔබ කවුද යන්න දැන ගන්න). මෙම අඩවිවල ඔබ සිදු කරන සෑම දෙයක්ම ෆේස්බුක් සඳහා නිරීක්‍ෂණය කළ හැකි බව මෙයින් අදහස් වේ.",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
     "message": "ෆේස්බුක් සේවාවෙන් පිටත",
@@ -108,7 +108,7 @@
   },
   "btn-allow": {
     "message": "ඉඩ දෙන්න",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "අවලංගු",
@@ -132,7 +132,7 @@
   },
   "btn-arrow-forward": {
     "message": "ෆේස්බුක් කන්ටේනර් වැඩ කරන අයුරු වෙත යන්න",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
     "message": "ෆේස්බුක් ලුහුබැඳීම් අනාවරණය වී නැත",
@@ -144,15 +144,15 @@
   },
   "learn-more": {
     "message": "තව දැනගන්න",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
+  "how-megahard-works": {
     "message": "ෆේස්බුක් කන්ටේනර් ක්‍රියා කරන අයුරු",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
     "message": "ඔබ ෆේස්බුක් වෙතින් තරමක් ආරක්‍ෂිතයි.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
     "message": "සාප්පු සවාරි, ප්‍රවෘත්ති සහ වෙනත් වියමන අඩවිවල දිස්වන ෆේස්බුක් බොත්තම් තුළ ඔබ වියමනෙහි යන එන තැන් ෆේස්බුක් වෙත දන්වන ලුහුබැඳීම් අඩංගු වේ. මනාපය දැක්වීමට හෝ බෙදා ගැනීමට ඔබ කිසි විටෙක මෙම බොත්තම් භාවිතා නොකළ ද, ලුහුබැඳීම් මගින් නිරතුරුව ඔබගේ පිරික්සුම් දත්ත රැස් කරයි. ෆේස්බුක් කන්ටේනර් මෙම ලුහුබැඳීම් අවහිර කරයි.",
@@ -172,7 +172,7 @@
   },
   "sites-included": {
     "message": "ඇතුළත් අඩවි",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "කිසිත් නැත",
@@ -180,7 +180,7 @@
   },
   "sites-allowed": {
     "message": "ඔබ ඉඩ දී තිබෙන අඩවි",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
     "message": "ෆේස්බුක් කන්ටේනර් මගින් ෆේස්බුක් සේවාව සතු අඩවි මාඉම තුළ තබයි. ඔබට වෙනත් අඩවි සඳහා මාඉම ඇතුළත ඉඩ දීමට හැකිය, නමුත් මෙමගින් ෆේස්බුක් සේවාවට ඔබගේ බොහෝ පිරික්සුම් ක්‍රියාකාරකම් නිරීක්‍ෂණයට ඉඩ සලසයි."
@@ -191,11 +191,11 @@
   },
   "button-allow-site": {
     "message": "ෆේස්බුක් කන්ටේනර් වෙත අඩවිය යොදන්න",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
     "message": "ෆේස්බුක් කන්ටේනර් වෙතින් අඩවිය ඉවත් කරන්න",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
     "message": "මෙය ෆෙස්බුක් සතු අඩවියක් නිසා ෆේස්බුක් කන්ටේනර් වෙතින් ඉවත් කිරීමට නොහැකිය.",

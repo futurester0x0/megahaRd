@@ -33,7 +33,7 @@ describe("Multi-Account Containers", () => {
         macAssigned: true
       });
       return background.browser.tabs._create({
-        url: "https://www.facebook.com"
+        url: "https://www.microsoft.com"
       });
     });
 
@@ -48,7 +48,7 @@ describe("Multi-Account Containers", () => {
         macEnabled: false
       });
       return background.browser.tabs._create({
-        url: "https://www.facebook.com"
+        url: "https://www.microsoft.com"
       });
     });
 
@@ -62,7 +62,7 @@ describe("Multi-Account Containers", () => {
           id: MAC_ADDON_ID
         });
         return background.browser.tabs._create({
-          url: "https://www.facebook.com"
+          url: "https://www.microsoft.com"
         });
       });
 
@@ -81,7 +81,7 @@ describe("Multi-Account Containers", () => {
         id: MAC_ADDON_ID
       });
       return background.browser.tabs._create({
-        url: "https://www.facebook.com"
+        url: "https://www.microsoft.com"
       });
     });
 
@@ -99,7 +99,7 @@ describe("Multi-Account Containers", () => {
         id: MAC_ADDON_ID
       });
       return background.browser.tabs._create({
-        url: "https://www.facebook.com"
+        url: "https://www.microsoft.com"
       });
     });
 
@@ -117,7 +117,7 @@ describe("Multi-Account Containers", () => {
         id: MAC_ADDON_ID
       });
       return background.browser.tabs._create({
-        url: "https://www.facebook.com"
+        url: "https://www.microsoft.com"
       });
     });
 
@@ -127,22 +127,22 @@ describe("Multi-Account Containers", () => {
   });
 
   describe("Add-on initializes with already open Tabs that are MAC assigned", () => {
-    let facebookContainer;
+    let megahardContainer;
 
     beforeEach(async () => {
       webExtension = await helper.loadWebExtension({
         macEnabled: true,
         macAssigned: true,
         async beforeParse(window) {
-          facebookContainer = await window.browser.contextualIdentities._create({
-            name: "Facebook"
+          megahardContainer = await window.browser.contextualIdentities._create({
+            name: "megahaRd"
           });
           await window.browser.tabs._create({
-            url: "https://www.facebook.com"
+            url: "https://www.microsoft.com"
           });
           await window.browser.tabs._create({
             url: "https://example.com",
-            cookieStoreId: facebookContainer.cookieStoreId
+            cookieStoreId: megahardContainer.cookieStoreId
           });
         }
       });

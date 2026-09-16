@@ -1,17 +1,17 @@
 # CONTRIBUTING
 
-Everyone is welcome to contribute to Facebook Containers. Reach out to team members if you have questions:
+Everyone is welcome to contribute to megahaRd. Reach out via GitHub if you have questions:
 
-- IRC: #containers on irc.mozilla.org
-- Email: containers@mozilla.com
+- Issues: https://github.com/futurester0x0/megahaRd/issues
+- Pull requests: https://github.com/futurester0x0/megahaRd/pulls
 
 ## Filing bugs
 
-If you find a bug with Facebook Container, please file a issue.
+If you find a bug with megahaRd, please file a issue.
 
-Check first if the bug might already exist: https://github.com/mozilla/contain-facebook/issues
+Check first if the bug might already exist: https://github.com/futurester0x0/megahaRd/issues
 
-[Open an issue](https://github.com/mozilla/contain-facebook/issues/new)
+[Open an issue](https://github.com/futurester0x0/megahaRd/issues/new)
 
 1. Visit about:support
 2. Click "Copy raw data to clipboard" and paste into the bug. Alternatively copy the following sections into the issue:

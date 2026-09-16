@@ -1,5 +1,4 @@
 if (!process.listenerCount("unhandledRejection")) {
-  // eslint-disable-next-line no-console
   process.on("unhandledRejection", r => console.log(r));
 }
 
@@ -30,7 +29,7 @@ global.loadWebExtension = async (options = {}) => {
   });
   webExtension.background.browser.runtime.sendMessage.resetHistory();
   if (webExtension.background.browser.contextualIdentities.create.firstCall) {
-    webExtension.facebookContainer =
+    webExtension.megahardContainer =
       await webExtension.background.browser.contextualIdentities.create.firstCall.returnValue;
   }
   global.webExtension = webExtension;

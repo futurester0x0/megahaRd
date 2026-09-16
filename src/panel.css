@@ -1,17 +1,18 @@
 body {
-  --fbc-blue-60: #0060df;
-  --fbc-blue-70: #003eaa;
-  --fbc-primary-text: #0c0c0d;
-  --fbc-secondary-text: #737373;
-  --fbc-gray-20: #ededf0;
-  --fbc-transition: all .15s cubic-bezier(.07,.95,0,1);
-  --fbc-borders: 1px solid #ededf0;
+  --mhc-blue-60: #0060df;
+  --mhc-blue-70: #003eaa;
+  --mhc-primary-text: #0c0c0d;
+  --mhc-secondary-text: #737373;
+  --mhc-gray-20: #ededf0;
+  --mhc-transition: all .15s cubic-bezier(.07,.95,0,1);
+  --mhc-borders: 1px solid #ededf0;
   font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 html,
 body {
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   min-height: 200px;
   min-width: 355px;
   max-width: 355px;
@@ -29,43 +30,21 @@ span {
   font-size: 12px;
 }
 
-.main-content-wrapper {
-  padding: 1.5rem 1.65rem;
-  min-height: 100px;
-}
-
 h2,
-p,
-div.img {
+p {
   padding-bottom: 1rem;
 }
 
-.main-content-wrapper a:last-child {
-  padding-bottom: 0;
-}
-
-h1 { /* "Facebook Container" headline for all panels */
+h1 { /* "megahaRd" headline for all panels */
   font-weight: 600;
   margin: 0;
   font-size: 13px;
-  border-bottom: var(--fbc-borders);
+  border-bottom: var(--mhc-borders);
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 46px;
-}
-
-.btn-return.arrow-left {
-  position: absolute;
-  border: 0;
-  left: 15px;
-  top: 15px;
-  width: 1.2rem;
-  height: 1.2rem;
-  background-color: rgba(255, 255, 255, 1);
-  background-image: url("/img/arrow-icon-left.svg");
-  cursor: pointer;
 }
 
 h2 { /* panel sub-head for all panels */
@@ -82,14 +61,14 @@ h3 {
   font-weight: 300;
 }
 
-.Facebook-text {
-  color: var(--fbc-secondary-text);
+.Microsoft-text {
+  color: var(--mhc-secondary-text);
   font-weight: 500;
   font-size: 14px;
 }
 
-.Facebook-text::after {
-  background: url("/img/fbc-icon-dark.svg") center no-repeat;
+.Microsoft-text::after {
+  background: url("/img/mhc-icon-dark.svg") center no-repeat;
   background-size: 14px auto;
   display: inline-block;
   width: 14px;
@@ -99,13 +78,13 @@ h3 {
   content: "";
 }
 
-.Facebook-blue-text {
+.Microsoft-blue-text {
   color: #37ADFF;
   font-weight: 500;
   font-size: 14px;
 }
 
-.Facebook-blue-text::after {
+.Microsoft-blue-text::after {
   background: url("/img/briefcase.svg") center no-repeat;
   background-size: 17px auto;
   display: inline-block;
@@ -122,69 +101,14 @@ a {
 }
 
 a {
-  color: var(--fbc-blue-60);
+  color: var(--mhc-blue-60);
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover {
-  color: var(--fbc-blue-70);
-  border-bottom: 1.5px solid var(--fbc-blue-70);
-}
-
-.fw-bottom-btn { /* Full-width bottom bar "How Facebook Container Works" button. Only on non-onboarding panels. */
-  padding: .7rem 0;
-  background-color: transparent;
-  border-top: var(--fbc-borders);
-}
-
-.highlight-on-hover { /* Full-width element that wraps around the "How Facebook Container Works" span and arrow icon */
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0);
-  border: 0;
-  cursor: pointer;
-  padding: .45rem 1.65rem;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  transition: var(--fbc-transition);
-}
-
-.highlight-on-hover::after {
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  right: 15px;
-  height: 100%;
-  width: .35rem;
-  background-image: url("/img/arrow-icon-right.svg");
-  background-position: center center;
-  transform: scale(1.3);
-}
-
-.highlight-on-hover.add-site-to-container::after {
-  width: 16px;
-  background-image: url("/img/site-add-icon.svg");
-}
-
-.highlight-on-hover.remove-site-from-container::after {
-  width: 16px;
-  background-image: url("/img/site-remove-icon.svg");
-}
-
-.highlight-on-hover.remove-site-from-container.disabled-button, .highlight-on-hover.add-site-to-container.disabled-button {
-  cursor: not-allowed;
-  position: relative;
-  z-index: 0;
-}
-
-.highlight-on-hover.remove-site-from-container.disabled-button::after,
-.highlight-on-hover.remove-site-from-container.disabled-button span,
-.highlight-on-hover.add-site-to-container.disabled-button::after,
-.highlight-on-hover.add-site-to-container.disabled-button span {
-  opacity: 0.4;
+  color: var(--mhc-blue-70);
+  border-bottom: 1.5px solid var(--mhc-blue-70);
 }
 
 #button-remove-site-tooltip {
@@ -199,47 +123,28 @@ a:hover {
   color: black;
   font-size: 13px;
   line-height: 17px;
-  background-color: var(--fbc-gray-20);
+  background-color: var(--mhc-gray-20);
   border: 1px solid #BEBEBF;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
   font-family: "SF Pro Text", 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
-.highlight-on-hover.remove-site-from-container.disabled-button:hover #button-remove-site-tooltip {
+.dashboard-btn.disabled-button:hover + #button-remove-site-tooltip,
+#button-remove-site-tooltip:hover {
   display: block;
-}
-
-.highlight-on-hover span {
-  pointer-events: none;
 }
 
 .allowed-site-wrapper {
-  display: block;
   position: relative;
   margin: .25rem 0;
   padding: .25rem 1.65rem;
   display: flex;
   align-items: center;
   min-height: 1.25rem;
-  transition: var(--fbc-transition);
+  transition: var(--mhc-transition);
 }
 
-.remove-btn, .allow-btn {
-  background-color: var(--fbc-blue-60);
-  border: 1px solid var(--fbc-blue-60);
-  border-top: 1px solid var(--fbc-blue-70);
-  cursor: pointer;
-  line-height: 41px;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-  font-size: 13px;
-}
-
-.remove-btn:hover, .allow-btn:hover {
-  background-color: var(--fbc-blue-70);
-}
-
-.remove-site, .add-site {
+.remove-site {
   background-color: transparent;
   border: none;
   position: absolute;
@@ -252,137 +157,22 @@ a:hover {
   cursor: pointer;
 }
 
-.remove-site-panel .allowed-site-wrapper, .add-site-panel .allowed-site-wrapper {
-  padding: 0;
-  margin-bottom: 1rem;
+.allowed-site-wrapper:hover {
+  background-color: var(--mhc-gray-20);
+  transition: var(--mhc-transition);
 }
 
-.remove-site-panel .allowed-site-wrapper:hover, .add-site-panel .allowed-site-wrapper:hover {
-  background-color: transparent;
-}
-
-.allowed-site-wrapper:hover,
-.highlight-on-hover:hover {
-  background-color: var(--fbc-gray-20);
-  transition: var(--fbc-transition);
-}
-
-.fw-bottom-btn,
-.bottom-btns {
-  display: flex;
-  justify-content: space-between;
-  transition: var(--fbc-transition);
-  cursor: pointer;
-}
-
-.bottom-btns { /* Bottom "Cancel, Back, Next, Done" buttons - onboarding panels only */
-  width: 100%;
-}
-
-.bottom-btn {
-  border-bottom: 0;
-  line-height: 103%;
-  height: 3.37rem;
-  width: 50%;
-  color: var(--fbc-primary-text);
-  padding: 1.15rem 0;
-  text-align: center;
-}
-
-.bottom-btn:first-of-type { /* Onboarding Panels only: The first bottom button ("Cancel", "Back") is always gray */
-  border-top: 1px solid rgba(24, 25, 26, 0.14);
-  border-right: 1px solid rgba(24, 25, 26, 0.14);
-  border-left: 0;
-  background-color: rgba(12,12,13, 0.05);
-  left: 0;
-}
-
-.bottom-btn:first-of-type:hover {
-  background-color: rgba(204, 204, 204, 0.5);
-}
-
-.bottom-btn:last-of-type { /* Onboarding Panels only: The second bottom button on the onboarding panels is always blue */
-  border-top: 1px solid var(--fbc-blue-70);
-  border-left: 1px solid var(--fbc-blue-60);
-  border-right: 0;
-  color: rgba(255, 255, 255, 1);
-  background-color: var(--fbc-blue-60);
-  right: 0;
-}
-
-.bottom-btn:last-of-type:hover {
-  background-color: var(--fbc-blue-70);
-}
-
-.allow-btn,
-.allow-btn:hover,
-.remove-btn,
-.remove-btn:hover,
-.bottom-btn,
-.bottom-btn:hover {
-  transition: var(--fbc-transition);
-}
-
-.in-fbc-subhead::before,
+.in-megahard-subhead::before,
 .trackers-detected-subhead::before {
+  content: "";
   background-image: url("/img/fenced-badge.svg");
   background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 23px;
   height: 19px;
   display: block;
   margin-right: 3px;
-}
-
-.img.in-fbc {
-  background-image: url("/img/image-inFBC@2x.png");
-  background-position: bottom center;
-  height: 170px;
-}
-
-.img.trackers-detected {
-  background-image: url("/img/image-tracker-detected@2x.png");
-  height: 145px;
-  margin: 1.25rem 0 1.75rem -4px;
-  background-position: left, center;
-}
-
-.img.onboarding4 {
-  background-image: url("/img/image-example@2x.png");
-  height: 145px;
-  margin: 1rem auto 1.5rem auto;
-  background-position: center center;
-}
-
-.img.onboarding5 {
-  background-image: url("/img/image-addsite@2x.png");
-  height: 179px;
-  margin: 1rem auto 1.5rem auto;
-  background-position: center center;
-}
-
-.img {
-  display: block;
-  min-height: 100px;
-}
-
-.img,
-.on-facebook-subbhead::before,
-.in-fbc-subhead::before,
-.highlight-on-hover::after,
-.Facebook-text::after,
-.trackers-detected-subhead::before,
-.btn-return.arrow-left {
-  content: "";
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-/* Bottom button hacks until a more reasonable solution presents itself */
-/* This eliminates (The-Powers-That-Be-Willing) a strange little white gap between
-   the bottom edge of the 'bottom-btns' and the bottom edge of the panel. */
-
-.onboarding5 .bottom-btn {
-  height: 3.41rem;
 }
 
 h3 {
@@ -410,11 +200,6 @@ h3.sites-allowed {
   background-repeat: no-repeat;
 }
 
-.site-lists-wrapper {
-  min-height: 100px;
-  padding-bottom: 1.65rem;
-}
-
 .allowed-site-wrapper.default-allowed-site:hover {
   background-color: rgba(255, 255, 255, 0);
 }
@@ -423,26 +208,201 @@ h3.sites-allowed {
   pointer-events: none;
 }
 
-.favi-facebook {
-  background-image: url("/img/favi-facebook.png");
+/* ---- megahaRd dashboard ---- */
+
+body.panel {
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "SF Pro Text", Roboto, sans-serif;
+  background: #eef3f9;
+  scrollbar-width: thin;
+  scrollbar-color: #a19f9d transparent;
 }
 
-.favi-instagram {
-  background-image: url("/img/favi-instagram.png");
+.dashboard-hero {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 12px;
+  padding: 14px 14px 16px;
+  background: linear-gradient(135deg, #2b88d8 0%, #0078d4 55%, #004578 100%);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 8px rgba(0, 66, 110, 0.25);
 }
 
-.favi-messenger {
-  background-image: url("/img/favi-messenger.png");
+.dashboard-logo {
+  width: 38px;
+  height: 38px;
+  flex: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
 }
 
-.favi-whatsapp {
-  background-image: url("/img/favi-whatsapp.png");
+.dashboard-hero .dashboard-title {
+  color: #fff;
+  border-bottom: none;
+  min-height: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  justify-content: flex-start;
 }
 
-.favi-workplace {
-  background-image: url("/img/favi-workplace.png");
+.dashboard-card {
+  background: #fff;
+  border: 1px solid #dde5ee;
+  border-top-width: 3px;
+  border-radius: 12px;
+  margin: 0 12px 12px;
+  padding: 14px;
+  box-shadow: 0 1px 3px rgba(0, 40, 80, 0.08);
 }
 
-#no-trackers .fw-bottom-btn:last-of-type {
-  display: none;
+.dashboard-status-card.is-contained {
+  border-top-color: #0078d4;
+}
+
+.dashboard-status-card.is-blocked {
+  border-top-color: #d83b01;
+}
+
+.dashboard-status-card.is-clear {
+  border-top-color: #107c10;
+}
+
+.dashboard-status-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #605e5c;
+  margin-bottom: 10px;
+}
+
+.dashboard-status-contained {
+  background: #0078d4;
+  box-shadow: 0 0 0 4px rgba(0, 120, 212, 0.18);
+}
+
+.dashboard-status-blocked {
+  background: #d83b01;
+  box-shadow: 0 0 0 4px rgba(216, 59, 1, 0.16);
+}
+
+.dashboard-status-clear {
+  background: #107c10;
+  box-shadow: 0 0 0 4px rgba(16, 124, 16, 0.16);
+}
+
+.dashboard-card h2 {
+  font-size: 13.5px;
+  padding-bottom: 0.6rem;
+}
+
+.dashboard-card h3 {
+  margin: 0 0 0.4rem;
+  padding: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #605e5c;
+}
+
+.dashboard-card p {
+  color: #323130;
+}
+
+.dashboard-site-row {
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: #f3f6fa;
+  border: 1px solid #e1e9f2;
+  border-radius: 8px;
+}
+
+.dashboard-current-site {
+  font-weight: 600;
+  font-size: 13px;
+  color: #004578;
+}
+
+.dashboard-btn {
+  background: linear-gradient(180deg, #1084d8 0%, #0078d4 60%, #106ebe 100%);
+  border: 1px solid #106ebe;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 9px 12px;
+  width: 100%;
+  transition: filter 0.15s ease, transform 0.1s ease;
+}
+
+.dashboard-btn:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.dashboard-btn:active {
+  transform: translateY(0);
+}
+
+.dashboard-btn:focus-visible {
+  outline: 2px solid #004578;
+  outline-offset: 2px;
+}
+
+.dashboard-btn.disabled-button {
+  background: #c8c6c4;
+  border-color: #c8c6c4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.allowed-site-wrapper {
+  border-radius: 8px;
+}
+
+.site-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.site-name {
+  font-weight: 500;
+  color: #201f1e;
+}
+
+.remove-site {
+  border-radius: 50%;
+}
+
+.remove-site:hover {
+  background-color: #fdecec;
+}
+
+.dashboard-footer {
+  padding: 4px 12px 14px;
+  text-align: center;
+}
+
+.dashboard-footer-link {
+  color: #0078d4;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.dashboard-footer-link:hover {
+  text-decoration: underline;
 }

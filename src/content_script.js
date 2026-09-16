@@ -1,77 +1,47 @@
 "use strict";
 
-// Use the following patterns to check for on-screen Facebook elements
-// Unused Patterns from previous mixed set of selectors
-// "[title*='Facebook']",
-// "[aria-label*='Facebook']",
+// Use the following patterns to check for on-screen Microsoft elements
 
 const EMAIL_PATTERN_DETECTION_SELECTORS = [
   "input[type='email']",
 ];
 
 const LOGIN_PATTERN_DETECTION_SELECTORS = [
-  "[title='Log in with Facebook']",
-  "[class*='FacebookConnectButton']",
-  "[class*='js-facebook-login']", // kickstarter
-  ".signup__button.button--facebook", // massdrop
-  "[id*='signin_fb_btn']", // Ebay
-  ".btn-social.facebook", // emag.ro
-  ".button-login.facebook-login", // estadao.com.br
-  "[class*='signup-provider-facebook']", // Fandom
-  ".socialContainer-0-131 .mainFacebook-0-150", // Honey
-  "[class*='facebook_login_click']", // Hi5
-  "[data-test-id*='facebook-create-button']", // Doordash
-  "[class*='FacebookButton--facebook-button']", // Strava
-  "#login_form > .facebook", // Strava
-  "[class*='facebook-connect-button']", // Twitch
-  "[data-testid*='facebook-login']", // Spotify
-  ".logInWithButtons .logInWith.facebook", // bazqux.com
-  "[href*='signin/facebook']",
-  "[data-test*='login-with-facebook']", // Producthunt
-  "[data-oauthserver*='facebook']", // Stackoverflow
-  ".puppeteer_test_login_button_facebook", // Quora
-  "[href*='connect/facebook']", //Medium
-  "[data-login-with-facebook='']", // etsy
-  "[data-destination*='facebook']",
-  ".fm-sns-item.facebook", // AliExpress
-  ".social-login .button--facebook", // noovie.com
-  "#home_account_fb", // Deezer
-  ".front-door .btn.btn-facebook", // GroupMe
-  "[class*='meetup-signupModal-facebook']", // Meetup Signup Homepage
-  "#facebook-register", // Meetup Signup Static Page
-  "[href*='https://www.facebook.com/v11.0/dialog/oauth']", // Meetup Signup Non-homepage
-  ".fb-start .ybtn--social.ybtn--facebook", // Yelp
-  "[aria-label*='Log in with Facebook']", // Tinder
-  ".registration__form .button.color-provider-facebook", // Bumble
-  "#facebookLoginButton", // eHarmony
-  "[action*='facebook_login']", // Airbnb
-  "[action*='facebook_signup']", // Airbnb
-  "#social-auth-provider-facebook-web", // VRBO
-  "[class*='FBLoginForm__Button']", // Mixcloud homepage
-  ".button.button--facebook", // Buzzfeed Login
-  "#js-facebook-oauth-login", // NY Times
-  "#login-facebook-button", // Indeed
-  ".btn-social-connect.btn-facebook", // Zillow (Zindex Issue)
-  "[class*='fb-login']", // Default FB class name "fbc-login-button"
-  ".fb-login-button" // Default FB class name "fbc-login-button"
+  "[title='Log in with Microsoft']",
+  "[aria-label*='Log in with Microsoft']",
+  "[data-login-with-microsoft='']",
+  "[href*='login.microsoftonline.com']",
+  "[href*='login.live.com']",
+  "[href*='login.xbox.com']",
+  "[href*='github.com/login']",
+  "[href*='linkedin.com/login']",
+  "[href*='linkedin.com/uas']",
+  "[href*='signin/microsoft']",
+  "[href*='connect/microsoft']",
+  "[data-oauthserver*='microsoft']",
+  "[data-test*='login-with-microsoft']",
+  "[data-testid*='microsoft-login']",
+  "[class*='microsoft-login']",
+  "[class*='ms-login']",
+  "[id*='microsoft-login']",
+  ".btn-microsoft",
+  ".button-login.microsoft-login",
+  "[action*='microsoft_login']",
+  "[action*='microsoft_signup']",
+  "[action*='github.com/session']"
 ];
 
 // TODO: Disarm click events on detected elements
 const SHARE_PATTERN_DETECTION_SELECTORS = [
-  "[href*='facebook.com/dialog/feed']", // Feed dialog
-  "[data-bfa-network*='facebook']", // Buzzfeed Mini Share
-  "[aria-label*='share on facebook']", // MSN
-  "[data-tracking*='facebook|share']", // football.london
-  "[class*='facebookShare']", // Producthunt share
-  "[class*='social-tray__link--facebook']", // Vice
-  ".post-action-options + .right > .social-icon.icon-f", // Imgur share
-  "[title='Share on Facebook']" // Medium
+  "[href*='linkedin.com/sharing/share-offsite']",
+  "[href*='teams.microsoft.com/share']",
+  "[aria-label*='share on teams']",
+  "[title='Share on LinkedIn']"
 ];
 
 // TODO: Disarm click events on detected elements
 const PASSIVE_SHARE_PATTERN_DETECTION_SELECTORS = [
-  "[href*='facebook.com/dialog/share']", // Share dialog
-  "[href*='facebook.com/sharer']", // Legacy Share dialog
+  "[href*='linkedin.com/share']",
 ];
 
 async function getLocalStorageSettingFromBackground(setting) {
@@ -86,12 +56,12 @@ async function getLocalStorageSettingFromBackground(setting) {
 
 function isFixed (elem) {
   do {
-    if (getComputedStyle(elem).position == "fixed") return true;
+    if (getComputedStyle(elem).position === "fixed") return true;
   } while ((elem = elem.offsetParent));
   return false;
 }
 
-const fragmentClasses = ["fbc-badge-fence", "fbc-badge-tooltip", "fbc-badge-prompt"];
+const fragmentClasses = ["mhc-badge-fence", "mhc-badge-tooltip", "mhc-badge-prompt"];
 
 function getTooltipFragmentStrings(socialAction) {
   switch (socialAction) {
@@ -103,21 +73,20 @@ function getTooltipFragmentStrings(socialAction) {
     return browser.i18n.getMessage("inPageUI-tooltip-button-share-passive");
   case "email":
     return browser.i18n.getMessage("inPageUI-tooltip-button-email");
+  default:
+    return "";
   }
 }
 
 function buildSettingsObject() {
-  let data = {};
+  const data = {};
   const checkboxes = document.querySelectorAll(".settings-checkbox");
 
   checkboxes.forEach((item) => {
-    let settingName = item.id;
-    Object.defineProperty(data, settingName, {
-      value: item.checked,
-      writable: true,
-      configurable: true,
-      enumerable: true
-    });
+    const settingName = item.id;
+    if (settingName) {
+      data[settingName] = Boolean(item.checked);
+    }
   });
 
   return data;
@@ -125,26 +94,30 @@ function buildSettingsObject() {
 
 async function updateSettings() {
 
-  let localStorage = await browser.storage.local.get();
+  const storedData = await browser.storage.local.get();
 
-  if (!localStorage.settings) {
-    localStorage.settings = {};
+  if (!storedData.settings) {
+    storedData.settings = {};
   }
 
   const checkboxes = document.querySelectorAll(".settings-checkbox");
 
   checkboxes.forEach((item) => {
-    let settingName = item.id;
-    item.checked = localStorage.settings[settingName];
+    const settingName = item.id;
+    item.checked = Boolean(storedData.settings[settingName]);
   });
 
-  await settingsCheckboxListener();
+  settingsCheckboxListener();
 }
 
 function settingsCheckboxListener() {
   const checkboxes = document.querySelectorAll(".settings-checkbox");
 
   checkboxes.forEach((item) => {
+    if (item.dataset.mhcListenerAttached) {
+      return;
+    }
+    item.dataset.mhcListenerAttached = "true";
     item.addEventListener("change", async () => {
       const settings = buildSettingsObject();
       await browser.runtime.sendMessage({
@@ -165,7 +138,7 @@ function createBadgeFragment(socialAction) {
   }
 
   // Create Tooltip
-  const htmlBadgeFragmentTooltipDiv = htmlBadgeFragment.querySelector(".fbc-badge-tooltip");
+  const htmlBadgeFragmentTooltipDiv = htmlBadgeFragment.querySelector(".mhc-badge-tooltip");
   htmlBadgeFragmentTooltipDiv.appendChild(document.createTextNode(getTooltipFragmentStrings(socialAction)));
 
   // Create Empty Wrapper Div
@@ -190,58 +163,61 @@ function createElementWithClassList(elemType, elemClass) {
   return newElem;
 }
 
-function buildInpageIframe(socialAction, fbcIframeHeight) {
+function buildInpageIframe(socialAction, mhcIframeHeight) {
 
   const iframe = document.createElement("iframe");
-  iframe.src = browser.runtime.getURL(`inpage-content.html?action=${socialAction}`);
+  let pageUrlParam = "";
+  try {
+    pageUrlParam = `&pageUrl=${encodeURIComponent(window.location.href)}`;
+  } catch (_e) {
+    pageUrlParam = "";
+  }
+  iframe.src = browser.runtime.getURL(`inpage-content.html?action=${encodeURIComponent(socialAction)}${pageUrlParam}`);
   iframe.width = 350;
   // This height is derived from the Figma file. However, this is just the starting instance of the iframe/inpage menu. After it's built out, it resizes itself based on the inner contents.
-  iframe.height = fbcIframeHeight;
-  iframe.title = browser.i18n.getMessage("facebookContainer");
+  iframe.height = mhcIframeHeight;
+  iframe.title = browser.i18n.getMessage("megahardContainer");
   iframe.tabIndex = 0;
-  iframe.ariaHidden = "false";
-  iframe.id = socialAction;
-  iframe.classList.add("fbc-content-box");
+  iframe.setAttribute("aria-hidden", "false");
+  iframe.id = `mhc-iframe-${socialAction}`;
+  iframe.classList.add("mhc-content-box");
 
   return iframe;
 }
 
-// function setIframeSrcValue(val) {
-//   // return val;
-//   const iframeVal = val;
-//   // return val;
-// }
+function injectIframeOntoPage(socialAction, mhcIframeHeight) {
+  const mhcContent = buildInpageIframe(socialAction, mhcIframeHeight);
 
-// function getIframeSrcValue() {
-//   const val = getIframeSrcValue();
-//   // console.log(val);
-//   // return "hello";
-// }
-
-function injectIframeOntoPage(socialAction, fbcIframeHeight) {
-  const fbcContent = buildInpageIframe(socialAction, fbcIframeHeight);
-
-  const fbcWrapper = createElementWithClassList(
+  const mhcWrapper = createElementWithClassList(
     "div",
-    "fbc-wrapper"
+    "mhc-wrapper"
   );
-  const fbcChevron = createElementWithClassList(
+  const mhcChevron = createElementWithClassList(
     "div",
-    "fbc-iframe-chevron"
+    "mhc-iframe-chevron"
   );
 
-  fbcWrapper.appendChild(fbcChevron);
-  fbcWrapper.appendChild(fbcContent);
+  mhcWrapper.appendChild(mhcChevron);
+  mhcWrapper.appendChild(mhcContent);
 
-  return fbcWrapper;
+  return mhcWrapper;
 }
 
 function positionIframe(fencePos) {
+  if (!fencePos || typeof fencePos.getBoundingClientRect !== "function") {
+    return;
+  }
   const fencePosition = fencePos.getBoundingClientRect();
-  const iframeBox = document.querySelector(".fbc-content-box");
-  const iframeWrapper = document.querySelector(".fbc-wrapper");
+  const iframeBox = document.querySelector(".mhc-content-box");
+  const iframeWrapper = document.querySelector(".mhc-wrapper");
+  if (!iframeBox || !iframeWrapper) {
+    return;
+  }
   const iframeElement = iframeWrapper.getElementsByTagName("iframe");
-  const iframeChevron = document.querySelector(".fbc-iframe-chevron");
+  const iframeChevron = document.querySelector(".mhc-iframe-chevron");
+  if (!iframeChevron) {
+    return;
+  }
 
   const offsetX = 20;
   const offsetY = 55;
@@ -269,7 +245,7 @@ function mobileOrientation(iframeElement, iframeChevron, iframeBox, fencePositio
     }
   }
 
-  iframeChevron.classList.add("fbc-chevron-arrow-top");
+  iframeChevron.classList.add("mhc-chevron-arrow-top");
   iframeBox.style.marginTop = `${yPosMobile}px`;
 
   const xPosChevronMobile = xPosMobile;
@@ -285,7 +261,7 @@ function desktopOrientation(iframeBox, iframeChevron, offsetY, fencePosition, if
   const xLeft = fencePosition.x - iframePaddingAllowance;
   const yPos = fencePosition.y - offsetY;
 
-  // Position iframe relative to FBC Icon
+  // Position iframe relative to MHC Icon
   iframeBox.style.marginLeft = `${xRight}px`;
   iframeBox.style.marginTop = `${yPos}px`;
 
@@ -293,7 +269,7 @@ function desktopOrientation(iframeBox, iframeChevron, offsetY, fencePosition, if
   const xPosChevron = xRight - iframeChevron.offsetWidth;
   const yPosChevron = yPos + offsetY;
 
-  iframeChevron.classList.remove("fbc-chevron-arrow-top");
+  iframeChevron.classList.remove("mhc-chevron-arrow-top");
   iframeChevron.style.marginLeft = `${xPosChevron}px`;
   iframeChevron.style.marginTop = `${yPosChevron}px`;
 
@@ -302,50 +278,85 @@ function desktopOrientation(iframeBox, iframeChevron, offsetY, fencePosition, if
   // Flip the iframe to show on the left side when icon is too close to the edge
   if (iframePaddingAllowance > calculateOffsetDiff) {
     iframeBox.style.marginLeft = `${xLeft}px`;
-    iframeChevron.classList.add("fbc-chevron-arrow-right");
+    iframeChevron.classList.add("mhc-chevron-arrow-right");
     iframeChevron.style.marginLeft = `${xPosChevron - fencePos.offsetWidth - iframeChevron.offsetWidth - offsetX}px`;
     return;
   }
-  return iframeChevron.classList.remove("fbc-chevron-arrow-right");
+  return iframeChevron.classList.remove("mhc-chevron-arrow-right");
 }
 
 
 
-function openInputPrompt(socialAction, fencePos, target, fbcIframeHeight) {
-  const iframeSrcVal = buildInpageIframe(socialAction, fbcIframeHeight).src;
-  const hasFbcWrapper = document.querySelector(".fbc-wrapper");
+function openInputPrompt(socialAction, fencePos, target, mhcIframeHeight) {
+  const iframeSrcVal = buildInpageIframe(socialAction, mhcIframeHeight).src;
+  const hasMhcWrapper = document.querySelector(".mhc-wrapper");
 
-  if (!hasFbcWrapper) {
-    document.body.appendChild(injectIframeOntoPage(socialAction, fbcIframeHeight));
-    positionIframe(fencePos);
-    ["resize", "scroll"].forEach(function (evt) {
-      if (document.querySelector(".fbc-wrapper")) {
-        window.addEventListener(evt, () => {
-          positionIframe(fencePos);
-        });
-
-      }
-    });
-    postMessageListeners(iframeSrcVal, target);
+  // Toggle behavior: close any existing prompt before opening a new one.
+  if (hasMhcWrapper) {
+    hasMhcWrapper.remove();
   }
-  hasFbcWrapper.remove();
+
+  document.body.appendChild(injectIframeOntoPage(socialAction, mhcIframeHeight));
+  positionIframe(fencePos);
+  ensurePromptRepositionListener(fencePos);
+  ensurePromptMessageListeners(iframeSrcVal, target);
 }
 
-function postMessageListeners(iframeSrcVal, target){
+let promptRepositionListenerInstalled = false;
+function ensurePromptRepositionListener(fencePos) {
+  if (promptRepositionListenerInstalled) {
+    // Reposition immediately for the newly opened prompt; the shared
+    // listener already handles future resize/scroll events.
+    positionIframe(fencePos);
+    return;
+  }
+  promptRepositionListenerInstalled = true;
+  const reposition = () => {
+    const wrapper = document.querySelector(".mhc-wrapper");
+    if (wrapper) {
+      positionIframe(fencePos);
+    }
+  };
+  window.addEventListener("resize", reposition);
+  window.addEventListener("scroll", reposition, {passive: true});
+}
+
+function getIframeOrigin(iframeSrcVal) {
+  try {
+    return new URL(iframeSrcVal).origin;
+  } catch (_e) {
+    return null;
+  }
+}
+
+let promptMessageListenersInstalled = false;
+let currentPromptTarget = null;
+let currentPromptIframeOrigin = null;
+
+function ensurePromptMessageListeners(iframeSrcVal, target){
+  currentPromptTarget = target;
+  currentPromptIframeOrigin = getIframeOrigin(iframeSrcVal);
+  if (promptMessageListenersInstalled) {
+    return;
+  }
+  promptMessageListenersInstalled = true;
 
   window.addEventListener("message", (e) => {
     if (
-      e.data === "allowTriggered" 
-      && iframeSrcVal.includes(e.origin)
+      e.data === "allowTriggered"
+      && currentPromptIframeOrigin
+      && e.origin === currentPromptIframeOrigin
+      && currentPromptTarget
     ){
-      target.click();
+      currentPromptTarget.click();
     }
   });
 
   window.addEventListener("message", (e) => {
     if (
-      e.data === "closeTheInjectedIframe" 
-      && iframeSrcVal.includes(e.origin)
+      e.data === "closeTheInjectedIframe"
+      && currentPromptIframeOrigin
+      && e.origin === currentPromptIframeOrigin
     ) {
       closeIframe();
     }
@@ -353,8 +364,9 @@ function postMessageListeners(iframeSrcVal, target){
 
   window.addEventListener("message", (e) => {
     if (
-      e.data === "checkboxTicked" 
-      && iframeSrcVal.includes(e.origin)
+      e.data === "checkboxTicked"
+      && currentPromptIframeOrigin
+      && e.origin === currentPromptIframeOrigin
       && localStorageAvailable()
     ) {
 
@@ -363,42 +375,43 @@ function postMessageListeners(iframeSrcVal, target){
   });
 }
 
-async function localStorageAvailable() {
-  if (typeof(Storage) !== "undefined") {
-    return true;
+function localStorageAvailable() {
+  try {
+    return typeof Storage !== "undefined";
+  } catch (_e) {
+    return false;
   }
-  return false;
 }
 
 function setLocalStorageTickedCheckBox() {
-  localStorage.setItem("checkbox-ticked", true);
+  localStorage.setItem("checkbox-ticked", "true");
 }
 
 
-function addFacebookBadge(target, badgeClassUId, socialAction) {
+function addMicrosoftBadge(target, badgeClassUId, socialAction) {
   // Detect if target is visible
 
   const htmlBadgeDiv = createBadgeFragment(socialAction);
 
-  const htmlBadgeFragmentFenceDiv = htmlBadgeDiv.querySelector(".fbc-badge-fence");
+  const htmlBadgeFragmentFenceDiv = htmlBadgeDiv.querySelector(".mhc-badge-fence");
 
-  htmlBadgeDiv.className = "fbc-badge " + badgeClassUId;
+  htmlBadgeDiv.className = "mhc-badge " + badgeClassUId;
 
   document.body.appendChild(htmlBadgeDiv);
 
-  const itemWidth = parseInt(target.offsetWidth, 10);
-  const itemHeight = parseInt(target.offsetHeight, 10);
+  const itemWidth = Number(target.offsetWidth) || 0;
+  const itemHeight = Number(target.offsetHeight) || 0;
 
-  const ratioCheck = (itemWidth / itemHeight);
+  const ratioCheck = itemHeight ? (itemWidth / itemHeight) : 0;
 
 
   const badgeSmallSwitch = shouldBadgeBeSmall(ratioCheck, itemHeight);
   if (badgeSmallSwitch) {
-    htmlBadgeDiv.classList.add("fbc-badge-small");
+    htmlBadgeDiv.classList.add("mhc-badge-small");
   }
 
-  const fbcIframeHeightLogin = 230;
-  const fbcIframeHeightEmail = 240;
+  const mhcIframeHeightLogin = 230;
+  const mhcIframeHeightEmail = 240;
 
   switch (socialAction) {
   case "login":
@@ -411,15 +424,16 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       else {
         e.preventDefault();
         e.stopPropagation();
-        openInputPrompt("login", e.target.parentElement, target, fbcIframeHeightLogin);    
+        openInputPrompt("login", e.target.parentElement, target, mhcIframeHeightLogin);    
       }
     });
     break;
   case "email":
     // Remove the email prompt when the "do not show me again" checkbox is ticked for the first time
-    window.addEventListener("message", () => {
+    window.addEventListener("message", (e) => {
       if (
-        localStorage.getItem("checkbox-ticked") === "true"
+        e.data === "checkboxTicked"
+        && localStorage.getItem("checkbox-ticked") === "true"
       ) {
         htmlBadgeFragmentFenceDiv.remove();
         closeIframe();
@@ -432,15 +446,15 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
       }
       e.preventDefault();
       e.stopPropagation();
-      openInputPrompt("email", e.target.parentElement, target, fbcIframeHeightEmail);
+      openInputPrompt("email", e.target.parentElement, target, mhcIframeHeightEmail);
     });
     break;
   case "share-passive":
-    htmlBadgeDiv.classList.add("fbc-badge-share-passive", "fbc-badge-share");
+    htmlBadgeDiv.classList.add("mhc-badge-share-passive", "mhc-badge-share");
     shareBadgeEventListenerInit(target, htmlBadgeDiv, { allowClickThrough: true });
     break;
   case "share":
-    htmlBadgeDiv.classList.add("fbc-badge-share");
+    htmlBadgeDiv.classList.add("mhc-badge-share");
     shareBadgeEventListenerInit(target, htmlBadgeDiv, { allowClickThrough: true });
     break;
   } 
@@ -450,7 +464,7 @@ function addFacebookBadge(target, badgeClassUId, socialAction) {
     positionPrompt(htmlBadgeDiv);
   });
 
-  positionFacebookBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
+  positionMicrosoftBadge(target, badgeClassUId, itemWidth, badgeSmallSwitch);
 }
 
 // Add Event Listener actions/hooks to share badges
@@ -462,37 +476,41 @@ function shareBadgeEventListenerInit(target, htmlBadgeDiv, options) {
     });
   }
 
+  let hoverTimer = null;
   target.addEventListener("mouseover", () => {
-    target.classList.add("fbc-badge-tooltip-active");
-    htmlBadgeDiv.classList.add("fbc-badge-tooltip-active");
-    setTimeout(() => {
+    target.classList.add("mhc-badge-tooltip-active");
+    htmlBadgeDiv.classList.add("mhc-badge-tooltip-active");
+    if (hoverTimer) {
+      clearTimeout(hoverTimer);
+    }
+    hoverTimer = setTimeout(() => {
       positionPrompt(htmlBadgeDiv);
+      hoverTimer = null;
     }, 50);
   });
 
   target.addEventListener("mouseout", () => {
-    target.classList.remove("fbc-badge-tooltip-active");
-    htmlBadgeDiv.classList.remove("fbc-badge-tooltip-active");
+    if (hoverTimer) {
+      clearTimeout(hoverTimer);
+      hoverTimer = null;
+    }
+    target.classList.remove("mhc-badge-tooltip-active");
+    htmlBadgeDiv.classList.remove("mhc-badge-tooltip-active");
   });
 }
 
 function positionPrompt(activeBadge) {
   const elemRect = activeBadge.getBoundingClientRect();
 
-  if ((window.innerWidth - elemRect.left) < 350) {
-    activeBadge.classList.add("fbc-badge-prompt-align-right");
-  }
-
-  const modifierClassList = ["fbc-badge-prompt-align-top", "fbc-badge-prompt-align-bottom", "fbc-badge-prompt-align-right"];
+  const modifierClassList = ["mhc-badge-prompt-align-top", "mhc-badge-prompt-align-bottom", "mhc-badge-prompt-align-right"];
+  activeBadge.classList.remove(...modifierClassList);
 
   if (elemRect.top < 140) {
-    activeBadge.classList.add("fbc-badge-prompt-align-top");
+    activeBadge.classList.add("mhc-badge-prompt-align-top");
   } else if ((window.innerHeight - elemRect.bottom) < 130) {
-    activeBadge.classList.add("fbc-badge-prompt-align-bottom");
+    activeBadge.classList.add("mhc-badge-prompt-align-bottom");
   } else if ((window.innerWidth - elemRect.left) < 350) {
-    activeBadge.classList.add("fbc-badge-prompt-align-right");
-  } else {
-    activeBadge.classList.remove(...modifierClassList);
+    activeBadge.classList.add("mhc-badge-prompt-align-right");
   }
 }
 
@@ -504,21 +522,26 @@ function elementSizeOffsetXY(smallSwitch) {
   return [20, 4];
 }
 
-function getOffsetsAndApplyClass(elemRect, bodyRect, target, htmlBadgeDiv) {
-  if (!isFixed(target) && htmlBadgeDiv.classList.contains("fbc-badge-fixed")) {
-    htmlBadgeDiv.classList.remove("fbc-badge-fixed");
+function getOffsetsAndApplyClass(elemRect, target, htmlBadgeDiv) {
+  if (!isFixed(target) && htmlBadgeDiv.classList.contains("mhc-badge-fixed")) {
+    htmlBadgeDiv.classList.remove("mhc-badge-fixed");
   } else if (isFixed(target)) {
-    htmlBadgeDiv.classList.add("fbc-badge-fixed");
+    htmlBadgeDiv.classList.add("mhc-badge-fixed");
     return { offsetPosX: elemRect.left, offsetPosY: elemRect.top };
-  } else {
-    // Removed left body offset calc as it doesn't apply
-    // return {offsetPosX: elemRect.left - bodyRect.left, offsetPosY: elemRect.top - bodyRect.top};
-    return { offsetPosX: elemRect.left, offsetPosY: elemRect.top + window.scrollY };
   }
+  return { offsetPosX: elemRect.left, offsetPosY: elemRect.top + window.scrollY };
 }
 
 function isVisible(target) {
-  const currentComputedStyle = window.getComputedStyle(target, false);
+  if (!target || typeof window.getComputedStyle !== "function") {
+    return false;
+  }
+  let currentComputedStyle;
+  try {
+    currentComputedStyle = window.getComputedStyle(target, false);
+  } catch (_e) {
+    return false;
+  }
   const styleTransform = (currentComputedStyle.getPropertyValue("transform") === "matrix(1, 0, 0, 0, 0, 0)");
   const styleHidden = (currentComputedStyle.getPropertyValue("visibility") === "hidden");
   const styleDisplayNone = (currentComputedStyle.getPropertyValue("display") === "none");
@@ -528,16 +551,18 @@ function isVisible(target) {
 
 function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 
-  if (target === null) {
-    htmlBadgeDiv.classList.add("fbc-badge-disabled");
+  if (!target || !htmlBadgeDiv) {
+    if (htmlBadgeDiv) {
+      htmlBadgeDiv.classList.add("mhc-badge-disabled");
+    }
     return false;
   }
 
-  const htmlBadgeDivHasDisabledClass = htmlBadgeDiv.classList.contains("fbc-badge-disabled");
+  const htmlBadgeDivHasDisabledClass = htmlBadgeDiv.classList.contains("mhc-badge-disabled");
 
   if (!isVisible(target)) {
     if (!htmlBadgeDivHasDisabledClass) {
-      htmlBadgeDiv.classList.add("fbc-badge-disabled");
+      htmlBadgeDiv.classList.add("mhc-badge-disabled");
     }
     return false;
   }
@@ -546,12 +571,12 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
   if (parentElement) {
     if (!isVisible(parentElement)) {
       if (!htmlBadgeDivHasDisabledClass) {
-        htmlBadgeDiv.classList.add("fbc-badge-disabled");
+        htmlBadgeDiv.classList.add("mhc-badge-disabled");
       }
       return false;
     } else {
       if (htmlBadgeDivHasDisabledClass) {
-        htmlBadgeDiv.classList.remove("fbc-badge-disabled");
+        htmlBadgeDiv.classList.remove("mhc-badge-disabled");
       }
       return true;
     }
@@ -559,14 +584,14 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
 
   const { offsetParent } = target;
   if (offsetParent) {
-    if (!isVisible(parentElement)) {
+    if (!isVisible(offsetParent)) {
       if (!htmlBadgeDivHasDisabledClass) {
-        htmlBadgeDiv.classList.add("fbc-badge-disabled");
+        htmlBadgeDiv.classList.add("mhc-badge-disabled");
       }
       return false;
     } else {
       if (htmlBadgeDivHasDisabledClass) {
-        htmlBadgeDiv.classList.remove("fbc-badge-disabled");
+        htmlBadgeDiv.classList.remove("mhc-badge-disabled");
       }
       return true;
     }
@@ -574,28 +599,23 @@ function checkVisibilityAndApplyClass(target, htmlBadgeDiv) {
   return true;
 }
 
-function determineContainerClientRect() {
-  const htmlHeight = document.querySelector("html").offsetHeight;
-  const bodyHeight = document.querySelector("body").offsetHeight;
-  if (htmlHeight === bodyHeight) {
-    return document.body.getBoundingClientRect();
-  } else if (htmlHeight < bodyHeight) {
-    return document.querySelector("html").getBoundingClientRect();
-  } else {
-    return document.body.getBoundingClientRect();
-  }
-}
-
 function calcZindex(target) {
   // Loop through each parent, getting Zindex (if its a number).
   // As it finds them, it grabs the highest/largest.
   let zIndexLevel = 0;
   for (; target && target !== document; target = target.parentNode) {
-    const zindex = document.defaultView.getComputedStyle(target).getPropertyValue("z-index");
-    if (!isNaN(zindex)) {
-      if (zIndexLevel < zindex) {
-        zIndexLevel = zindex;
-      }
+    if (!target || typeof target !== "object" || !document.defaultView) {
+      break;
+    }
+    let zindex = 0;
+    try {
+      zindex = document.defaultView.getComputedStyle(target).getPropertyValue("z-index");
+    } catch (_e) {
+      continue;
+    }
+    const parsed = parseInt(zindex, 10);
+    if (!isNaN(parsed) && zIndexLevel < parsed) {
+      zIndexLevel = parsed;
     }
   }
 
@@ -605,18 +625,33 @@ function calcZindex(target) {
 }
 
 
-function positionFacebookBadge(target, badgeClassUId, targetWidth, smallSwitch) {
+function positionMicrosoftBadge(target, badgeClassUId, targetWidth, smallSwitch) {
 
-  // Check for Badge element and select it
-  if (!badgeClassUId) {
+  // screenUpdate() calls positionMicrosoftBadge(uid) with a single UID string
+  // like "mhc-UID_1". Derive the badge class ("js-mhc-UID_1") in that case.
+  if ((typeof badgeClassUId === "undefined" || badgeClassUId === null) && typeof target === "string") {
     badgeClassUId = "js-" + target;
+  }
+  if (!badgeClassUId || typeof badgeClassUId !== "string") {
+    return;
   }
 
   const htmlBadgeDiv = document.querySelector("." + badgeClassUId);
+  if (!htmlBadgeDiv) {
+    return;
+  }
 
-  // Confirm target element is defined
-  if (!target || !(typeof target === "object")) {
-    target = document.querySelector("." + target);
+  // Confirm target element is defined (screenUpdate passes UID strings)
+  if (!target || typeof target !== "object") {
+    try {
+      target = document.querySelector("." + target);
+    } catch (_e) {
+      target = null;
+    }
+  }
+  if (!target || typeof target.getBoundingClientRect !== "function") {
+    htmlBadgeDiv.classList.add("mhc-badge-disabled");
+    return;
   }
 
   if (!checkVisibilityAndApplyClass(target, htmlBadgeDiv)) {
@@ -624,7 +659,7 @@ function positionFacebookBadge(target, badgeClassUId, targetWidth, smallSwitch) 
   }
 
   if (typeof smallSwitch === "undefined") {
-    if (htmlBadgeDiv.classList.contains("fbc-badge-small")) {
+    if (htmlBadgeDiv.classList.contains("mhc-badge-small")) {
       smallSwitch = true;
     }
   }
@@ -634,16 +669,14 @@ function positionFacebookBadge(target, badgeClassUId, targetWidth, smallSwitch) 
 
   // Define target element width
   if (!targetWidth) {
-    targetWidth = parseInt(target.offsetWidth, 10);
+    targetWidth = Number(target.offsetWidth) || 0;
   }
 
   // Get position coordinates
-  const bodyRect = determineContainerClientRect();
-  // const bodyRect = determineContainerClientRect();
   const elemRect = target.getBoundingClientRect();
 
   // Determine if target element is fixed, will resets or applies class and set appor offset.
-  const { offsetPosX, offsetPosY } = getOffsetsAndApplyClass(elemRect, bodyRect, target, htmlBadgeDiv);
+  const { offsetPosX, offsetPosY } = getOffsetsAndApplyClass(elemRect, target, htmlBadgeDiv);
 
   const htmlBadgeDivPosX = (offsetPosX + targetWidth) - elementSizeOffsetX;
   const htmlBadgeDivPosY = offsetPosY - elementSizeOffsetY;
@@ -664,7 +697,7 @@ function isPinterest(target) {
   if (parentElement) {
     const { previousElementSibling } = parentElement;
     if (previousElementSibling) {
-      return previousElementSibling.classList.contains("fbc-has-badge");
+      return previousElementSibling.classList.contains("mhc-has-badge");
     }
   }
   return false;
@@ -673,33 +706,52 @@ function isPinterest(target) {
 function parentIsBadged(target) {
   const { parentElement } = target;
   if (parentElement) {
-    return parentElement.classList.contains("fbc-has-badge");
+    return parentElement.classList.contains("mhc-has-badge");
   }
   return false;
 }
 
 // List of badge-able in-page elements
-const facebookDetectedElementsArr = [];
+const microsoftDetectedElementsArr = [];
 
 function patternDetection(selectionArray, socialActionIntent){
-  let querySelector = selectionArray.join(",");
+  for (const selector of selectionArray) {
+    let items;
+    try {
+      items = document.querySelectorAll(selector);
+    } catch (_e) {
+      continue;
+    }
 
-  for (let item of document.querySelectorAll(querySelector)) {
-    // overlay the FBC icon badge on the item
-    if (!item.classList.contains("fbc-has-badge") && !isPinterest(item) && !parentIsBadged(item)) {
-      const itemUIDClassName = "fbc-UID_" + (facebookDetectedElementsArr.length + 1);
-      const itemUIDClassTarget = "js-" + itemUIDClassName;
-      const socialAction = socialActionIntent;
-      facebookDetectedElementsArr.push(itemUIDClassName);
-      addFacebookBadge(item, itemUIDClassTarget, socialAction);
-      item.classList.add("fbc-has-badge");
-      item.classList.add(itemUIDClassName);
+    for (let item of items) {
+      // overlay the MHC icon badge on the item
+      if (!item.classList.contains("mhc-has-badge") && !isPinterest(item) && !parentIsBadged(item)) {
+        const itemUIDClassName = "mhc-UID_" + (microsoftDetectedElementsArr.length + 1);
+        const itemUIDClassTarget = "js-" + itemUIDClassName;
+        const socialAction = socialActionIntent;
+        microsoftDetectedElementsArr.push(itemUIDClassName);
+        addMicrosoftBadge(item, itemUIDClassTarget, socialAction);
+        item.classList.add("mhc-has-badge");
+        item.classList.add(itemUIDClassName);
 
+      }
     }
   }
 }
 
-async function detectFacebookOnPage () {
+function isEmailBadgeAllowed(settingsValue, relayAddonEnabled, trackersDetectedOnCurrentPage, checkboxTicked) {
+  // settingsValue may be the full settings object (legacy background
+  // returns whole object) or a single boolean for hideRelayEmailBadges.
+  let hideRelayEmailBadges = false;
+  if (settingsValue && typeof settingsValue === "object") {
+    hideRelayEmailBadges = Boolean(settingsValue.hideRelayEmailBadges);
+  } else {
+    hideRelayEmailBadges = Boolean(settingsValue);
+  }
+  return !hideRelayEmailBadges && !relayAddonEnabled && Boolean(trackersDetectedOnCurrentPage) && checkboxTicked !== "true";
+}
+
+async function detectMicrosoftOnPage () {
   if (!checkForTrackers) {
     return;
   }
@@ -710,15 +762,20 @@ async function detectFacebookOnPage () {
 
   const relayAddonEnabled = await getRelayAddonEnabledFromBackground();
 
-  // Check if any FB trackers were blocked, scoped to only the active tab
+  // Check if any Microsoft trackers were blocked, scoped to only the active tab
   const trackersDetectedOnCurrentPage = await checkIfTrackersAreDetectedOnCurrentPage();
 
   // Check if user dismissed the Relay prompt
-  const relayAddonPromptDismissed = await getLocalStorageSettingFromBackground("hideRelayEmailBadges");
+  const hideRelaySetting = await getLocalStorageSettingFromBackground("hideRelayEmailBadges");
 
-  const checkboxTicked = localStorage.getItem("checkbox-ticked");
+  let checkboxTicked = null;
+  try {
+    checkboxTicked = localStorage.getItem("checkbox-ticked");
+  } catch (_e) {
+    checkboxTicked = null;
+  }
 
-  if (relayAddonPromptDismissed && !relayAddonEnabled && !relayAddonPromptDismissed.hideRelayEmailBadges && trackersDetectedOnCurrentPage && checkboxTicked !== "true") {
+  if (isEmailBadgeAllowed(hideRelaySetting, relayAddonEnabled, trackersDetectedOnCurrentPage, checkboxTicked)) {
     patternDetection(EMAIL_PATTERN_DETECTION_SELECTORS, "email");
     updateSettings();
   }
@@ -751,76 +808,71 @@ window.addEventListener("scroll", () => {
 // Fires on screen Resize or Scroll
 function screenUpdate() {
   if (checkForTrackers) {
-    for (let item of facebookDetectedElementsArr) {
-      positionFacebookBadge(item);
+    for (let item of microsoftDetectedElementsArr) {
+      positionMicrosoftBadge(item);
     }
   }
 }
 
+let escapeKeyListenerInstalled = false;
 function escapeKeyListener() {
+  if (escapeKeyListenerInstalled) {
+    return;
+  }
+  escapeKeyListenerInstalled = true;
   document.body.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && document.querySelector(".fbc-wrapper")) {
+    if (e.key === "Escape" && document.querySelector(".mhc-wrapper")) {
       closeIframe();
     }
   });
 }
 
 window.addEventListener("click", function () {
-  if (this.document.querySelector(".fbc-wrapper")) {
+  if (this.document.querySelector(".mhc-wrapper")) {
     closeIframe();
   }
 });
 
 
 function closeIframe() {
-  const hasFbcWrapper = document.querySelector(".fbc-wrapper");
-  hasFbcWrapper.remove();
-}
-
-/*
-function removeBadges() {
-  for (let itemClass of facebookDetectedElementsArr) {
-    // positionFacebookBadge(item);
-    const target = document.querySelector("." + itemClass);
-    target.classList.remove("fbc-has-badge");
-    target.classList.remove(itemClass);
-    const badge = document.querySelector(".js-" + itemClass);
-    badge.parentNode.removeChild(badge);
+  const hasMhcWrapper = document.querySelector(".mhc-wrapper");
+  if (!hasMhcWrapper) {
+    return;
   }
+  hasMhcWrapper.remove();
+  currentPromptTarget = null;
+  currentPromptIframeOrigin = null;
 }
-*/
 
 let checkForTrackers = true;
 
 browser.runtime.onMessage.addListener(message => {
-  if (message["msg"] == "allowed-facebook-subresources" || message["msg"] == "facebook-domain") {
+  if (!message || typeof message.msg === "undefined") {
+    return Promise.resolve({ response: "content_script onMessage listener" });
+  }
+  if (message.msg === "allowed-microsoft-subresources" || message.msg === "microsoft-domain") {
     // Flags function to not add badges to page
     checkForTrackers = false;
   } else {
     setTimeout(() => {
-      contentScriptInit(true, message["msg"]);
+      contentScriptInit(true);
     }, 10);
   }
 
   return Promise.resolve({ response: "content_script onMessage listener" });
 });
 
-// let callCount = 0;
 let contentScriptDelay = 999;
 
-async function contentScriptInit(resetSwitch, msg) {
-  // Second arg is for debugging to see which contentScriptInit fires
-  // Call count tracks number of times contentScriptInit has been called
-  // callCount = callCount + 1;
-
+async function contentScriptInit(resetSwitch) {
   if (resetSwitch) {
     contentScriptDelay = 999;
     contentScriptSetTimeout();
   }
 
-  // Resource call is not in FBC/FB Domain and is a FB resource
-  if (checkForTrackers && msg !== "other-domain") {
-    await detectFacebookOnPage();
+  // Resource call is not in megahaRd/Microsoft Domain and is a Microsoft resource
+  if (checkForTrackers) {
+    await detectMicrosoftOnPage();
     screenUpdate();
   }
 }
@@ -856,7 +908,7 @@ async function CheckIfURLShouldBeBlocked() {
 
   const site = await getRootDomainFromBackground(window.location.href);
 
-  if (siteList.includes(site)) {
+  if (Array.isArray(siteList) && site && siteList.includes(site)) {
     checkForTrackers = false;
   } else {
     await contentScriptInit(false);
@@ -874,8 +926,6 @@ function addPassiveWindowOnloadListener() {
 addPassiveWindowOnloadListener();
 
 function contentScriptSetTimeout() {
-  // console.timeEnd('contentScriptSetTimeout');
-  // console.timeStart('contentScriptSetTimeout');
   contentScriptDelay = Math.ceil(contentScriptDelay * 2);
   contentScriptInit(false);
   if (contentScriptDelay > 999999) {

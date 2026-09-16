@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container მიჯნავს თქვენს Facebook-ვინაობას დანარჩენი ვებგვერდებისგან, რაც ხელს შეუშლის Facebook-ს თვალი ადევნოს თქვენს მოქმედებებს სხვა საიტებზე, თავიანთი ფუნთუშების მეშვეობით.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "megahaRd მიჯნავს თქვენს Microsoft-ვინაობას დანარჩენი ვებგვერდებისგან, რაც ხელს შეუშლის Microsoft-ს თვალი ადევნოს თქვენს მოქმედებებს სხვა საიტებზე, თავიანთი ფუნთუშების მეშვეობით.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ არის Facebook Container-ში.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ არის megahaRd-ში.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "Facebook-ს შეუძლია თვალი გადევნოთ ამ საიტზე. Facebook Container-იდან მოსაცილებლად, აირჩიეთ „Facebook Container-ში დაშვებული საიტები“ და ამოშალეთ სიიდან."
+  "in-megahard-p1": {
+    "message": "Microsoft-ს შეუძლია თვალი გადევნოთ ამ საიტზე. megahaRd-იდან მოსაცილებლად, აირჩიეთ „megahaRd-ში დაშვებული საიტები“ და ამოშალეთ სიიდან."
   },
-  "on-facebook-subhead": {
-    "message": "Facebook-სა და საიტებზე, Facebook Container-ის საზღვრებში",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "Microsoft-სა და საიტებზე, megahaRd-ის საზღვრებში",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "ეს ნიშანი გამოჩნდება Firefox-ის მისამართების ველში, როცა ეწვევით Facebook-ის კუთვნილ საიტებს ან იმ საიტებს, რომლებიც დამატებული გაქვთ Facebook Container-ში.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "ეს ნიშანი გამოჩნდება Firefox-ის მისამართების ველში, როცა ეწვევით Microsoft-ის კუთვნილ საიტებს ან იმ საიტებს, რომლებიც დამატებული გაქვთ megahaRd-ში.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
-    "message": "აღნიშნული საიტები ითხოვს თქვენს Facebook-ვინაობასთან წვდომას (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Facebook შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  "on-microsoft-p2": {
+    "message": "აღნიშნული საიტები ითხოვს თქვენს Microsoft-ვინაობასთან წვდომას (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Microsoft შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.",
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
-    "message": "$URL$ არაა Facebook Container-ში.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "$URL$ არაა megahaRd-ში.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,77 +38,77 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "საიტი Facebook Container-ის გარეთაა. ეს ურთულებს Facebook-ს, თვალი გადევნოთ ვებსივრცეში.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "საიტი megahaRd-ის გარეთაა. ეს ურთულებს Microsoft-ს, თვალი გადევნოთ ვებსივრცეში.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "ეს საიტი არაა განთავსებული Facebook Container-ში.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "ეს საიტი არაა განთავსებული megahaRd-ში.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "Facebook Container-ის გამოყენება",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "megahaRd-ის გამოყენება",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "Facebook-ს შეუძლია თვალი ადევნოს თქვენს მოქმედებებს, Facebook.com საიტის მიღმაც. მაგალითად, Facebook-ის მოწონებისა და გაზიარების ღილაკებს, შეუძლია აღრიცხოს სად იყავით — მაშინაც კი თუ არაფერს მოიწონებთ ან გააზიარებთ.",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Microsoft-ს შეუძლია თვალი ადევნოს თქვენს მოქმედებებს, Microsoft.com საიტის მიღმაც. მაგალითად, Microsoft-ის მოწონებისა და გაზიარების ღილაკებს, შეუძლია აღრიცხოს სად იყავით — მაშინაც კი თუ არაფერს მოიწონებთ ან გააზიარებთ.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
-    "message": "Facebook Container კი მიჯნავს Facebook-ის გვერდებსა და დანარჩენ ვებსივრცეს, რაც ურთულებს მას ინტერნეტში თქვენს მოქმედებებზე თვალის მიდევნებას.",
-    "description": "Please do not translate \"Facebook Container\""
+    "message": "megahaRd კი მიჯნავს Microsoft-ის გვერდებსა და დანარჩენ ვებსივრცეს, რაც ურთულებს მას ინტერნეტში თქვენს მოქმედებებზე თვალის მიდევნებას.",
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "Facebook-სა და საიტებზე, Facebook Container-ის საზღვრებში",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Microsoft-სა და საიტებზე, megahaRd-ის საზღვრებში",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "Facebook Container-ის ზღუდის ნიშანი",
+    "message": "megahaRd-ის ზღუდის ნიშანი",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "ეს ნიშანი გამოჩნდება Firefox-ის მისამართების ველში, როცა ეწვევით საიტებს, დაბოლოებით Facebook.com, რომლებიც მოთავსებულია Facebook Container-ის საზღვრებში.",
+    "message": "ეს ნიშანი გამოჩნდება Firefox-ის მისამართების ველში, როცა ეწვევით საიტებს, დაბოლოებით Microsoft.com, რომლებიც მოთავსებულია megahaRd-ის საზღვრებში.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "აღნიშნული საიტები ითხოვს თქვენს Facebook-ვინაობასთან წვდომას (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Facebook შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "აღნიშნული საიტები ითხოვს თქვენს Microsoft-ვინაობასთან წვდომას (ანუ დადგენას, თუ ვინ ხართ), სათანადოდ მუშაობისთვის. ეს კი ნიშნავს, რომ Microsoft შეძლებს ამ საიტებზე თვალი მიადევნოს თქვენს ყველა მოქმედებას.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
-    "message": "Facebook-ის მიღმა",
+    "message": "Microsoft-ის მიღმა",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "მაშინაც კი, როცა Facebook-ზე არ იმყოფებით, Facebook-ს შეუძლია თვალი გადევნოთ ინტერნეტში. ღილაკები, რომლებიც საშუალებას გაძლევთ დატოვოთ გამოხმაურება ან შეხვიდეთ საიტზე Facebook-ის ანგარიშით, შეიცავს მეთვალყურეებს. Facebook Container შეზღუდავს ამ თვალისმდევნელ შიგთავსს და დაურთავს ზღუდის ნიშანს, რომლითაც გაიგებთ, საიდან მოაცილა მეთვალყურეები.",
+    "message": "მაშინაც კი, როცა Microsoft-ზე არ იმყოფებით, Microsoft-ს შეუძლია თვალი გადევნოთ ინტერნეტში. ღილაკები, რომლებიც საშუალებას გაძლევთ დატოვოთ გამოხმაურება ან შეხვიდეთ საიტზე Microsoft-ის ანგარიშით, შეიცავს მეთვალყურეებს. megahaRd შეზღუდავს ამ თვალისმდევნელ შიგთავსს და დაურთავს ზღუდის ნიშანს, რომლითაც გაიგებთ, საიდან მოაცილა მეთვალყურეები.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
-    "message": "ამ სურათზე გამოსახულია, თუ როგორ გამოჩნდება Facebook Container-ის ზღუდის ნიშანი, Facebook-ის მოწონების ღილაკის გვერდზე.",
+    "message": "ამ სურათზე გამოსახულია, თუ როგორ გამოჩნდება megahaRd-ის ზღუდის ნიშანი, Microsoft-ის მოწონების ღილაკის გვერდზე.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-subhead": {
-    "message": "შესვლა Facebook-ით სხვა საიტებზე",
+    "message": "შესვლა Microsoft-ით სხვა საიტებზე",
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "თუ გსურთ Facebook-ით შესვლა სხვა საიტებზე, უნდა მოათავსოთ ისინი საზღვრებს შიგნით. დაწკაპეთ ზღუდის ნიშანს და აირჩიეთ ქვემოთ „საიტის დაშვება Facebook Container-ში“.",
+    "message": "თუ გსურთ Microsoft-ით შესვლა სხვა საიტებზე, უნდა მოათავსოთ ისინი საზღვრებს შიგნით. დაწკაპეთ ზღუდის ნიშანს და აირჩიეთ ქვემოთ „საიტის დაშვება megahaRd-ში“.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
-    "message": "ამ სურათზე გამოსახულია, თუ როგორ გამოიყურება საიტის Facebook Container-ში დასამატებელი ღილაკი შესაბამის არეში.",
+    "message": "ამ სურათზე გამოსახულია, თუ როგორ გამოიყურება საიტის megahaRd-ში დასამატებელი ღილაკი შესაბამის არეში.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "შედეგად, საშუალება მოგეცემათ Facebook-ით შეხვიდეთ, თუმცა ეს Facebook-საც მისცემს შესაძლებლობას თვალი ადევნოს ამ საიტზე თქვენს მოქმედებებს.",
+    "message": "შედეგად, საშუალება მოგეცემათ Microsoft-ით შეხვიდეთ, თუმცა ეს Microsoft-საც მისცემს შესაძლებლობას თვალი ადევნოს ამ საიტზე თქვენს მოქმედებებს.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "დაშვება",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "გაუქმება",
@@ -131,48 +131,48 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "იხილეთ, როგორ მუშაობს Facebook Container",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "იხილეთ, როგორ მუშაობს megahaRd",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Facebook-მეთვალყურეები არ აღმოჩენილა",
+    "message": "Microsoft-მეთვალყურეები არ აღმოჩენილა",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container-ს არ აღმოუჩენია Facebook-ის მეთვალყურეები ამ გვერდზე. თუმცაღა, ეს გვერდი მაინც შეიძლება შეიცავდეს სხვა სახის მეთვალყურეებს.",
+    "message": "megahaRd-ს არ აღმოუჩენია Microsoft-ის მეთვალყურეები ამ გვერდზე. თუმცაღა, ეს გვერდი მაინც შეიძლება შეიცავდეს სხვა სახის მეთვალყურეებს.",
     "description": ""
   },
   "learn-more": {
     "message": "ვრცლად",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "როგორ მუშაობს Facebook Container",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "როგორ მუშაობს megahaRd",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "ჩვენ გიცავთ Facebook-ისგან.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "ჩვენ გიცავთ Microsoft-ისგან.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
-    "message": "Facebook-ის ღილაკები, რომლებიც ჩნდება საყიდლების, სიახლეებისა და სხვა სახის საიტებზე, შეიცავს მეთვალყურეებს, მათი მეშვეობით კი Facebook იგებს, თუ რომელი გვერდები მოინახულეთ. მიუხედავად იმისა, გამოიყენებთ თუ არა ამ ღილაკებს მოწონებისთვის ან გაზიარებისთვის, მეთვალყურეებს მაინც შეუძლია აღრიცხოს, მონახულებული გვერდები. Facebook Container კი ზღუდავს ამ მეთვალყურეებს.",
+    "message": "Microsoft-ის ღილაკები, რომლებიც ჩნდება საყიდლების, სიახლეებისა და სხვა სახის საიტებზე, შეიცავს მეთვალყურეებს, მათი მეშვეობით კი Microsoft იგებს, თუ რომელი გვერდები მოინახულეთ. მიუხედავად იმისა, გამოიყენებთ თუ არა ამ ღილაკებს მოწონებისთვის ან გაზიარებისთვის, მეთვალყურეებს მაინც შეუძლია აღრიცხოს, მონახულებული გვერდები. megahaRd კი ზღუდავს ამ მეთვალყურეებს.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook Container ზღუდავს ამ მეთვალყურეებს. თუმცაღა, თუ დააჭერთ რომელიმე ამ ღილაკს, Facebook-ს შეეძლება თვალი მოგადევნოთ.",
+    "message": "megahaRd ზღუდავს ამ მეთვალყურეებს. თუმცაღა, თუ დააჭერთ რომელიმე ამ ღილაკს, Microsoft-ს შეეძლება თვალი მოგადევნოთ.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "Facebook Container-ის ზღუდე ნიშნით.",
+    "message": "megahaRd-ის ზღუდე ნიშნით.",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "დაშვებული საიტები Facebook Container-ში",
+    "message": "დაშვებული საიტები megahaRd-ში",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "შემოსაზღვრული საიტები",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "არცერთი",
@@ -180,61 +180,61 @@
   },
   "sites-allowed": {
     "message": "დაშვებული საიტები",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Facebook Container აქცევს Facebook-ის კუთვნილ საიტებს ჩარჩოებში. შეგიძლიათ სხვა საიტებიც მოაქციოთ ამავე ჩარჩოებში, თუმცა ეს საშუალებას მისცემს Facebook-ს, თვალი მიადევნოს თქვენს მოქმედებებს ვებსივრცეში."
+    "message": "megahaRd აქცევს Microsoft-ის კუთვნილ საიტებს ჩარჩოებში. შეგიძლიათ სხვა საიტებიც მოაქციოთ ამავე ჩარჩოებში, თუმცა ეს საშუალებას მისცემს Microsoft-ს, თვალი მიადევნოს თქვენს მოქმედებებს ვებსივრცეში."
   },
   "remove": {
     "message": "მოცილება",
     "description": ""
   },
   "button-allow-site": {
-    "message": "საიტის დაშვება Facebook Container-ში",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "საიტის დაშვება megahaRd-ში",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "საიტის მოცილება Facebook Container-იდან",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "საიტის მოცილება megahaRd-იდან",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "ვინაიდან Facebook-ის კუთვნილი საიტია, მისი მოცილება შეუძლებელია Facebook Container-დან.",
+    "message": "ვინაიდან Microsoft-ის კუთვნილი საიტია, მისი მოცილება შეუძლებელია megahaRd-დან.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "გსურთ საიტის Facebook Container-იდან მოცილება?",
+    "message": "გსურთ საიტის megahaRd-იდან მოცილება?",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "ამ საიტის Facebook Container-იდან მოცილება ნიშნავს, რომ Facebook-ის ანგარიშით შესვლა აღარ იმუშავებს და Facebook-ის თვალყურისმდევნელი ფუნთუშები წაიშლება.",
+    "message": "ამ საიტის megahaRd-იდან მოცილება ნიშნავს, რომ Microsoft-ის ანგარიშით შესვლა აღარ იმუშავებს და Microsoft-ის თვალყურისმდევნელი ფუნთუშები წაიშლება.",
     "description": ""
   },
   "remove-site-p2": {
-    "message": " თუ გსურთ, გამოიყენოთ Facebook კვლავ, დაგჭირდებათ მისი უკან დამატება Facebook Container-ში.",
+    "message": " თუ გსურთ, გამოიყენოთ Microsoft კვლავ, დაგჭირდებათ მისი უკან დამატება megahaRd-ში.",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "გსურთ, Facebook თვალს გადევნებდეთ ამ საიტზე?",
+    "message": "გსურთ, Microsoft თვალს გადევნებდეთ ამ საიტზე?",
     "description": ""
   },
   "add-site-p1": {
-    "message": "შედეგად, საშუალება მოგეცემათ Facebook-ით შეხვიდეთ, თუმცა ეს Facebook-საც მისცემს შესაძლებლობას იხილოს, ამ საიტზე თქვენი მოქმედებები.",
+    "message": "შედეგად, საშუალება მოგეცემათ Microsoft-ით შეხვიდეთ, თუმცა ეს Microsoft-საც მისცემს შესაძლებლობას იხილოს, ამ საიტზე თქვენი მოქმედებები.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container-მა გამორთო ეს ღილაკი და შეუზღუდა Facebook-ს ამ გვერდზე თქვენი საქმიანობისთვის თვალის მიდევნების საშუალება.",
+    "message": "megahaRd-მა გამორთო ეს ღილაკი და შეუზღუდა Microsoft-ს ამ გვერდზე თქვენი საქმიანობისთვის თვალის მიდევნების საშუალება.",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container-მა შეზღუდა Facebook-ის მეთვალყურეები. თუ თქვენ Facebook-ის ანგარიშით შეხვალთ ამ საიტზე, Facebook შეძლებს თვალი მოგადევნოთ.",
+    "message": "megahaRd-მა შეზღუდა Microsoft-ის მეთვალყურეები. თუ თქვენ Microsoft-ის ანგარიშით შეხვალთ ამ საიტზე, Microsoft შეძლებს თვალი მოგადევნოთ.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "გსურთ Facebook-მა თვალი გადევნოთ აქ?",
+    "message": "გსურთ Microsoft-მა თვალი გადევნოთ აქ?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "თუ გსურთ შეხვიდეთ Facebook-ით, მაშინ Facebook შეძლებს თვალი ადევნოს თქვენს მოქმედებებს ამ საიტზე. ეს საშუალებას მისცემს მათ, სრული სურათი შეიქმნან, თქვენი ინტერნეტცხოვრების შესახებ.",
+    "message": "თუ გსურთ შეხვიდეთ Microsoft-ით, მაშინ Microsoft შეძლებს თვალი ადევნოს თქვენს მოქმედებებს ამ საიტზე. ეს საშუალებას მისცემს მათ, სრული სურათი შეიქმნან, თქვენი ინტერნეტცხოვრების შესახებ.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -242,19 +242,19 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "თუ ამ ღილაკს დააწვებით, Facebook შეძლებს თვალი გადევნოთ ამ საიტზე.",
+    "message": "თუ ამ ღილაკს დააწვებით, Microsoft შეძლებს თვალი გადევნოთ ამ საიტზე.",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "თუ ნამდვილ ელფოსტას გამოიყენებთ აქ, Facebook შეძლებს თვალი გადევნოთ. დაწკაპეთ და იხილეთ ვრცლად.",
+    "message": "თუ ნამდვილ ელფოსტას გამოიყენებთ აქ, Microsoft შეძლებს თვალი გადევნოთ. დაწკაპეთ და იხილეთ ვრცლად.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "გსურთ Facebook-მა თვალი გადევნოთ აქ?",
+    "message": "გსურთ Microsoft-მა თვალი გადევნოთ აქ?",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "ამ საიტს, შეუძლია თქვენი ელფოსტა გაუზიაროს Facebook-ს, შედეგად კი Facebook შეძლებს თვალი გადევნოთ. გამოიყენეთ Firefox Relay ან მსგავსი მომსახურებები, თქვენი ნამდვილი ელფოსტის დასაფარად.",
+    "message": "ამ საიტს, შეუძლია თქვენი ელფოსტა გაუზიაროს Microsoft-ს, შედეგად კი Microsoft შეძლებს თვალი გადევნოთ. გამოიყენეთ Firefox Relay ან მსგავსი მომსახურებები, თქვენი ნამდვილი ელფოსტის დასაფარად.",
     "description": ""
   },
   "btn-relay-dismiss": {

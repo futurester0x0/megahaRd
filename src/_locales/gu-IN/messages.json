@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
-    "message": "Facebook કંટેનર તમારી Facebook પ્રવૃત્તિને તમારી બાકીની વેબ પ્રવૃત્તિથી અલગ કરે છે જેથી Facebook ને તૃતીય પક્ષ કૂકીઝ દ્વારા તમારી વેબસાઇટ પર ટ્રૅક કરવાથી અટકાવી શકાય.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "Microsoft કંટેનર તમારી Microsoft પ્રવૃત્તિને તમારી બાકીની વેબ પ્રવૃત્તિથી અલગ કરે છે જેથી Microsoft ને તૃતીય પક્ષ કૂકીઝ દ્વારા તમારી વેબસાઇટ પર ટ્રૅક કરવાથી અટકાવી શકાય.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ Facebook Container માં છે.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ megahaRd માં છે.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "Facebook હવે આ સાઇટ પર તમને ટ્રૅક કરી શકે છે. Facebook Containerથી આ સાઇટને દૂર કરવા માટે, Facebook Containerમાં મંજૂર સાઇટ્સ પસંદ કરો અને સૂચિમાંથી તેને દૂર કરો."
+  "in-megahard-p1": {
+    "message": "Microsoft હવે આ સાઇટ પર તમને ટ્રૅક કરી શકે છે. megahaRdથી આ સાઇટને દૂર કરવા માટે, megahaRdમાં મંજૂર સાઇટ્સ પસંદ કરો અને સૂચિમાંથી તેને દૂર કરો."
   },
-  "on-facebook-subhead": {
-    "message": "Facebook પર અને Facebook કન્ટેનર સીમામાં સાઇટ્સ",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "Microsoft પર અને Microsoft કન્ટેનર સીમામાં સાઇટ્સ",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "આ ચિન્હ Firefox ના એડ્રેસ બાર માં આવશે જયારે તમે Facebook માલિકી ની સાઈટ અથવા Facebook Container માં ઉમેરેલી સાઇટ્સ છે તેની મુલાકાત લેશો ત્યારે.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "આ ચિન્હ Firefox ના એડ્રેસ બાર માં આવશે જયારે તમે Microsoft માલિકી ની સાઈટ અથવા megahaRd માં ઉમેરેલી સાઇટ્સ છે તેની મુલાકાત લેશો ત્યારે.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
-    "message": "આ સાઇટ્સને કામ કરવા માટે તમારી Facebook ઓળખ (અથવા તમે કોણ છો તે) સુધી પહોંચવાની જરૂર છે. આનો અર્થ એ પણ છે કે આ સાઇટ્સ પર તમે કરો છો તે બધું જ Facebook ટ્રૅક કરી શકે છે.",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  "on-microsoft-p2": {
+    "message": "આ સાઇટ્સને કામ કરવા માટે તમારી Microsoft ઓળખ (અથવા તમે કોણ છો તે) સુધી પહોંચવાની જરૂર છે. આનો અર્થ એ પણ છે કે આ સાઇટ્સ પર તમે કરો છો તે બધું જ Microsoft ટ્રૅક કરી શકે છે.",
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
-    "message": "$URL$ Facebook કંટેનરમાં નથી.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "$URL$ Microsoft કંટેનરમાં નથી.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,52 +38,52 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "આ સાઇટ Facebook Containerની બહાર છે. આ વેબ પર તમને ટ્રૅક કરવા માટે Facebook માટે વધુ મુશ્કેલ બનાવે છે.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "આ સાઇટ megahaRdની બહાર છે. આ વેબ પર તમને ટ્રૅક કરવા માટે Microsoft માટે વધુ મુશ્કેલ બનાવે છે.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "આ સાઇટ Facebook કન્ટેનરમાં નથી.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "આ સાઇટ Microsoft કન્ટેનરમાં નથી.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
+  "megahardContainer": {
     "message": "ફેસબુક કન્ટેનર",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "Facebook કન્ટેનર મદદથી",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Microsoft કન્ટેનર મદદથી",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "Facebook તમારા બ્રાઉઝિંગને Facebook.com થી ઘણા દૂર ટ્રેક કરી શકે છે. Facebook Like અને Share બટનો, ઉદાહરણ તરીકે, તમે ક્યાં રહો છો તે ટ્રૅક કરી શકો છો — તે પૃષ્ઠો પર પણ કે જે તમે ક્યારેય પસંદ અથવા શેર કરતા નથી.",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Microsoft તમારા બ્રાઉઝિંગને Microsoft.com થી ઘણા દૂર ટ્રેક કરી શકે છે. Microsoft Like અને Share બટનો, ઉદાહરણ તરીકે, તમે ક્યાં રહો છો તે ટ્રૅક કરી શકો છો — તે પૃષ્ઠો પર પણ કે જે તમે ક્યારેય પસંદ અથવા શેર કરતા નથી.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
-    "message": "Fscebook Container Facebook સાઇટ્સ અને બાકીની વેબ વચ્ચેની સીમા બનાવે છે જેથી Facebook ને ઑનલાઇન ટ્રૅક કરવા માટે તે મુશ્કેલ બને છે.",
-    "description": "Please do not translate \"Facebook Container\""
+    "message": "Fscebook Container Microsoft સાઇટ્સ અને બાકીની વેબ વચ્ચેની સીમા બનાવે છે જેથી Microsoft ને ઑનલાઇન ટ્રૅક કરવા માટે તે મુશ્કેલ બને છે.",
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "Facebook પર અને Facebook Container સીમામાં સાઇટ્સ",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Microsoft પર અને megahaRd સીમામાં સાઇટ્સ",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "Facebook કન્ટેનર વાડ આઇકોન",
+    "message": "Microsoft કન્ટેનર વાડ આઇકોન",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "આ આયકન Firefox એડ્રેસ બારમાં દેખાય છે જ્યારે તમે સાઇટ્સની મુલાકાત લો છો, જેમ કે Facebook.com, જે Facebook Container સીમામાં છે.",
+    "message": "આ આયકન Firefox એડ્રેસ બારમાં દેખાય છે જ્યારે તમે સાઇટ્સની મુલાકાત લો છો, જેમ કે Microsoft.com, જે megahaRd સીમામાં છે.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "આ સાઇટ્સને કાર્ય કરવા માટે તમારી Facebook ઓળખ (અથવા તમે કોણ છો તે) ઍક્સેસ કરવાની જરૂર છે. આનો અર્થ એ પણ છે કે આ સાઇટ્સ પર તમે કરો છો તે બધું જ Facebook ટ્રૅક કરી શકે છે.",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "આ સાઇટ્સને કાર્ય કરવા માટે તમારી Microsoft ઓળખ (અથવા તમે કોણ છો તે) ઍક્સેસ કરવાની જરૂર છે. આનો અર્થ એ પણ છે કે આ સાઇટ્સ પર તમે કરો છો તે બધું જ Microsoft ટ્રૅક કરી શકે છે.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
     "message": "ફેસબુકની બહાર",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "તમે Facebook પર ન હોવ ત્યારે પણ, ફેસબુક તમને ઓનલાઇન ટ્રેક કરી શકે છે. બટનો કે જે તમને ફેસબુક પર વસ્તુઓ પોસ્ટ કરવા દે છે અથવા તમારા Facebook એકાઉન્ટનો ઉપયોગ કરીને વેબસાઇટ્સ પર પ્રવેશ કરવા દે છે તે ટ્રેકર ધરાવે છે. Facebook કન્ટેઈનર આ ટ્રેકર્સને અવરોધિત કરશે અને તમને બતાવવા માટે કે ટ્રેકર્સને ક્યાંથી દૂર કરવામાં આવ્યા હતા.",
+    "message": "તમે Microsoft પર ન હોવ ત્યારે પણ, ફેસબુક તમને ઓનલાઇન ટ્રેક કરી શકે છે. બટનો કે જે તમને ફેસબુક પર વસ્તુઓ પોસ્ટ કરવા દે છે અથવા તમારા Microsoft એકાઉન્ટનો ઉપયોગ કરીને વેબસાઇટ્સ પર પ્રવેશ કરવા દે છે તે ટ્રેકર ધરાવે છે. Microsoft કન્ટેઈનર આ ટ્રેકર્સને અવરોધિત કરશે અને તમને બતાવવા માટે કે ટ્રેકર્સને ક્યાંથી દૂર કરવામાં આવ્યા હતા.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
@@ -108,7 +108,7 @@
   },
   "btn-allow": {
     "message": "મંજૂરી આપો",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "રદ કરો",
@@ -131,48 +131,48 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "Facebook કન્ટેનર કેવી રીતે કામ કરે છે તેની પર જાઓ",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "Microsoft કન્ટેનર કેવી રીતે કામ કરે છે તેની પર જાઓ",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "કોઈ Facebook ટ્રેકર મળ્યાં નથી",
+    "message": "કોઈ Microsoft ટ્રેકર મળ્યાં નથી",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container આ પૃષ્ઠ પરના કોઈ પણ Facebook ટ્રેકરને શોધી શક્યું નથી. જો કે, પૃષ્ઠમાં હજી પણ અન્ય પ્રકારના ટ્રેકર શામેલ હોઈ શકે છે.",
+    "message": "megahaRd આ પૃષ્ઠ પરના કોઈ પણ Microsoft ટ્રેકરને શોધી શક્યું નથી. જો કે, પૃષ્ઠમાં હજી પણ અન્ય પ્રકારના ટ્રેકર શામેલ હોઈ શકે છે.",
     "description": ""
   },
   "learn-more": {
     "message": "વધુ શીખો",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "કેવી રીતે Facebook કન્ટેનર કામ કરે છે",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "કેવી રીતે Microsoft કન્ટેનર કામ કરે છે",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "અમે તમને Facebookથી સુરક્ષિત કર્યા છે.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "અમે તમને Microsoftથી સુરક્ષિત કર્યા છે.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
-    "message": "શોપિંગ, સમાચાર અને અન્ય સાઇટ્સ પર દેખાતા Facebook બટનો ટ્રેકર્સ ધરાવે છે, જે તમે વેબ પર હોવ તેવા Facebook ને કહો. જો તમે આ બટનો ક્યારેય ગમવા અથવા શેર કરવા માટે ક્યારેય ન વાપરો તો પણ, ટ્રૅક્સર્સ તમારી બ્રાઉઝિંગ વિશે ડેટા એકત્રિત કરી શકે છે. Facebook Container આ ટ્રેકરને અવરોધિત કરે છે.",
+    "message": "શોપિંગ, સમાચાર અને અન્ય સાઇટ્સ પર દેખાતા Microsoft બટનો ટ્રેકર્સ ધરાવે છે, જે તમે વેબ પર હોવ તેવા Microsoft ને કહો. જો તમે આ બટનો ક્યારેય ગમવા અથવા શેર કરવા માટે ક્યારેય ન વાપરો તો પણ, ટ્રૅક્સર્સ તમારી બ્રાઉઝિંગ વિશે ડેટા એકત્રિત કરી શકે છે. megahaRd આ ટ્રેકરને અવરોધિત કરે છે.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook Container આ ટ્રેકરને અવરોધિત કરે છે. જો કે, જો તમે આમાંથી કોઈપણ બટન પર ક્લિક કરો છો, તો Facebook તમને ટ્રૅક કરવામાં સમર્થ હશે.",
+    "message": "megahaRd આ ટ્રેકરને અવરોધિત કરે છે. જો કે, જો તમે આમાંથી કોઈપણ બટન પર ક્લિક કરો છો, તો Microsoft તમને ટ્રૅક કરવામાં સમર્થ હશે.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "ઢાલ સાથે Facebook કન્ટેનર વાડ.",
+    "message": "ઢાલ સાથે Microsoft કન્ટેનર વાડ.",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "Facebook કન્ટેનર માં મંજૂર સાઇટ્સ",
+    "message": "Microsoft કન્ટેનર માં મંજૂર સાઇટ્સ",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "SITES INCLUDED",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "કંઈ નહીં",
@@ -180,10 +180,10 @@
   },
   "sites-allowed": {
     "message": "SITES YOU’VE ALLOWED",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Facebook Container સીમામાં Facebookની માલિકીની સાઇટ્સ મૂકે છે. તમે અન્ય સાઇટ્સને સીમામાં મંજૂરી આપી શકો છો, પરંતુ આ Facebook ને તમારી વેબ બ્રાઉઝિંગને વધુ ટ્રૅક કરવાની મંજૂરી આપશે."
+    "message": "megahaRd સીમામાં Microsoftની માલિકીની સાઇટ્સ મૂકે છે. તમે અન્ય સાઇટ્સને સીમામાં મંજૂરી આપી શકો છો, પરંતુ આ Microsoft ને તમારી વેબ બ્રાઉઝિંગને વધુ ટ્રૅક કરવાની મંજૂરી આપશે."
   },
   "remove": {
     "message": "દૂર કરો",
@@ -191,26 +191,26 @@
   },
   "button-allow-site": {
     "message": "ફેસબુક કન્ટેનરમાં સાઇટને મંજૂરી આપો",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
     "message": "ફેસબુક કન્ટેનરમાંથી સાઇટ દૂર કરો",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
     "message": "કારણ કે આ ફેસબુકની માલિકીની સાઇટ છે, તેથી તેને ફેસબુક કન્ટેનરથી દૂર કરી શકાતી નથી.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Facebook કન્ટેનર માંથી સાઈટ દૂર કરીએ?",
+    "message": "Microsoft કન્ટેનર માંથી સાઈટ દૂર કરીએ?",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "Facebook Containerથી આ સાઇટને દૂર કરવાનો અર્થ એ છે કે Facebook સુવિધા સાથે લૉગ ઇન હવે કાર્ય કરશે નહીં અને Facebook ટ્રેકિંગ કૂકીઝ કાઢી નાખવામાં આવશે.",
+    "message": "megahaRdથી આ સાઇટને દૂર કરવાનો અર્થ એ છે કે Microsoft સુવિધા સાથે લૉગ ઇન હવે કાર્ય કરશે નહીં અને Microsoft ટ્રેકિંગ કૂકીઝ કાઢી નાખવામાં આવશે.",
     "description": ""
   },
   "remove-site-p2": {
-    "message": " જો તમે ફરીથી Facebook સાથે લોગ ઇનનો ઉપયોગ કરવા માંગતા હો, તો તમારે તેને ફરીથી Facebook Containerમાં ઉમેરવાની જરૂર પડશે.",
+    "message": " જો તમે ફરીથી Microsoft સાથે લોગ ઇનનો ઉપયોગ કરવા માંગતા હો, તો તમારે તેને ફરીથી megahaRdમાં ઉમેરવાની જરૂર પડશે.",
     "description": ""
   },
   "add-site-subhead": {
@@ -222,19 +222,19 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Containerએ આ બટનને અક્ષમ કર્યું છે અને આ પૃષ્ઠ પરની તમારી મુલાકાતને ટ્રૅક કરવાથી Facebook ને અવરોધિત કર્યું છે.",
+    "message": "megahaRdએ આ બટનને અક્ષમ કર્યું છે અને આ પૃષ્ઠ પરની તમારી મુલાકાતને ટ્રૅક કરવાથી Microsoft ને અવરોધિત કર્યું છે.",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Containerએ Facebook ટ્રેકરને અવરોધિત કર્યા છે. જો તમે આ સાઇટ પર Facebook સાથે લોગ ઇનનો ઉપયોગ કરો છો, તો Facebook તમને ટ્રૅક કરવામાં સમર્થ હશે.",
+    "message": "megahaRdએ Microsoft ટ્રેકરને અવરોધિત કર્યા છે. જો તમે આ સાઇટ પર Microsoft સાથે લોગ ઇનનો ઉપયોગ કરો છો, તો Microsoft તમને ટ્રૅક કરવામાં સમર્થ હશે.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Facebook તમને અહીં ટ્રૅક કરવા દે છે?",
+    "message": "Microsoft તમને અહીં ટ્રૅક કરવા દે છે?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "જો તમે Facebook સાથે લૉગ ઇનનો ઉપયોગ કરવા માંગતા હો, તો પછી Facebook આ સાઇટ પર તમારી પ્રવૃત્તિને ટ્રૅક કરવામાં સમર્થ હશે. આ તેમને તમારા ઑનલાઇન જીવનની સંપૂર્ણ છબી બનાવવામાં સહાય કરી શકે છે.",
+    "message": "જો તમે Microsoft સાથે લૉગ ઇનનો ઉપયોગ કરવા માંગતા હો, તો પછી Microsoft આ સાઇટ પર તમારી પ્રવૃત્તિને ટ્રૅક કરવામાં સમર્થ હશે. આ તેમને તમારા ઑનલાઇન જીવનની સંપૂર્ણ છબી બનાવવામાં સહાય કરી શકે છે.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -246,15 +246,15 @@
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "જો તમે તમારા વાસ્તવિક ઈમેલ એડ્રેસનો અહીં ઉપયોગ કરો છો, તો Facebook તમને ટ્રૅક કરી શકશે. વધુ જાણવા માટે ક્લિક કરો.",
+    "message": "જો તમે તમારા વાસ્તવિક ઈમેલ એડ્રેસનો અહીં ઉપયોગ કરો છો, તો Microsoft તમને ટ્રૅક કરી શકશે. વધુ જાણવા માટે ક્લિક કરો.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "Facebook તમને અહીં ટ્રૅક કરવા દે છે?",
+    "message": "Microsoft તમને અહીં ટ્રૅક કરવા દે છે?",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "આ સાઇટ તમારું ઇમેઇલ સરનામું Facebook સાથે શેર કરી શકે છે, જે Facebook તમને ટ્રૅક કરવાની મંજૂરી આપે છે. તમારું વાસ્તવિક ઇમેઇલ સરનામું છુપાવવા માટે Firefox રિલે જેવી સેવાનો ઉપયોગ કરો.",
+    "message": "આ સાઇટ તમારું ઇમેઇલ સરનામું Microsoft સાથે શેર કરી શકે છે, જે Microsoft તમને ટ્રૅક કરવાની મંજૂરી આપે છે. તમારું વાસ્તવિક ઇમેઇલ સરનામું છુપાવવા માટે Firefox રિલે જેવી સેવાનો ઉપયોગ કરો.",
     "description": ""
   },
   "btn-relay-dismiss": {

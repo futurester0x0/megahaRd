@@ -4,9 +4,9 @@ describe("Badging", () => {
     await geckodriver.get(badgesFixture);
   });
 
-  it("should badge facebook elements", async () => {
+  it("should badge microsoft elements", async () => {
     await geckodriver.wait(until.elementLocated(
-      By.className("fbc-badge")
+      By.className("mhc-badge")
     ), 5000, "Should have badged the element");
   });
 });

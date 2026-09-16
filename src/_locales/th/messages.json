@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container แยกกิจกรรม Facebook ของคุณออกจากกิจกรรมเว็บที่เหลือ เพื่อป้องกันไม่ให้ Facebook ติดตามคุณนอกเว็บไซต์ Facebook ผ่านคุกกี้ของบุคคลที่สาม",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "megahaRd แยกกิจกรรม Microsoft ของคุณออกจากกิจกรรมเว็บที่เหลือ เพื่อป้องกันไม่ให้ Microsoft ติดตามคุณนอกเว็บไซต์ Microsoft ผ่านคุกกี้ของบุคคลที่สาม",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ อยู่ใน Facebook Container",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ อยู่ใน megahaRd",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "Facebook สามารถติดตามคุณบนไซต์นี้ได้ ถ้าต้องการเอาไซต์นี้ออกจาก Facebook Container ให้เลือก ไซต์ที่อนุญาต ใน Facebook Container แล้วเอาออกจากรายชื่อ"
+  "in-megahard-p1": {
+    "message": "Microsoft สามารถติดตามคุณบนไซต์นี้ได้ ถ้าต้องการเอาไซต์นี้ออกจาก megahaRd ให้เลือก ไซต์ที่อนุญาต ใน megahaRd แล้วเอาออกจากรายชื่อ"
   },
-  "on-facebook-subhead": {
-    "message": "บน Facebook และไซต์ที่อยู่ในขอบเขตของ Facebook Container",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "บน Microsoft และไซต์ที่อยู่ในขอบเขตของ megahaRd",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "ไอคอนนี้จะปรากฏในแถบที่อยู่ของ Firefox เมื่อคุณเยี่ยมชมไซต์ที่ Facebook เป็นเจ้าของหรือไซต์ที่คุณเพิ่มลงใน Facebook Container",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "ไอคอนนี้จะปรากฏในแถบที่อยู่ของ Firefox เมื่อคุณเยี่ยมชมไซต์ที่ Microsoft เป็นเจ้าของหรือไซต์ที่คุณเพิ่มลงใน megahaRd",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
-    "message": "ไซต์เหล่านี้จำเป็นต้องเข้าถึงข้อมูลประจำตัว Facebook ของคุณ (หรือรู้ว่าคุณเป็นใคร) เพื่อให้ทำงานได้ ซึ่งหมายความว่า Facebook สามารถติดตามทุกสิ่งที่คุณทำบนไซต์เหล่านี้ได้ด้วย",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  "on-microsoft-p2": {
+    "message": "ไซต์เหล่านี้จำเป็นต้องเข้าถึงข้อมูลประจำตัว Microsoft ของคุณ (หรือรู้ว่าคุณเป็นใคร) เพื่อให้ทำงานได้ ซึ่งหมายความว่า Microsoft สามารถติดตามทุกสิ่งที่คุณทำบนไซต์เหล่านี้ได้ด้วย",
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
-    "message": "$URL$ ไม่ได้อยู่ใน Facebook Container",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "$URL$ ไม่ได้อยู่ใน megahaRd",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,77 +38,77 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "ไซต์นี้อยู่ภายนอก Facebook Container ซึ่งทำให้ Facebook ติดตามคุณได้ยากขึ้น",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "ไซต์นี้อยู่ภายนอก megahaRd ซึ่งทำให้ Microsoft ติดตามคุณได้ยากขึ้น",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "ไซต์นี้ไม่ได้อยู่ใน Facebook Container",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "ไซต์นี้ไม่ได้อยู่ใน megahaRd",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "การใช้ Facebook Container",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "การใช้ megahaRd",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "Facebook สามารถติดตามการเรียกดูของคุณได้มากกว่า Facebook.com ปุ่มถูกใจและแชร์ของ Facebook สามารถติดตามสถานที่ที่คุณเคยไปแม้กระทั่งในหน้าที่คุณไม่เคยถูกใจหรือแชร์ได้",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Microsoft สามารถติดตามการเรียกดูของคุณได้มากกว่า Microsoft.com ปุ่มถูกใจและแชร์ของ Microsoft สามารถติดตามสถานที่ที่คุณเคยไปแม้กระทั่งในหน้าที่คุณไม่เคยถูกใจหรือแชร์ได้",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
-    "message": "Facebook Container จะสร้างขอบเขตระหว่างไซต์ Facebook กับเว็บอื่น ๆ ที่เหลือ จึงทำให้ Facebook ติดตามคุณบนโลกออนไลน์ได้ยากขึ้น",
-    "description": "Please do not translate \"Facebook Container\""
+    "message": "megahaRd จะสร้างขอบเขตระหว่างไซต์ Microsoft กับเว็บอื่น ๆ ที่เหลือ จึงทำให้ Microsoft ติดตามคุณบนโลกออนไลน์ได้ยากขึ้น",
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "บน Facebook และไซต์ที่อยู่ในขอบเขตของ Facebook Container",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "บน Microsoft และไซต์ที่อยู่ในขอบเขตของ megahaRd",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "ไอคอนรูปรั้วของ Facebook Container",
+    "message": "ไอคอนรูปรั้วของ megahaRd",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "ไอคอนนี้จะปรากฏในแถบที่อยู่ Firefox เมื่อคุณเยี่ยมชมไซต์ต่าง ๆ เช่น Facebook.com ที่อยู่ในขอบเขตของ Facebook Container",
+    "message": "ไอคอนนี้จะปรากฏในแถบที่อยู่ Firefox เมื่อคุณเยี่ยมชมไซต์ต่าง ๆ เช่น Microsoft.com ที่อยู่ในขอบเขตของ megahaRd",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "ไซต์เหล่านี้จำเป็นต้องเข้าถึงข้อมูลประจำตัว Facebook ของคุณ (หรือรู้ว่าคุณเป็นใคร) เพื่อให้ทำงานได้ ซึ่งหมายความว่า Facebook สามารถติดตามทุกสิ่งที่คุณทำบนไซต์เหล่านี้ได้ด้วย",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "ไซต์เหล่านี้จำเป็นต้องเข้าถึงข้อมูลประจำตัว Microsoft ของคุณ (หรือรู้ว่าคุณเป็นใคร) เพื่อให้ทำงานได้ ซึ่งหมายความว่า Microsoft สามารถติดตามทุกสิ่งที่คุณทำบนไซต์เหล่านี้ได้ด้วย",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
-    "message": "ภายนอก Facebook",
+    "message": "ภายนอก Microsoft",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "ถึงแม้ว่าคุณจะไม่ได้ใช้ Facebook แต่ Facebook ก็สามารถติดตามคุณบนโลกออนไลน์ได้ ปุ่มที่ให้คุณโพสต์สิ่งต่าง ๆ ลงใน Facebook หรือเข้าสู่ระบบเว็บไซต์โดยใช้บัญชี Facebook ของคุณจะมีตัวติดตาม Facebook Container จะปิดกั้นตัวติดตามเหล่านี้และแสดงไอคอนรั้วเพื่อแสดงให้คุณเห็นว่าตัวติดตามถูกเอาออกที่จุดใดบ้าง",
+    "message": "ถึงแม้ว่าคุณจะไม่ได้ใช้ Microsoft แต่ Microsoft ก็สามารถติดตามคุณบนโลกออนไลน์ได้ ปุ่มที่ให้คุณโพสต์สิ่งต่าง ๆ ลงใน Microsoft หรือเข้าสู่ระบบเว็บไซต์โดยใช้บัญชี Microsoft ของคุณจะมีตัวติดตาม megahaRd จะปิดกั้นตัวติดตามเหล่านี้และแสดงไอคอนรั้วเพื่อแสดงให้คุณเห็นว่าตัวติดตามถูกเอาออกที่จุดใดบ้าง",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
-    "message": "ภาพนี้จะแสดงให้เห็นว่าไอคอนรั้วของ Facebook Container จะปรากฏในหน้าเคียงข้างปุ่มถูกใจของ Facebook อย่างไร",
+    "message": "ภาพนี้จะแสดงให้เห็นว่าไอคอนรั้วของ megahaRd จะปรากฏในหน้าเคียงข้างปุ่มถูกใจของ Microsoft อย่างไร",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-subhead": {
-    "message": "การเข้าสู่ระบบด้วย Facebook บนไซต์อื่น",
+    "message": "การเข้าสู่ระบบด้วย Microsoft บนไซต์อื่น",
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "ถ้าต้องการใช้ข้อมูลการเข้าสู่ระบบ Facebook ของคุณบนไซต์อื่น คุณจะต้องย้ายข้อมูลเหล่านั้นมาไว้ภายในขอบเขต คลิกไอคอนรั้วแล้วเลือก ‘อนุญาตไซต์ใน Facebook Container’ ที่อยู่ด้านล่าง",
+    "message": "ถ้าต้องการใช้ข้อมูลการเข้าสู่ระบบ Microsoft ของคุณบนไซต์อื่น คุณจะต้องย้ายข้อมูลเหล่านั้นมาไว้ภายในขอบเขต คลิกไอคอนรั้วแล้วเลือก ‘อนุญาตไซต์ใน megahaRd’ ที่อยู่ด้านล่าง",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
-    "message": "ภาพนี้แสดงให้เห็นว่าปุ่มที่จะเพิ่มไซต์ลงใน Facebook Container จะปรากฏในแผงอย่างไร",
+    "message": "ภาพนี้แสดงให้เห็นว่าปุ่มที่จะเพิ่มไซต์ลงใน megahaRd จะปรากฏในแผงอย่างไร",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "คุณลักษณะนี้ช่วยให้คุณสามารถเข้าสู่ระบบด้วย Facebook ได้ แต่จะอนุญาตให้ Facebook ติดตามกิจกรรมของคุณบนไซต์นั้นได้",
+    "message": "คุณลักษณะนี้ช่วยให้คุณสามารถเข้าสู่ระบบด้วย Microsoft ได้ แต่จะอนุญาตให้ Microsoft ติดตามกิจกรรมของคุณบนไซต์นั้นได้",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "อนุญาต",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "ยกเลิก",
@@ -131,48 +131,48 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "ไปที่ Facebook Container ทำงานอย่างไร",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "ไปที่ megahaRd ทำงานอย่างไร",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "ไม่พบตัวติดตามของ Facebook",
+    "message": "ไม่พบตัวติดตามของ Microsoft",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container ไม่พบตัวติดตาม Facebook ใด ๆ บนหน้านี้ แต่อาจยังมีตัวติดตามชนิดอื่น ๆ อยู่",
+    "message": "megahaRd ไม่พบตัวติดตาม Microsoft ใด ๆ บนหน้านี้ แต่อาจยังมีตัวติดตามชนิดอื่น ๆ อยู่",
     "description": ""
   },
   "learn-more": {
     "message": "เรียนรู้เพิ่มเติม",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "Facebook Container ทำงานอย่างไร",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "megahaRd ทำงานอย่างไร",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "เราปกป้องคุณจาก Facebook",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "เราปกป้องคุณจาก Microsoft",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
-    "message": "ปุ่ม Facebook ที่ปรากฏในไซต์ซื้อของ ข่าว และอื่น ๆ มีตัวติดตามที่บอก Facebook ว่าคุณไปเยี่ยมชมเว็บใดมาบ้าง ถึงแม้ว่าคุณจะไม่เคยใช้ปุ่มเหล่านี้เพื่อกดถูกใจหรือแชร์ แต่ตัวติดตามยังสามารถรวบรวมข้อมูลเกี่ยวกับการเรียกดูของคุณได้ ซึ่ง Facebook Container จะปิดกั้นตัวติดตามเหล่านี้",
+    "message": "ปุ่ม Microsoft ที่ปรากฏในไซต์ซื้อของ ข่าว และอื่น ๆ มีตัวติดตามที่บอก Microsoft ว่าคุณไปเยี่ยมชมเว็บใดมาบ้าง ถึงแม้ว่าคุณจะไม่เคยใช้ปุ่มเหล่านี้เพื่อกดถูกใจหรือแชร์ แต่ตัวติดตามยังสามารถรวบรวมข้อมูลเกี่ยวกับการเรียกดูของคุณได้ ซึ่ง megahaRd จะปิดกั้นตัวติดตามเหล่านี้",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook Container จะปิดกั้นตัวติดตามเหล่านี้ แต่ถ้าคุณคลิกที่ปุ่มใดปุ่มหนึ่งเหล่านี้ Facebook จะสามารถติดตามคุณได้",
+    "message": "megahaRd จะปิดกั้นตัวติดตามเหล่านี้ แต่ถ้าคุณคลิกที่ปุ่มใดปุ่มหนึ่งเหล่านี้ Microsoft จะสามารถติดตามคุณได้",
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "รั้ว Facebook Container พร้อมโล่",
+    "message": "รั้ว megahaRd พร้อมโล่",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "ไซต์ที่อนุญาตใน Facebook Container",
+    "message": "ไซต์ที่อนุญาตใน megahaRd",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "ไซต์ที่รวมอยู่",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "ไม่มี",
@@ -180,61 +180,61 @@
   },
   "sites-allowed": {
     "message": "ไซต์ที่คุณได้อนุญาต",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Facebook Container ทำให้ไซต์ที่เป็นของ Facebook อยู่ภายในขอบเขต คุณสามารถอนุญาตให้ไซต์อื่น ๆ เข้ามาในขอบเขตได้ แต่จะทำให้ Facebook ติดตามการเรียกดูเว็บของคุณได้มากขึ้น"
+    "message": "megahaRd ทำให้ไซต์ที่เป็นของ Microsoft อยู่ภายในขอบเขต คุณสามารถอนุญาตให้ไซต์อื่น ๆ เข้ามาในขอบเขตได้ แต่จะทำให้ Microsoft ติดตามการเรียกดูเว็บของคุณได้มากขึ้น"
   },
   "remove": {
     "message": "เอาออก",
     "description": ""
   },
   "button-allow-site": {
-    "message": "อนุญาตไซต์ใน Facebook Container",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "อนุญาตไซต์ใน megahaRd",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "เอาไซต์ออกจาก Facebook Container",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "เอาไซต์ออกจาก megahaRd",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "เนื่องจากไซต์นี้เป็นไซต์ของ Facebook จึงไม่สามารถเอาออกจาก Facebook Container ได้",
+    "message": "เนื่องจากไซต์นี้เป็นไซต์ของ Microsoft จึงไม่สามารถเอาออกจาก megahaRd ได้",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "ต้องการเอาไซต์ออกจาก Facebook Container หรือไม่?",
+    "message": "ต้องการเอาไซต์ออกจาก megahaRd หรือไม่?",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "การเอาไซต์นี้ออกจาก Facebook Container จะทำให้ไม่สามารถใช้คุณลักษณะการลงชื่อเข้าใช้ด้วย Facebook ได้อีกต่อไป และจะลบคุกกี้การติดตามของ Facebook",
+    "message": "การเอาไซต์นี้ออกจาก megahaRd จะทำให้ไม่สามารถใช้คุณลักษณะการลงชื่อเข้าใช้ด้วย Microsoft ได้อีกต่อไป และจะลบคุกกี้การติดตามของ Microsoft",
     "description": ""
   },
   "remove-site-p2": {
-    "message": " ถ้าคุณต้องการใช้การเข้าสู่ระบบด้วย Facebook อีกครั้ง คุณจะต้องเพิ่มกลับไปที่ Facebook Container ใหม่",
+    "message": " ถ้าคุณต้องการใช้การเข้าสู่ระบบด้วย Microsoft อีกครั้ง คุณจะต้องเพิ่มกลับไปที่ megahaRd ใหม่",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "ต้องการอนุญาตการติดตามของ Facebook บนไซต์นี้หรือไม่?",
+    "message": "ต้องการอนุญาตการติดตามของ Microsoft บนไซต์นี้หรือไม่?",
     "description": ""
   },
   "add-site-p1": {
-    "message": "ตัวเลือกนี้ให้คุณสามารถเข้าสู่ระบบด้วย Facebook ได้ แต่จะทำให้ Facebook สามารถติดตามสิ่งต่าง ๆ ที่คุณได้ทำบนไซต์นี้ได้",
+    "message": "ตัวเลือกนี้ให้คุณสามารถเข้าสู่ระบบด้วย Microsoft ได้ แต่จะทำให้ Microsoft สามารถติดตามสิ่งต่าง ๆ ที่คุณได้ทำบนไซต์นี้ได้",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container ได้ปิดใช้งานปุ่มนี้ และปิดกั้น Facebook ไม่ให้ติดตามการเยี่ยมชมหน้านี้ของคุณ",
+    "message": "megahaRd ได้ปิดใช้งานปุ่มนี้ และปิดกั้น Microsoft ไม่ให้ติดตามการเยี่ยมชมหน้านี้ของคุณ",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container ได้ปิดกั้นตัวติดตามของ Facebook ถ้าคุณใช้การเข้าสู่ระบบด้วย Facebook บนไซต์นี้ Facebook จะสามารถติดตามคุณได้",
+    "message": "megahaRd ได้ปิดกั้นตัวติดตามของ Microsoft ถ้าคุณใช้การเข้าสู่ระบบด้วย Microsoft บนไซต์นี้ Microsoft จะสามารถติดตามคุณได้",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "ต้องการอนุญาตให้ Facebook ติดตามคุณที่นี่หรือไม่?",
+    "message": "ต้องการอนุญาตให้ Microsoft ติดตามคุณที่นี่หรือไม่?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "ถ้าคุณต้องการใช้การเข้าสู่ระบบด้วย Facebook จะทำให้ Facebook สามารถติดตามกิจกรรมของคุณบนไซต์นี้ได้ ซึ่งจะช่วยให้พวกเขาสร้างภาพชีวิตออนไลน์ของคุณได้สมบูรณ์ยิ่งขึ้น",
+    "message": "ถ้าคุณต้องการใช้การเข้าสู่ระบบด้วย Microsoft จะทำให้ Microsoft สามารถติดตามกิจกรรมของคุณบนไซต์นี้ได้ ซึ่งจะช่วยให้พวกเขาสร้างภาพชีวิตออนไลน์ของคุณได้สมบูรณ์ยิ่งขึ้น",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -242,19 +242,19 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "ถ้าคุณคลิกปุ่มนี้ Facebook จะสามารถติดตามการเยี่ยมชมไซต์นี้ของคุณได้",
+    "message": "ถ้าคุณคลิกปุ่มนี้ Microsoft จะสามารถติดตามการเยี่ยมชมไซต์นี้ของคุณได้",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "ถ้าคุณใช้ที่อยู่อีเมลจริงของคุณที่นี่ Facebook อาจสามารถติดตามคุณได้ คลิกเพื่อเรียนรู้เพิ่มเติม",
+    "message": "ถ้าคุณใช้ที่อยู่อีเมลจริงของคุณที่นี่ Microsoft อาจสามารถติดตามคุณได้ คลิกเพื่อเรียนรู้เพิ่มเติม",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "ต้องการอนุญาตให้ Facebook ติดตามคุณที่นี่หรือไม่?",
+    "message": "ต้องการอนุญาตให้ Microsoft ติดตามคุณที่นี่หรือไม่?",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "ไซต์นี้สามารถแชร์ที่อยู่อีเมลของคุณกับ Facebook ซึ่งช่วยให้ Facebook ติดตามคุณได้ ให้ใช้บริการ เช่น Firefox Relay เพื่อซ่อนที่อยู่อีเมลจริงของคุณ",
+    "message": "ไซต์นี้สามารถแชร์ที่อยู่อีเมลของคุณกับ Microsoft ซึ่งช่วยให้ Microsoft ติดตามคุณได้ ให้ใช้บริการ เช่น Firefox Relay เพื่อซ่อนที่อยู่อีเมลจริงของคุณ",
     "description": ""
   },
   "btn-relay-dismiss": {

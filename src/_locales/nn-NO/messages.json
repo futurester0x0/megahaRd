@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container isolerer Facebook-aktiviteten din frå resten av nettaktiviteten din for å hindre at Facebook sporar deg utanfor Facebook-nettstaden via tredjeparts infokapslar.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "megahaRd isolerer Microsoft-aktiviteten din frå resten av nettaktiviteten din for å hindre at Microsoft sporar deg utanfor Microsoft-nettstaden via tredjeparts infokapslar.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ er i Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ er i megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "Facebook kan no spore deg på denne nettstaden. For å fjerne denne nettstaden frå Facebook Container, vel Tillatne nettstadar i Facebook Container og fjern han frå."
+  "in-megahard-p1": {
+    "message": "Microsoft kan no spore deg på denne nettstaden. For å fjerne denne nettstaden frå megahaRd, vel Tillatne nettstadar i megahaRd og fjern han frå."
   },
-  "on-facebook-subhead": {
-    "message": "På Facebook og nettstadar innanfor ramma av Facebook Container",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "På Microsoft og nettstadar innanfor ramma av megahaRd",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "Dette ikonet vert vist i adressefeltet til Firefox når du besøkjer Facebook-eigde nettstadar eller nettstadar du har lagt til i Facebook Container.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "Dette ikonet vert vist i adressefeltet til Firefox når du besøkjer Microsoft-eigde nettstadar eller nettstadar du har lagt til i megahaRd.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
-    "message": "Disse nettstadane treng tilgang til Facebook-identiteten din (eller vite kven du er) for å fungere. Dette betyr også at Facebook kan spore alt du gjer på desse nettstadane.",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  "on-microsoft-p2": {
+    "message": "Disse nettstadane treng tilgang til Microsoft-identiteten din (eller vite kven du er) for å fungere. Dette betyr også at Microsoft kan spore alt du gjer på desse nettstadane.",
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
-    "message": "$URL$ er ikkje i Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "$URL$ er ikkje i megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,77 +38,77 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "Denne nettstaden er utanfor Facebook Container. Dette gjer det vanskelegare for Facebook å spore deg på nettet.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "Denne nettstaden er utanfor megahaRd. Dette gjer det vanskelegare for Microsoft å spore deg på nettet.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "Denne nettsida er ikkje i Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "Denne nettsida er ikkje i megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "Bruke Facebook Container",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Bruke megahaRd",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "Facebook kan spore nettsurfinga di langt utanfor Facebook.com. Facebook sine Likar- og Dele-knappar kan til dømes spore kvar du har vore — til og med på nettsider du aldri likar eller deler.",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Microsoft kan spore nettsurfinga di langt utanfor Microsoft.com. Microsoft sine Likar- og Dele-knappar kan til dømes spore kvar du har vore — til og med på nettsider du aldri likar eller deler.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
-    "message": "Facebook Container lagar ei ramme mellom Facebook-nettstadar og resten av nettet slik at det blir vanskelegare for Facebook å spore deg.",
-    "description": "Please do not translate \"Facebook Container\""
+    "message": "megahaRd lagar ei ramme mellom Microsoft-nettstadar og resten av nettet slik at det blir vanskelegare for Microsoft å spore deg.",
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "På Facebook og nettstadar innanfor ramma av Facebook Container",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "På Microsoft og nettstadar innanfor ramma av megahaRd",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "Gjerde-ikonet til Facebook Container",
+    "message": "Gjerde-ikonet til megahaRd",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Dette ikonet vert vist i adressefeltet til Firefox når du besøkjer nettstadar, som Facebook.com, som er innanfor ramma til Facebook Container.",
+    "message": "Dette ikonet vert vist i adressefeltet til Firefox når du besøkjer nettstadar, som Microsoft.com, som er innanfor ramma til megahaRd.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "Desse nettstadane treng tilgang til Facebook-identiteten din (eller å vite kven du er) for å fungere. Dette betyr også at Facebook kan spore alt du gjer på desse nettstadane.",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Desse nettstadane treng tilgang til Microsoft-identiteten din (eller å vite kven du er) for å fungere. Dette betyr også at Microsoft kan spore alt du gjer på desse nettstadane.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
-    "message": "Utanfor Facebook",
+    "message": "Utanfor Microsoft",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Sjølv når du ikkje er på Facebook, kan Facebook spore deg på nettet. Knappar som lar deg leggje ut ting på Facebook eller logge på nettstadar med Facebook-kontoen din, inneheld sporings-mekanismar. Facebook Container blokkerer desse sporingsmekanismane og viser gjerdeikonet for å vise deg kvar sporingsmekanismar vart fjerna.",
+    "message": "Sjølv når du ikkje er på Microsoft, kan Microsoft spore deg på nettet. Knappar som lar deg leggje ut ting på Microsoft eller logge på nettstadar med Microsoft-kontoen din, inneheld sporings-mekanismar. megahaRd blokkerer desse sporingsmekanismane og viser gjerdeikonet for å vise deg kvar sporingsmekanismar vart fjerna.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
-    "message": "Dette bildet demonstrerer korleis gjerdeikonet til Facebook Container vil visast på nettsida ved sidan av ein Facebook Likar-knapp.",
+    "message": "Dette bildet demonstrerer korleis gjerdeikonet til megahaRd vil visast på nettsida ved sidan av ein Microsoft Likar-knapp.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-subhead": {
-    "message": "Logg inn med Facebook på andre nettstadar",
+    "message": "Logg inn med Microsoft på andre nettstadar",
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "For å bruke Facebook-pålogginga di på andre nettstadar, må du flytte dei innanfor grensa. Klikk på gjerdeikonet og vel «Tillat nettstad i Facebook Container» nedst.",
+    "message": "For å bruke Microsoft-pålogginga di på andre nettstadar, må du flytte dei innanfor grensa. Klikk på gjerdeikonet og vel «Tillat nettstad i megahaRd» nedst.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
-    "message": "Dette bildet viser korleis knappen for å leggje til ein nettstad til Facebook Container vil bli vist i panelet.",
+    "message": "Dette bildet viser korleis knappen for å leggje til ein nettstad til megahaRd vil bli vist i panelet.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "Dette lar deg logge på med Facebook, men gjer at Facebook kan spore det du gjer på denne nettstaden.",
+    "message": "Dette lar deg logge på med Microsoft, men gjer at Microsoft kan spore det du gjer på denne nettstaden.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Tillat",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "Avbryt",
@@ -131,48 +131,48 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "Gå til «Korleis Facebook Container fungerer»",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "Gå til «Korleis megahaRd fungerer»",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Ingen Facebook-sporarar oppdaga",
+    "message": "Ingen Microsoft-sporarar oppdaga",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container fann ingen Facebook-sporarar på denne nettsida. Men, nettsida kan framleis innehalde andre typar sporarar.",
+    "message": "megahaRd fann ingen Microsoft-sporarar på denne nettsida. Men, nettsida kan framleis innehalde andre typar sporarar.",
     "description": ""
   },
   "learn-more": {
     "message": "Les meir",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "Korleis Facebook Container fungerer",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "Korleis megahaRd fungerer",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "Vi har beskytta deg frå Facebook.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "Vi har beskytta deg frå Microsoft.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
-    "message": "Facebook-knappar som vert viste på nettbutikkar, nyhende-, og andre nettstadar inneheld sporarar som fortel Facebook kvar du har vore på nettet. Til og med dersom du aldri brukar desse knappane til å like eller dele, kan sporarane framleis samle data om nettlesinga di. Facebook Container blokkerer desse sporarane.",
+    "message": "Microsoft-knappar som vert viste på nettbutikkar, nyhende-, og andre nettstadar inneheld sporarar som fortel Microsoft kvar du har vore på nettet. Til og med dersom du aldri brukar desse knappane til å like eller dele, kan sporarane framleis samle data om nettlesinga di. megahaRd blokkerer desse sporarane.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook Container blokkerer desse sporarane. Viss du derimot trykkjer på ein av desse knappane vil Facebook ha moglegheit til å spore deg.",
+    "message": "megahaRd blokkerer desse sporarane. Viss du derimot trykkjer på ein av desse knappane vil Microsoft ha moglegheit til å spore deg.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "Facebook Container-gjerde med skjold.",
+    "message": "megahaRd-gjerde med skjold.",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "Tillatne nettstadar i Facebook Container",
+    "message": "Tillatne nettstadar i megahaRd",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "INKLUDERTE NETTSTADAR",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "Ingen",
@@ -180,61 +180,61 @@
   },
   "sites-allowed": {
     "message": "NETTSTADAR DU HAR TILLATE",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Facebook Container puttar Facebook-eigde nettstadar innanfor ramma. Du kan tillate andre nettstadar innanfor grensa, men dette vil gi Facebook moglegheit til å spore meir av nettlesinga di."
+    "message": "megahaRd puttar Microsoft-eigde nettstadar innanfor ramma. Du kan tillate andre nettstadar innanfor grensa, men dette vil gi Microsoft moglegheit til å spore meir av nettlesinga di."
   },
   "remove": {
     "message": "Fjern",
     "description": ""
   },
   "button-allow-site": {
-    "message": "Tillat nettstaden i Facebook Container",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "Tillat nettstaden i megahaRd",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "Fjern nettstaden frå Facebook Container",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "Fjern nettstaden frå megahaRd",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Sidan dette er ein Facebook-eigd nettstad, kan han ikkje fjernast frå Facebook Container.",
+    "message": "Sidan dette er ein Microsoft-eigd nettstad, kan han ikkje fjernast frå megahaRd.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Fjerne nettstad frå Facebook Container?",
+    "message": "Fjerne nettstad frå megahaRd?",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "Å ta bort denne nettstaden frå Facebook Container inneber at det å logge inn med Facebook-funksjonen ikkje lenger vil verke og Facebooks-infokapslane vil bli sletta.",
+    "message": "Å ta bort denne nettstaden frå megahaRd inneber at det å logge inn med Microsoft-funksjonen ikkje lenger vil verke og Microsofts-infokapslane vil bli sletta.",
     "description": ""
   },
   "remove-site-p2": {
-    "message": " Viss du vil bruke Logg inn med Facebook igjen må du leggje den tilbake til Facebook Container.",
+    "message": " Viss du vil bruke Logg inn med Microsoft igjen må du leggje den tilbake til megahaRd.",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Tillate Facebook-sporing på denne nettstaden?",
+    "message": "Tillate Microsoft-sporing på denne nettstaden?",
     "description": ""
   },
   "add-site-p1": {
-    "message": "Dette lar deg logge på med Facebook, men gjer at Facebook kan følgje med på det du gjer på denne nettstaden.",
+    "message": "Dette lar deg logge på med Microsoft, men gjer at Microsoft kan følgje med på det du gjer på denne nettstaden.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container har deaktivert denne knappen og blokkert Facebook frå å spore deg når du besøkjer denne nettsida.",
+    "message": "megahaRd har deaktivert denne knappen og blokkert Microsoft frå å spore deg når du besøkjer denne nettsida.",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container har blokkert Facebook-sporarar. Viss du brukar Logg inn med Facebook på denne nettsida vil Facebook ha moglegheita til å spore deg.",
+    "message": "megahaRd har blokkert Microsoft-sporarar. Viss du brukar Logg inn med Microsoft på denne nettsida vil Microsoft ha moglegheita til å spore deg.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Tillate Facebook å spore deg her?",
+    "message": "Tillate Microsoft å spore deg her?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Viss du vil bruke logg inn med Facebook så vil Facebook ha moglegheit til å spore aktiviteten din på denne nettstaden. Dette kan hjelpe dei med å byggje eit meir detaljert bilde av livet ditt på nettet.",
+    "message": "Viss du vil bruke logg inn med Microsoft så vil Microsoft ha moglegheit til å spore aktiviteten din på denne nettstaden. Dette kan hjelpe dei med å byggje eit meir detaljert bilde av livet ditt på nettet.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -242,19 +242,19 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "Dersom du klikkar på denne knappen, vil Facebook kunne spore besøket ditt på denne nettstaden.",
+    "message": "Dersom du klikkar på denne knappen, vil Microsoft kunne spore besøket ditt på denne nettstaden.",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "Dersom du brukar den verkelege e -postadressa di her, kan det hende at Facebook kan spore deg. Klikk for å lese meir.",
+    "message": "Dersom du brukar den verkelege e -postadressa di her, kan det hende at Microsoft kan spore deg. Klikk for å lese meir.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "Tillate Facebook å spore deg her?",
+    "message": "Tillate Microsoft å spore deg her?",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Denne nettstaden kan dele e -postadressa di med Facebook, som lar Facebook spore deg. Bruk ei teneste som Firefox Relay for å skjule den verkelege e -postadressa di.",
+    "message": "Denne nettstaden kan dele e -postadressa di med Microsoft, som lar Microsoft spore deg. Bruk ei teneste som Firefox Relay for å skjule den verkelege e -postadressa di.",
     "description": ""
   },
   "btn-relay-dismiss": {

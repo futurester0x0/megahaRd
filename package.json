@@ -1,51 +1,57 @@
 {
-  "name": "contain-facebook",
-  "version": "2.3.12",
-  "description": "Facebook Container isolates your Facebook activity from the rest of your web activity in order to prevent Facebook from tracking you outside of the Facebook website via third party cookies. ",
-  "main": "background.js",
+  "name": "megahard",
+  "version": "1.0.0",
+  "description": "megahaRd isolates your Microsoft activity from the rest of your web activity in order to prevent Microsoft from tracking you outside of the Microsoft website via third party cookies. ",
+  "author": "futurester0x0",
+  "homepage": "https://github.com/futurester0x0/megahaRd#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/futurester0x0/megahaRd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/futurester0x0/megahaRd/issues"
+  },
   "scripts": {
-    "test": "eslint src test && npm run coverage && npm run test-functional",
+    "lint": "eslint src test",
+    "test": "eslint src test && npm run coverage",
+    "test-all": "eslint src test && npm run coverage && npm run test-functional",
     "test-watch": "mocha --reporter=progress test/setup.js test/features/*.test.js --watch",
     "test-functional": "mocha --reporter=progress test/functional/setup.js test/functional/*.test.js --timeout 60000",
     "test-functional-dev": "cross-env NODE_ENV=development npm run test-functional",
-    "coverage": "nyc --reporter=html --reporter=text mocha --reporter=progress test/setup.js test/features/*.test.js --timeout 60000",
+    "coverage": "node -e \"require('fs').rmSync('.nyc_output',{recursive:true,force:true});require('fs').mkdirSync('.nyc_output/instruments',{recursive:true})\" && nyc --clean=false --reporter=html --reporter=text mocha --reporter=progress test/setup.js test/features/*.test.js --timeout 60000",
     "build": "npm test && web-ext build --overwrite-dest -s src",
     "dev": "web-ext run -s src"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:mozilla/contain-facebook.git"
   },
   "keywords": [
     "addon",
     "firefox",
     "mozilla"
   ],
-  "author": "Luke Crouch",
   "license": "MPL-2.0",
-  "bugs": {
-    "url": "https://github.com/mozilla/contain-facebook/issues"
-  },
-  "homepage": "https://github.com/mozilla/contain-facebook#readme",
   "devDependencies": {
-    "chai": "^4.3.6",
-    "cross-env": "^5.2.1",
-    "eslint": "^4.19.1",
-    "eslint-plugin-no-unsanitized": "^2.0.2",
-    "fs-extra": "^8.1.0",
-    "mocha": "^5.2.0",
-    "nyc": "^15.1.0",
-    "psl": "^1.8.0",
-    "sinon": "^7.5.0",
+    "chai": "^4.5.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.39.0",
+    "eslint-plugin-no-unsanitized": "^4.1.5",
+    "fs-extra": "^11.3.0",
+    "globals": "^17.12.0",
+    "mocha": "^11.1.0",
+    "nyc": "^17.1.0",
+    "psl": "^1.15.0",
+    "sinon": "^22.0.0",
     "sinon-chai": "^3.7.0",
+    "web-ext": "^10.6.0",
     "webextensions-geckodriver": "^0.7.0",
     "webextensions-jsdom": "^1.4.1"
   },
-  "dependencies": {
-    "web-ext": "^6.7.0"
-  },
   "volta": {
-    "node": "16.14.1",
-    "npm": "8.5.0" 
+    "node": "22.12.0",
+    "npm": "10.9.0"
+  },
+  "nyc": {
+    "exclude": [
+      "src/psl.min.js",
+      "test/**"
+    ]
   }
 }

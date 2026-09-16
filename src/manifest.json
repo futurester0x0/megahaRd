@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "Facebook Container",
-    "version": "2.3.12",
+    "name": "megahaRd",
+    "version": "1.0.0",
 
     "incognito": "not_allowed",
 
@@ -14,29 +14,32 @@
         "96": "/img/icon.svg"
     },
 
-    "applications": {
+    "browser_specific_settings": {
       "gecko": {
-        "id": "@contain-facebook",
-        "strict_min_version": "67.0"
+        "id": "megahard@futurester0x0",
+        "strict_min_version": "115.0",
+        "data_collection_permissions": {
+          "required": ["none"]
+        }
       }
     },
 
-    "homepage_url": "https://github.com/mozilla/contain-facebook",
+    "homepage_url": "https://github.com/futurester0x0/megahaRd",
 
     "browser_action": {
         "browser_style": true,
-        "default_icon": "/img/fbc-icon-dark.svg",
-        "default_title": "Facebook Container",
+        "default_icon": "/img/mhc-icon-dark.svg",
+        "default_title": "megahaRd",
         "default_popup": "panel.html",
         "theme_icons": [
             {
-                "light": "/img/fbc-icon.svg",
-                "dark": "/img/fbc-icon-dark.svg",
+                "light": "/img/mhc-icon.svg",
+                "dark": "/img/mhc-icon-dark.svg",
                 "size": 16
             },
             {
-                "light": "/img/fbc-icon.svg",
-                "dark": "/img/fbc-icon-dark.svg",
+                "light": "/img/mhc-icon.svg",
+                "dark": "/img/mhc-icon-dark.svg",
                 "size": 32
             }
         ]

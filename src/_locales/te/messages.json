@@ -1,40 +1,40 @@
 {
-  "in-fbc-subhead": {
+  "in-megahard-subhead": {
     "message": "$URL$ ఫేస్‌బుక్ కంటెయినరులో ఉంది.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
+  "in-megahard-p1": {
     "message": "ఫేస్‌బుక్ ఇప్పుడు మిమ్మల్ని ఈ సైట్లో ట్రాక్ చేయవచ్చు. ఫేస్‌బుక్ కంటైనర్ నుండి ఈ సైటును తొలగించడానికి, ఫేస్‌బుక్ కంటైనర్లో అనుమతించబడిన సైట్లు ఎంచుకొని దీన్ని ఆ జాబితా నుండి తొలగించండి."
   },
-  "on-facebook-subhead": {
+  "on-microsoft-subhead": {
     "message": "ఫేస్‌బుక్, ఫేస్‌బుక్ కంటెయినర్ పరిధి లోని సైట్లలో",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "notOnFacebookText": {
+  "notOnMicrosoftText": {
     "message": "ఈ సైట్ ఫేస్‌బుక్ కంటెయినర్ వెలుపల ఉంది. ఇది జాలంలో మిమ్మల్ని ట్రాక్ చేయడం ఫేస్‌బుక్‌కు కష్టతరం చేస్తుంది.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
     "message": "ఈ సైటు ఫేస్‌బుక్ కంటెయినర్‌లో లేదు.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
+  "megahardContainer": {
     "message": "ఫేస్‌బుక్ కంటెయినర్",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
     "message": "ఫేస్‌బుక్ కంటెయినర్‌ ఉపయోగించడం",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
     "message": "ఫేస్‌బుక్ సైట్లకు, తతిమా అంతర్జాలానికీ మధ్య సరిహద్దును ఫేస్‌బుక్ కంటైనర్ సృష్టిస్తుంది, తద్వారా జాలంలో మీ జాడను పసిగట్టటం ఫే‌స్‌బుక్‌కి కష్టమవుతుంది.",
-    "description": "Please do not translate \"Facebook Container\""
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
     "message": "ఫేస్‌బుక్ కంటయినర్ కంచె ప్రతీకం",
@@ -46,7 +46,7 @@
   },
   "btn-allow": {
     "message": "అనుమతించు",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "రద్దుచేయి",
@@ -66,7 +66,7 @@
   },
   "btn-arrow-forward": {
     "message": "ఫేస్‌బుక్ కంటెయినర్‌ ఎలా పనిచేస్తుంది చుడండి",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
     "message": "ఫేస్‌బుక్ ట్రాకర్లు కనుగొనబడలేదు",
@@ -78,15 +78,15 @@
   },
   "learn-more": {
     "message": "ఇంకా తెలుసుకోండి",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
+  "how-megahard-works": {
     "message": "ఫేస్‌బుక్ కంటెయినర్‌ ఎలా పనిచేస్తుంది",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "మేము మిమ్మల్ని Facebook నుండి రక్షించాము.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "మేము మిమ్మల్ని Microsoft నుండి రక్షించాము.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "sites-added-subhead": {
     "message": "ఫేస్‌బుక్ కంటెయినర్‌లో అనుమతించబడే సైట్లు",
@@ -98,7 +98,7 @@
   },
   "sites-allowed": {
     "message": "మీరు అనుమతించిన సైట్లు",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
     "message": "ఫేస్‌బుక్ కంటైనర్ ఫేస్‌బుక్ వారి సైట్లన్నిటినీ ఒక సరిహద్దులో ఉంచుతుంది. ఈ సరిహద్దు లోనికి మీరు ఇతర సైట్లను అనుమతించవచ్చు, కానీ దానివల్ల మీ జాల విహరణపు జాడను ఫేస్‌బుక్ ఎక్కువగా తెలుసుకొనే వీలుకల్గుతుంది."

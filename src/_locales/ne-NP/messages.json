@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
-    "message": "Facebook Containerले तपाईंको फेसबुक गतिविधिलाई तपाईंको वेब गतिविधिबाट टाढा राख्छ ताकि फेसबुकले तपाईंलाई तेस्रो पार्टी कुकीज मार्फत फेसबुक वेबसाइट बाहिर ट्र्याक गर्न नसकोस्।",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "megahaRdले तपाईंको फेसबुक गतिविधिलाई तपाईंको वेब गतिविधिबाट टाढा राख्छ ताकि फेसबुकले तपाईंलाई तेस्रो पार्टी कुकीज मार्फत फेसबुक वेबसाइट बाहिर ट्र्याक गर्न नसकोस्।",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ Facebook कन्टेनरमा छ।",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ Microsoft कन्टेनरमा छ।",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
+  "in-megahard-p1": {
     "message": "फेसबुकले अब यस साइटमा तपाइँलाई ट्र्याक गर्न सक्छ। फेसबुक कन्टेनरबाट यो साइट हटाउन, फेसबुक कन्टेनरमा अनुमति दिइएका साइटहरू चयन गर्नुहोस् र यसलाई सूचीबाट हटाउनुहोस्।"
   },
-  "on-facebook-subhead": {
+  "on-microsoft-subhead": {
     "message": "फेसबुकमा र फेसबुक कन्टेनर सीमामा भएका साइटहरूमा",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "यो आइकन Firefox ठेगाना पट्टीमा देखा पर्दछ जब तपाइँ फेसबुकको स्वामित्वमा रहेका साइटहरू वा तपाइँले Facebook कन्टेनरमा थप्नुभएको साइटहरूमा जानुहुन्छ।",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "यो आइकन Firefox ठेगाना पट्टीमा देखा पर्दछ जब तपाइँ फेसबुकको स्वामित्वमा रहेका साइटहरू वा तपाइँले Microsoft कन्टेनरमा थप्नुभएको साइटहरूमा जानुहुन्छ।",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
-    "message": "यी साइटहरूले काम गर्नको लागि तपाईंको Facebook पहिचान (वा तपाईं को हुनुहुन्छ भनेर जान्न) पहुँच गर्न आवश्यक छ। यसको मतलब यो पनि हो कि फेसबुकले तपाईंले यी साइटहरूमा गर्ने सबै कुरा ट्र्याक गर्न सक्छ।",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  "on-microsoft-p2": {
+    "message": "यी साइटहरूले काम गर्नको लागि तपाईंको Microsoft पहिचान (वा तपाईं को हुनुहुन्छ भनेर जान्न) पहुँच गर्न आवश्यक छ। यसको मतलब यो पनि हो कि फेसबुकले तपाईंले यी साइटहरूमा गर्ने सबै कुरा ट्र्याक गर्न सक्छ।",
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
+  "notOnMicrosoftHeader": {
     "message": "$URL$ यो फेसबुक कन्टेनरमा छैन।",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,45 +38,45 @@
       }
     }
   },
-  "notOnFacebookText": {
+  "notOnMicrosoftText": {
     "message": "यो साइट फेसबुक कन्टेनर बाहिर छ। यसले फेसबुकलाई वेबमा तपाईंलाई ट्र्याक गर्न गाह्रो बनाउँछ।",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
     "message": "यो साइट फेसबुक कन्टेनरमा छैन।",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
     "message": "फेसबुक कन्टेनर प्रयोग गरिदै",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "फेसबुकले Facebook.com भन्दा धेरै टाढा तपाईंको ब्राउजिङ्ग ट्र्याक गर्न सक्छ। फेसबुक लाइक र सेयर बटनहरू, उदाहरणका लागि, तपाईं कहाँ हुनुहुन्थ्यो भनेर ट्र्याक गर्न सक्छ — तपाईंले कहिल्यै मन नपर्ने वा साझेदारी नगरेका पृष्ठहरूमा पनि ट्राक गर्न सक्छ।",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "फेसबुकले Microsoft.com भन्दा धेरै टाढा तपाईंको ब्राउजिङ्ग ट्र्याक गर्न सक्छ। फेसबुक लाइक र सेयर बटनहरू, उदाहरणका लागि, तपाईं कहाँ हुनुहुन्थ्यो भनेर ट्र्याक गर्न सक्छ — तपाईंले कहिल्यै मन नपर्ने वा साझेदारी नगरेका पृष्ठहरूमा पनि ट्राक गर्न सक्छ।",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
     "message": "फेसबुक कन्टेनरले फेसबुक साइटहरू र वेबको बाँकी भागहरू बीचको सीमा सिर्जना गर्दछ, त्यसैले फेसबुकलाई तपाईंलाई अनलाइन ट्र्याक गर्न गाह्रो हुन्छ।",
-    "description": "Please do not translate \"Facebook Container\""
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
     "message": "फेसबुकमा र फेसबुक कन्टेनर सीमामा भएका साइटहरूमा",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
     "message": "फेसबुक कन्टेनर फेन्च आइकन",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "यो आइकन Firefox ठेगाना पट्टीमा देखिन्छ जब तपाइँ फेसबुक कन्टेनर सीमामा रहेका Facebook.com जस्ता साइटहरूमा जानुहुन्छ।",
+    "message": "यो आइकन Firefox ठेगाना पट्टीमा देखिन्छ जब तपाइँ फेसबुक कन्टेनर सीमामा रहेका Microsoft.com जस्ता साइटहरूमा जानुहुन्छ।",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
     "message": "यी साइटहरूले काम गर्नको लागि तपाईंको फेसबुक पहिचान (वा तपाईं को हुनुहुन्छ भनेर जान्न) पहुँच गर्न आवश्यक छ। यसको मतलब यो पनि हो कि फेसबुकले तपाईंले यी साइटहरूमा गर्ने सबै कुरा ट्र्याक गर्न सक्छ।",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
     "message": "फेसबुक भन्दा बाहिर",
@@ -108,7 +108,7 @@
   },
   "btn-allow": {
     "message": "अनुमति दिनुहोस्",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "रद्द गर्नुहोस्",
@@ -132,7 +132,7 @@
   },
   "btn-arrow-forward": {
     "message": "फेसबुक कन्टेनर कार्यविधि मा जानुहोस",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
     "message": "कुनै पनि फेसबुक ट्र्याकरहरू फेला परेनन्",
@@ -144,15 +144,15 @@
   },
   "learn-more": {
     "message": "थप जान्नुहोस्",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
+  "how-megahard-works": {
     "message": "फेसबुक कन्टेनर ले कसरी काम गर्दछ",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
     "message": "हामीले तपाईंलाई फेसबुक ट्र्याकर्स हरुबाट सुरक्षित राखेका छौं।",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
     "message": "किनमेल, समाचार तथा अन्य साइटहरूमा देखा पर्ने फेसबुकका सांकेतिक बटनहरूमा ट्र्याकरहरू हुन्छन् जसले फेसबुकलाई तपाइँ वेबमा कहाँ पुग्नुभएको छ भनी बताउँछन्। यी बटनहरू लाईक वा सेयर गर्न प्रयोग नगरेता पनि, ट्र्याकरहरूले तपाइँको ब्राउजिङ्गको गतिविधि सम्बन्धी डेटा सङ्कलन गर्न सक्छन्। फेसबुक कन्टेनरले यी ट्र्याकरहरूलाई रोक्दछ ।",
@@ -172,7 +172,7 @@
   },
   "sites-included": {
     "message": "समावेश गरिएका साइटहरू",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "कुनै पनि होइन",
@@ -180,7 +180,7 @@
   },
   "sites-allowed": {
     "message": "तपाईंले अनुमति दिनुभएका साइटहरू",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
     "message": "फेसबुक कन्टेनरले फेसबुकको स्वामित्वमा रहेका साइटहरूलाई लक्ष्मण घेरा भित्र सीमित गरीदिन्छ। अन्य साइटहरूलाई तपाइँ सीमा भित्र प्रवेश पाउने अनुमति दिन सक्नुहुन्छ, फलत : यसले फेसबुकलाई तपाइँको वेब ब्राउजिङ्ग गतिविधि थप ट्र्याक गर्न अनुमति दिनेछ ।"
@@ -191,11 +191,11 @@
   },
   "button-allow-site": {
     "message": "फेसबुक कन्टेनरमा अनुमति दिनुहोस्",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
     "message": "फेसबुक कन्टेनरबाट साइट हटाउनुहोस्",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
     "message": "यो फेसबुकको स्वामित्वमा रहेको साइट भएकाले , यसलाई फेसबुक कन्टेनरबाट हटाउन मिल्दैन ।",

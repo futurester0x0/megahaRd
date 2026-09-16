@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container wašu aktiwitu Facebook wót zbytka wašeje webaktiwity izolěrujo, aby Facebook zawoborał, wam zwenka websedła Facebook pśez cookieje tśeśich slědowaś.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "megahaRd wašu aktiwitu Microsoft wót zbytka wašeje webaktiwity izolěrujo, aby Microsoft zawoborał, wam zwenka websedła Microsoft pśez cookieje tśeśich slědowaś.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ jo w Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ jo w megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "Facebook móžo wam něnto na toś tom sedle slědowaś. Aby toś to sedło z Facebook Container wótwónoźeł, wubjeŕśo „Sedła, kótarež su dowólone w Facebook Container“, aby jo z lisćiny wótwónoźeł."
+  "in-megahard-p1": {
+    "message": "Microsoft móžo wam něnto na toś tom sedle slědowaś. Aby toś to sedło z megahaRd wótwónoźeł, wubjeŕśo „Sedła, kótarež su dowólone w megahaRd“, aby jo z lisćiny wótwónoźeł."
   },
-  "on-facebook-subhead": {
-    "message": "Na Facebook a sedłach w šćitanem wobceŕku Facebook Container",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "Na Microsoft a sedłach w šćitanem wobceŕku megahaRd",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "Toś ten symbol se w adresowem pólu Firefox pokazujo, gaž k sedłam woglědujośo, kótarež Facebook słušaju, abo k sedłam, kótarež sćo Facebook Container pśidał.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "Toś ten symbol se w adresowem pólu Firefox pokazujo, gaž k sedłam woglědujośo, kótarež Microsoft słušaju, abo k sedłam, kótarež sćo megahaRd pśidał.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
-    "message": "Toś te sedła trjebaju pśistup k wašej identiśe Facebook (abo muse wěźeś, chto sćo), aby funkcioněrowali. To teke groni, až Facebook móžo wšymu slědowaś, což na toś tych sedłach cyniśo.",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  "on-microsoft-p2": {
+    "message": "Toś te sedła trjebaju pśistup k wašej identiśe Microsoft (abo muse wěźeś, chto sćo), aby funkcioněrowali. To teke groni, až Microsoft móžo wšymu slědowaś, což na toś tych sedłach cyniśo.",
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
-    "message": "$URL$ njejo w Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "$URL$ njejo w megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,77 +38,77 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "Toś to sedło jo zwenka Facebook Container. To Facebook póśěžujo, wam pó webje slědowaś.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "Toś to sedło jo zwenka megahaRd. To Microsoft póśěžujo, wam pó webje slědowaś.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "Toś to sedło njejo w Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "Toś to sedło njejo w megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "Facebook Container wužywaś",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "megahaRd wužywaś",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "Facebook móžo wěcej ako Facebook.com slědowaś. Tłocaška „Spódoba se“ a „Źěliś“ na pśikład móžotej wam wšuźi slědowaś, źož sćo był - samo na bokach, na kótarychž njejsćo nigda kliknuł na „Spódoba sr“ abo „Źěliś“.",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Microsoft móžo wěcej ako Microsoft.com slědowaś. Tłocaška „Spódoba se“ a „Źěliś“ na pśikład móžotej wam wšuźi slědowaś, źož sćo był - samo na bokach, na kótarychž njejsćo nigda kliknuł na „Spódoba sr“ abo „Źěliś“.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
-    "message": "Facebook Container šćitany wobceŕk mjazy sedłami a zbytkom interneta napórajo, aby jo śěžej za Facebook, wam online slědowaś.",
-    "description": "Please do not translate \"Facebook Container\""
+    "message": "megahaRd šćitany wobceŕk mjazy sedłami a zbytkom interneta napórajo, aby jo śěžej za Microsoft, wam online slědowaś.",
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "Na Facebook a sedłach w šćitanem wobceŕku Facebook Container",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Na Microsoft a sedłach w šćitanem wobceŕku megahaRd",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "Płośikowy symbol Facebook Container",
+    "message": "Płośikowy symbol megahaRd",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Toś ten symbol se w adresowem pólu Firefox pokazujo, gaž se k sedłam ako Facebook.com woglědujośo, kótarež su w šćitanem wobceŕku Facebook Container.",
+    "message": "Toś ten symbol se w adresowem pólu Firefox pokazujo, gaž se k sedłam ako Microsoft.com woglědujośo, kótarež su w šćitanem wobceŕku megahaRd.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "Toś te sedła trjebaju pśistup k wašej identiśe Facebook (abo muse wěźeś, chto sćo), aby funkcioněrowali. To teke groni, až Facebook móžo wšymu slědowaś, což na toś tych sedłach cyniśo.",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Toś te sedła trjebaju pśistup k wašej identiśe Microsoft (abo muse wěźeś, chto sćo), aby funkcioněrowali. To teke groni, až Microsoft móžo wšymu slědowaś, což na toś tych sedłach cyniśo.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
-    "message": "Zwenka Facebook",
+    "message": "Zwenka Microsoft",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Samo gaž njeby wy na Facebook był, móžo wam Facebook online slědowaś. Tłocaški, kótarež wam zmóžnjaju, něco na Facebook słaś abo se z wašym kontom Facebook pla websedłow pśizjawiś, pśeslědowaki wopśimuju. Facebook Container buźo toś te pśeslědowaki blokěrowaś a płotowy symbol zwobrazniś, aby wam pokazał, źož su se wótwónoźeli pśeslědowaki.",
+    "message": "Samo gaž njeby wy na Microsoft był, móžo wam Microsoft online slědowaś. Tłocaški, kótarež wam zmóžnjaju, něco na Microsoft słaś abo se z wašym kontom Microsoft pla websedłow pśizjawiś, pśeslědowaki wopśimuju. megahaRd buźo toś te pśeslědowaki blokěrowaś a płotowy symbol zwobrazniś, aby wam pokazał, źož su se wótwónoźeli pśeslědowaki.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
-    "message": "Toś ten wobraz demonstrěrujo, kak se płośikowy symbol Facebook Container na boku pódla tłocaška „Spódoba se“ Facebook.",
+    "message": "Toś ten wobraz demonstrěrujo, kak se płośikowy symbol megahaRd na boku pódla tłocaška „Spódoba se“ Microsoft.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-subhead": {
-    "message": "Z Facebook na drugich sedłach pśizjawiś",
+    "message": "Z Microsoft na drugich sedłach pśizjawiś",
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "Aby swójo pśizjawjenje na drugich sedłach wužywał, musyśo je do šćitanego wobceŕka pśesunuś. Klikniśo na płotowy symbol a wubjeŕśo dołojce ‚Sedło we Facebook Container‘.",
+    "message": "Aby swójo pśizjawjenje na drugich sedłach wužywał, musyśo je do šćitanego wobceŕka pśesunuś. Klikniśo na płotowy symbol a wubjeŕśo dołojce ‚Sedło we megahaRd‘.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
-    "message": "Toś ten wobraz demonstrěrujo, kak se tłocašk za pśidawanje sedła do Facebook Container we woknje pokazujo.",
+    "message": "Toś ten wobraz demonstrěrujo, kak se tłocašk za pśidawanje sedła do megahaRd we woknje pokazujo.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "To wam zmóžnja, se pla Facebook pśizjawiś, ale Facebook móžo wašej aktiwiśe na tom sedle slědowaś.",
+    "message": "To wam zmóžnja, se pla Microsoft pśizjawiś, ale Microsoft móžo wašej aktiwiśe na tom sedle slědowaś.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Dowóliś",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "Pśetergnuś",
@@ -131,48 +131,48 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "Slědk ku „Kak Facebook Container funkcioněrujo“",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "Slědk ku „Kak megahaRd funkcioněrujo“",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Žedne pśeslědowaki Facebook namakane",
+    "message": "Žedne pśeslědowaki Microsoft namakane",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container njejo namakał žedne pśeslědowaki Facebook na toś tom boku. Ale bok móžo hyšći druge typy pśeslědowakow wopśimjeś.",
+    "message": "megahaRd njejo namakał žedne pśeslědowaki Microsoft na toś tom boku. Ale bok móžo hyšći druge typy pśeslědowakow wopśimjeś.",
     "description": ""
   },
   "learn-more": {
     "message": "Dalšne informacije",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "Kak Facebook Container funkcioněrujo",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "Kak megahaRd funkcioněrujo",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "Smy was šćitali pśed Facebook.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "Smy was šćitali pśed Microsoft.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
-    "message": "Tłocaški Facebook, kótarež se na nakupowańskich, powěsćowych a drugich sedłach pokazuju, pśeslědowaki wopśimuju, kótarež Facebook k wěsći daju, źož sćo był we webje. Samo gaby wy toś te tłocaški nigda njewužywał, aby ze „Spódoba se“ markěrował abo źělił, mógu pśeslědowaki hyšći daty wó wašom pśeglědowanju zběraś. Facebook Container toś te pśeslědowaki blokěrujo.",
+    "message": "Tłocaški Microsoft, kótarež se na nakupowańskich, powěsćowych a drugich sedłach pokazuju, pśeslědowaki wopśimuju, kótarež Microsoft k wěsći daju, źož sćo był we webje. Samo gaby wy toś te tłocaški nigda njewužywał, aby ze „Spódoba se“ markěrował abo źělił, mógu pśeslědowaki hyšći daty wó wašom pśeglědowanju zběraś. megahaRd toś te pśeslědowaki blokěrujo.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook Container toś te pśeslědowaki blokěrujo. Jolic pak na toś te tłocaški kliknjośo, móžo wam Facebook slědowaś.",
+    "message": "megahaRd toś te pśeslědowaki blokěrujo. Jolic pak na toś te tłocaški kliknjośo, móžo wam Microsoft slědowaś.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "Płośikowy symbol Facebook Container ze šćitom.",
+    "message": "Płośikowy symbol megahaRd ze šćitom.",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "Sedła, kótarež su dowólone w Facebook Container",
+    "message": "Sedła, kótarež su dowólone w megahaRd",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "ZAPŚIMJONE SEDŁA",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "Žeden",
@@ -180,61 +180,61 @@
   },
   "sites-allowed": {
     "message": "SEDŁA, KÓTAREŽ SĆO DOWÓLIŁ",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Facebook Container sedła Facebook do šćitanego wobceŕka zamka. Móžośo dalšne websedła do šćitanego wobceŕka zapśimjeś, ale to Facebook zmóžnja, wěcej wašogo webpśeglědowanja slědowaś."
+    "message": "megahaRd sedła Microsoft do šćitanego wobceŕka zamka. Móžośo dalšne websedła do šćitanego wobceŕka zapśimjeś, ale to Microsoft zmóžnja, wěcej wašogo webpśeglědowanja slědowaś."
   },
   "remove": {
     "message": "Wótwónoźeś",
     "description": ""
   },
   "button-allow-site": {
-    "message": "Sedło we Facebook Container dowóliś",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "Sedło we megahaRd dowóliś",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "Sedło z Facebook Container wótwónoźeś",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "Sedło z megahaRd wótwónoźeś",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Dokulaž to jo sedło, kótarež Facebook słuša, njedajo se z Facebook Container wótwónoźeś.",
+    "message": "Dokulaž to jo sedło, kótarež Microsoft słuša, njedajo se z megahaRd wótwónoźeś.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Sedło z Facebook Container wótwónoźeś?",
+    "message": "Sedło z megahaRd wótwónoźeś?",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "Gaž toś to sedło z Facebook Container wótwónoźujośo, to groni, až funkcija „Z Facebook pśizjawiś“ wěcej njefunkcioněrujo a se slědujuce cookieje Facebook wulašuju.",
+    "message": "Gaž toś to sedło z megahaRd wótwónoźujośo, to groni, až funkcija „Z Microsoft pśizjawiś“ wěcej njefunkcioněrujo a se slědujuce cookieje Microsoft wulašuju.",
     "description": ""
   },
   "remove-site-p2": {
-    "message": "Jolic cośo se zasej pla Facebook pśizjawiś, musyśo jen zasej Facebook Container pśidaś.",
+    "message": "Jolic cośo se zasej pla Microsoft pśizjawiś, musyśo jen zasej megahaRd pśidaś.",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Slědowanje pśez Facebook na toś tom sedle dowóliś?",
+    "message": "Slědowanje pśez Microsoft na toś tom sedle dowóliś?",
     "description": ""
   },
   "add-site-p1": {
-    "message": "To wam zmóžnja, se pla Facebook pśizjawiś, dowólujo pak Facebook slědowaś, což na toś tom sedle cyniśo.",
+    "message": "To wam zmóžnja, se pla Microsoft pśizjawiś, dowólujo pak Microsoft slědowaś, což na toś tom sedle cyniśo.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container jo znjemóžnił toś ten tłocašk a Facebook zawoborał, wašomu woglědoju na toś tom boku slědowaś.",
+    "message": "megahaRd jo znjemóžnił toś ten tłocašk a Microsoft zawoborał, wašomu woglědoju na toś tom boku slědowaś.",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container jo zablokěrował pśeslědowaki Facebook. Jolic „Z Facebook na toś tom sedle pśizjawiś“ wužywaśo, móžo wam Facebook slědowaś.",
+    "message": "megahaRd jo zablokěrował pśeslědowaki Microsoft. Jolic „Z Microsoft na toś tom sedle pśizjawiś“ wužywaśo, móžo wam Microsoft slědowaś.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Facebook dowóliś, wam slědowaś?",
+    "message": "Microsoft dowóliś, wam slědowaś?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Jolic cośo funkciju „Z Facebook pśizjawiś“ wužywaś, móžo Facebook wašej aktiwiśe na toś tom sedle slědowaś. To móžo jomu pomagaś, wašo žywjenje online lěpjej póznaś.",
+    "message": "Jolic cośo funkciju „Z Microsoft pśizjawiś“ wužywaś, móžo Microsoft wašej aktiwiśe na toś tom sedle slědowaś. To móžo jomu pomagaś, wašo žywjenje online lěpjej póznaś.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -242,19 +242,19 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "Jolic na toś ten tłocašk kliknjośo, móžo Facebook wašomu woglědoju na toś tom sedle slědowaś.",
+    "message": "Jolic na toś ten tłocašk kliknjośo, móžo Microsoft wašomu woglědoju na toś tom sedle slědowaś.",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "Jolic swóju napšawdnu e-mailowu adresu how wužywaśo, móžo Facebook wam slědowaś. Klikniśo, aby wěcej zgónił.",
+    "message": "Jolic swóju napšawdnu e-mailowu adresu how wužywaśo, móžo Microsoft wam slědowaś. Klikniśo, aby wěcej zgónił.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "Facebook dowóliś, wam slědowaś?",
+    "message": "Microsoft dowóliś, wam slědowaś?",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Toś to sedło móžo wašu e-mailowu adresu z Facebook źěliś, což Facebook zmóžnja, wam slědowaś. Wužywajśo słužbu ako Firefox Relay, aby swóju napšawdnu e-mailowu adresu schował.",
+    "message": "Toś to sedło móžo wašu e-mailowu adresu z Microsoft źěliś, což Microsoft zmóžnja, wam slědowaś. Wužywajśo słužbu ako Firefox Relay, aby swóju napšawdnu e-mailowu adresu schował.",
     "description": ""
   },
   "btn-relay-dismiss": {

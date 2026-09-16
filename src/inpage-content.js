@@ -1,90 +1,116 @@
 
 const url = window.location.href;
 
-const action = new URL(url).searchParams.get("action");
+let action = null;
+let pageUrl = null;
+try {
+  const params = new URL(url).searchParams;
+  action = params.get("action");
+  pageUrl = params.get("pageUrl");
+} catch (_e) {
+  action = null;
+  pageUrl = null;
+}
 
-const loginItem = document.getElementById("fbc-login");
-const emailItem = document.getElementById("fbc-email");
+function getParentOrigin() {
+  if (!pageUrl) {
+    return "*";
+  }
+  try {
+    return new URL(pageUrl).origin;
+  } catch (_e) {
+    return "*";
+  }
+}
 
-if (action === "login") {
+const loginItem = document.getElementById("mhc-login");
+const emailItem = document.getElementById("mhc-email");
+
+if (action === "login" && loginItem) {
   loginItem.classList.remove("is-hidden");
 }
 
-if (action === "email") {
+if (action === "email" && emailItem) {
   emailItem.classList.remove("is-hidden");
 }
 
 // Header String
-const fbcTitle = document.querySelector(".fbc-title");
-fbcTitle.textContent = browser.i18n.getMessage("facebookContainer");
+const mhcTitle = document.querySelector(".mhc-title");
+mhcTitle.textContent = browser.i18n.getMessage("megahardContainer");
 
 // Login Strings
-const fbcPromptSubtitleLogin = document.querySelector(".fbc-subtitle-login");
-fbcPromptSubtitleLogin.textContent = browser.i18n.getMessage("inPageUI-tooltip-prompt-p1");
+const mhcPromptSubtitleLogin = document.querySelector(".mhc-subtitle-login");
+mhcPromptSubtitleLogin.textContent = browser.i18n.getMessage("inPageUI-tooltip-prompt-p1");
 
-const fbcPromptBodyTextLogin = document.querySelector(".fbc-bodytext-login");
-fbcPromptBodyTextLogin.textContent = browser.i18n.getMessage("inPageUI-tooltip-prompt-p2");
+const mhcPromptBodyTextLogin = document.querySelector(".mhc-bodytext-login");
+mhcPromptBodyTextLogin.textContent = browser.i18n.getMessage("inPageUI-tooltip-prompt-p2");
 
-const fbcPromptAllow = document.querySelector(".fbc-badge-prompt-btn-allow");
-const fbcPromptCancel = document.querySelector(".fbc-badge-prompt-btn-cancel");
+const mhcPromptAllow = document.querySelector(".mhc-badge-prompt-btn-allow");
+const mhcPromptCancel = document.querySelector(".mhc-badge-prompt-btn-cancel");
 
-fbcPromptAllow.textContent = browser.i18n.getMessage("btn-allow");
-fbcPromptCancel.textContent = browser.i18n.getMessage("btn-cancel");
+mhcPromptAllow.textContent = browser.i18n.getMessage("btn-allow");
+mhcPromptCancel.textContent = browser.i18n.getMessage("btn-cancel");
 
-fbcPromptAllow.addEventListener("click", (e) => {
+mhcPromptAllow.addEventListener("click", (e) => {
   if (!e.isTrusted) {
     // The click was not user generated so ignore
     e.preventDefault();
     return false;
-  } 
-  // allowClickSwitch = true; 
+  }
   browser.runtime.sendMessage({
-    message: "add-domain-to-list"
+    message: "add-domain-to-list",
+    // Explicit page URL: sender.url for this extension iframe is the
+    // moz-extension:// URL, not the web page. Background falls back to
+    // sender.tab.url for older content scripts without pageUrl.
+    url: pageUrl
   });
 
-  // Launch facebook authentication
-  parent.postMessage("allowTriggered", "*");
+  // Launch microsoft authentication
+  parent.postMessage("allowTriggered", getParentOrigin());
 
 });
 
 // Email Strings
-const fbcEmailSubtitleLogin = document.querySelector(".fbc-subtitle-email");
-fbcEmailSubtitleLogin.textContent = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1");
+const mhcEmailSubtitleLogin = document.querySelector(".mhc-subtitle-email");
+mhcEmailSubtitleLogin.textContent = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p1");
 
-const fbcEmailBodyTextLogin = document.querySelector(".fbc-bodytext-email");
-fbcEmailBodyTextLogin.textContent = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2");
+const mhcEmailBodyTextLogin = document.querySelector(".mhc-bodytext-email");
+mhcEmailBodyTextLogin.textContent = browser.i18n.getMessage("inPageUI-tooltip-email-prompt-p2");
 
-const fbcEmailCheckbox = document.querySelector(".fbc-email-checkbox");
-fbcEmailCheckbox.textContent = browser.i18n.getMessage("inPageUI-tooltip-prompt-checkbox");
+const mhcEmailCheckbox = document.querySelector(".mhc-email-checkbox");
+mhcEmailCheckbox.textContent = browser.i18n.getMessage("inPageUI-tooltip-prompt-checkbox");
 
-const fbcEmailAllow = document.querySelector(".fbc-badge-email-btn-cta-fx-relay");
-const fbcEmailCancel = document.querySelector(".fbc-badge-email-btn-dismiss");
+const mhcEmailAllow = document.querySelector(".mhc-badge-email-btn-cta-fx-relay");
+const mhcEmailCancel = document.querySelector(".mhc-badge-email-btn-dismiss");
 
-fbcEmailAllow.textContent = browser.i18n.getMessage("btn-relay-try");
-fbcEmailCancel.textContent = browser.i18n.getMessage("btn-relay-dismiss");
+mhcEmailAllow.textContent = browser.i18n.getMessage("btn-relay-try");
+mhcEmailCancel.textContent = browser.i18n.getMessage("btn-relay-dismiss");
 
 // Checkbox
-const fbcCheckboxes = document.querySelectorAll(".settings-checkbox");
+const mhcCheckboxes = document.querySelectorAll(".settings-checkbox");
 
-fbcCheckboxes.forEach(e => {
+mhcCheckboxes.forEach(e => {
   e.addEventListener("change", () => {
-    parent.postMessage("checkboxTicked", "*");
+    parent.postMessage("checkboxTicked", getParentOrigin());
   });
 });
 
 // Launch Relay when Try Relay is clicked
-fbcEmailAllow.addEventListener("click", (e) => {
+mhcEmailAllow.addEventListener("click", (e) => {
   if (!e.isTrusted) {
     // The click was not user generated so ignore
     return false;
-  } 
-  window.open("https://relay.firefox.com/?utm_source=firefox&utm_medium=addon&utm_campaign=Facebook%20Container&utm_content=Try%20Firefox%20Relay");
+  }
+  window.open("https://relay.firefox.com/?utm_source=firefox&utm_medium=addon&utm_campaign=megahaRd&utm_content=Try%20Firefox%20Relay", "_blank", "noopener");
 });
 
 // // Remove popup when cancel/dismiss is clicked
-[fbcPromptCancel, fbcEmailCancel].forEach(e => {
+[mhcPromptCancel, mhcEmailCancel].forEach(e => {
+  if (!e) {
+    return;
+  }
   e.addEventListener("click", () => {
-    parent.postMessage("closeTheInjectedIframe", "*");
+    parent.postMessage("closeTheInjectedIframe", getParentOrigin());
   });
 });
 

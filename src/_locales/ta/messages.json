@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
     "message": "முகநூல் மூன்றாம் தரப்பு நினைவிகள் வழியாக முகநூல் வலைத்தளத்திற்கு வெளியே உங்களை கண்காணிப்பதைத் தடுக்க முகநூல் கொள்கலன் உங்கள் முகநூல் செயல்பாட்டை உங்கள் மீதமுள்ள இணையச் செயல்பாடுகளிலிருந்து தனிமைப்படுத்துகிறது.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
+  "in-megahard-subhead": {
     "message": "$URL$ முகநூல் கொள்கலனில் உள்ளது.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
+  "in-megahard-p1": {
     "message": "முகநூல் இப்போது உங்களை இந்த தளத்தில் கண்காணிக்க முடியும். இந்த தளத்தை முகநூல் கொள்கலனில் இருந்து அகற்ற, முகநூல் கொள்கலனில் அனுமதிக்கப்பட்ட தளங்களைத் தேர்ந்தெடுத்து பட்டியலிலிருந்து அகற்றவும்."
   },
-  "on-facebook-subhead": {
+  "on-microsoft-subhead": {
     "message": "முகநூல் கொள்கலன் எல்லைக்குள் உள்ள முகநூல் மற்றும் பிற தளங்களில்",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
+  "on-microsoft-p1": {
     "message": "முகநூலுக்குச் சொந்தமான தளங்கள் அல்லது முகநூல் கொள்கலனில் நீங்கள் சேர்த்த தளங்களைப் பார்வையிடும்போது இந்தச் சின்னம் பயர்பாக்சு முகவரி பட்டையில் தோன்றும்.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
+  "on-microsoft-p2": {
     "message": "இந்தத் தளங்கள் வேலை செய்ய உங்கள் முகநூல் அடையாளத்தை அணுக வேண்டும் (அல்லது நீங்கள் யார் என்பதை அறிய வேண்டும்). இந்தத் தளங்களில் நீங்கள் செய்யும் அனைத்தையும் முகநூல் கண்காணிக்க முடியும் என்பது இதன் பொருளாகும்.",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
+  "notOnMicrosoftHeader": {
     "message": "$URL$ முகநூல் கொள்கலனில் இல்லை.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,33 +38,33 @@
       }
     }
   },
-  "notOnFacebookText": {
+  "notOnMicrosoftText": {
     "message": "இந்த தளம் முகநூல் கொள்கலனுக்கு வெளியே உள்ளது. இது உங்களை இணையம் முழுவதும் கண்காணிக்க முகநூல் கடினமாக்குகிறது.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
     "message": "இந்த தளம் முகநூல் கொள்கலனில் இல்லை.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
     "message": "முகநூல் கொள்கலனைப் பயன்படுத்துதல்",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "முகநூல் உங்கள் உலாவலை Facebook.com. முகநூல் விருப்பம் மற்றும் பகிர்தல் பொத்தான்களுக்கு வெளியிலும் கண்காணிக்க முடியும், எடுத்துக்காட்டாக, நீங்கள் எங்கே இருக்கிறீர்கள் என்பதைக் கண்காணிக்க முடியும் — நீங்கள் விரும்பாத அல்லது பகிராத பக்கங்களில் கூட.",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "முகநூல் உங்கள் உலாவலை Microsoft.com. முகநூல் விருப்பம் மற்றும் பகிர்தல் பொத்தான்களுக்கு வெளியிலும் கண்காணிக்க முடியும், எடுத்துக்காட்டாக, நீங்கள் எங்கே இருக்கிறீர்கள் என்பதைக் கண்காணிக்க முடியும் — நீங்கள் விரும்பாத அல்லது பகிராத பக்கங்களில் கூட.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
     "message": "முகநூல் கொள்கலன் முகநூல் தளங்களுக்கும் மீதமுள்ள வலையுக்கும் இடையில் ஒரு எல்லையை உருவாக்குகிறது, எனவே உங்களை ஆன்லைனில் கண்காணிப்பது முகநூல் கடினம்.",
-    "description": "Please do not translate \"Facebook Container\""
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
     "message": "முகநூல் கொள்கலன் எல்லைக்குள் உள்ள முகநூல் மற்றும் பிற தளங்களில்",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
     "message": "முகநூல் கொள்கலன் வேலி ஐகான்",
@@ -76,7 +76,7 @@
   },
   "onboarding2-p2": {
     "message": "இந்தத் தளங்கள் வேலை செய்ய உங்கள் முகநூல் அடையாளத்தை அணுக வேண்டும் (அல்லது நீங்கள் யார் என்பதை அறிய வேண்டும்). இந்தத் தளங்களில் நீங்கள் செய்யும் அனைத்தையும் முகநூல் கண்காணிக்க முடியும் என்பது இதன் பொருளாகும்.",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
     "message": "முகநூலுக்கு வெளியே",
@@ -108,7 +108,7 @@
   },
   "btn-allow": {
     "message": "அனுமதி",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "ரத்து",
@@ -132,7 +132,7 @@
   },
   "btn-arrow-forward": {
     "message": "முகநூல் கொள்கலன் எவ்வாறு இயங்குகிறது என்பதற்குச் செல்லவும்",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
     "message": "முகநூல் தடமிகள் எதுவும் கண்டறியப்படவில்லை",
@@ -144,15 +144,15 @@
   },
   "learn-more": {
     "message": "மேலும் அறிய",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
+  "how-megahard-works": {
     "message": "முகநூல் கொள்கலன் எவ்வாறு இயங்குகிறது",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
     "message": "நாங்கள் உங்களை முகநூலில் இருந்து பாதுகாத்துள்ளோம்.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
     "message": "பொருள் வாங்குதல், செய்தி மற்றும் பிற தளங்களில் தோன்றும் முகநூல் பொத்தான்களில் நீங்கள் இணையத்தில் எங்கிருந்தீர்கள் என்பதை முகநூலிற்கு சொல்லும் தடமிகள் உள்ளன. நீங்கள் விரும்பவோ பகிரவோ இந்தப் பொத்தான்களை ஒருபோதும் பயன்படுத்தாவிட்டாலும் கூட, இந்தத் தடமிகளால் உங்கள் உலாவல் குறித்த தரவுகளைச் சேகரிக்க முடியும். முகநூல் கொள்கலன் இந்தத் தடமிகளைத் தடுக்கிறது.",
@@ -172,7 +172,7 @@
   },
   "sites-included": {
     "message": "தளங்கள் சேர்க்கப்பட்டுள்ளன",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "ஒன்றுமில்லை",
@@ -180,7 +180,7 @@
   },
   "sites-allowed": {
     "message": "நீங்கள் அனுமதித்த தளங்கள்",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
     "message": "முகநூல் கொள்கலன் முகநூலுக்கு சொந்தமான தளங்களை எல்லைக்குள் வைக்கிறது. நீங்கள் பிற தளங்களை எல்லைக்குள் அனுமதிக்கலாம், ஆனால் இது உங்கள் வலை உலாவலை மேலும் கண்காணிக்க முகநூலை அனுமதிக்கும்."
@@ -191,11 +191,11 @@
   },
   "button-allow-site": {
     "message": "முகநூல் கொள்கலனில் தளத்தை அனுமதி",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
     "message": "முகநூல் கொள்கலனில் இருந்து தளத்தை நீக்கு",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
     "message": "இது முகநூலுக்குச் சொந்தமான தளம் என்பதால், இதனை முகநூல் கொள்கலனிலிருந்து நீக்க முடியாது.",

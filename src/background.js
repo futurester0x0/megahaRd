@@ -1,43 +1,77 @@
 /* global psl */
 
-const FACEBOOK_CONTAINER_DETAILS = {
-  name: "Facebook",
+const MEGAHRD_CONTAINER_DETAILS = {
+  name: "megahaRd",
   color: "toolbar",
   icon: "fence"
 };
 
-const FACEBOOK_DOMAINS = [
-  "facebook.com", "www.facebook.com", "facebook.net", "fb.com", "fb.me",
-  "fbcdn.net", "fbcdn.com", "fbsbx.com", "tfbnw.net",
-  "facebook-web-clients.appspot.com", "fbcdn-profile-a.akamaihd.net", "fbsbx.com.online-metrix.net", "connect.facebook.net.edgekey.net",
-  
-  "facebookrecruiting.com", "facebookblueprint.com",
-
-  "fburl.com", "internalfb.com",
-
-  "instagram.com",
-  "cdninstagram.com", "instagramstatic-a.akamaihd.net", "instagramstatic-a.akamaihd.net.edgesuite.net",
-
-  "messenger.com", "m.me", "messengerdevelopers.com", "facebook.messenger.com",
-
-  "atdmt.com",
-
-  "workplace.com", "www.workplace.com", "work.facebook.com",
-
-  "onavo.com",
-  "oculus.com", "oculusvr.com", "oculusbrand.com", "oculusforbusiness.com",
-
-  "mapwith.ai", "wit.ai", "mapillary.com",
-
-  "oversightboard.com", "www.oversightboard.com",
-  
-  "bulletin.com", "facebookbrand.com",
-
-  "metacareers.com", "meta.com",  "metaque.st",
-
-  "novi.com",
-
-  "threads.net", "threads.com"
+const MICROSOFT_DOMAINS = [
+  // Core Microsoft + account/auth
+  "microsoft.com", "www.microsoft.com",
+  "microsoftonline.com",
+  "microsoft365.com",
+  "microsoftcloud.com",
+  "cloud.microsoft",
+  "live.com",
+  "outlook.com",
+  "hotmail.com",
+  "msauth.net",
+  "msauthimages.net",
+  "msecnd.net",
+  "gfx.ms",
+  "aka.ms",
+  // Microsoft 365 / Office / collaboration
+  "office.com",
+  "office365.com",
+  "office.net",
+  "sharepoint.com",
+  "sharepointonline.com",
+  "onedrive.com",
+  "onenote.com",
+  "onenote.net",
+  "teams.com",
+  "skype.com",
+  "skypeassets.com",
+  "yammer.com",
+  "dynamics.com",
+  // Windows / Azure / dev platform
+  "windows.com",
+  "windows.net",
+  "windowsupdate.com",
+  "azure.com",
+  "azure.net",
+  "azureedge.net",
+  "cloudapp.net",
+  "visualstudio.com",
+  "vsassets.io",
+  // Search / content
+  "msn.com",
+  "bing.com",
+  "bing.net",
+  // GitHub (Microsoft-owned) — code, assets, OAuth apps
+  "github.com",
+  "githubusercontent.com",
+  "githubassets.com",
+  "githubapp.com",
+  "npmjs.com",
+  "nuget.org",
+  // Professional network
+  "linkedin.com",
+  "licdn.com",
+  // Gaming: Xbox, Minecraft/Mojang, ZeniMax/Bethesda, Activision Blizzard, King
+  "xbox.com",
+  "xboxlive.com",
+  "xboxapi.com",
+  "xboxservices.com",
+  "minecraft.net",
+  "mojang.com",
+  "bethesda.net",
+  "activision.com",
+  "blizzard.com",
+  "battle.net",
+  "callofduty.com",
+  "king.com"
 ];
 
 const DEFAULT_SETTINGS = {
@@ -49,14 +83,14 @@ const RELAY_ADDON_ID = "private-relay@firefox.com";
 
 let macAddonEnabled = false;
 let relayAddonEnabled = false;
-let facebookCookieStoreId = null;
+let megahardCookieStoreId = null;
 
 // TODO: refactor canceledRequests and tabsWaitingToLoad into tabStates
 const canceledRequests = {};
 const tabsWaitingToLoad = {};
 const tabStates = {};
 
-const facebookHostREs = [];
+const microsoftHostREs = [];
 
 async function updateSettings(data){
   await browser.storage.local.set({
@@ -65,19 +99,23 @@ async function updateSettings(data){
 }
 
 async function checkSettings(setting){
-  let fbcStorage = await browser.storage.local.get();
+  const megahardStorage = await browser.storage.local.get();
+
+  if (!megahardStorage.settings) {
+    await browser.storage.local.set({
+      "settings": DEFAULT_SETTINGS
+    });
+    if (setting) {
+      return DEFAULT_SETTINGS[setting];
+    }
+    return DEFAULT_SETTINGS;
+  }
 
   if (setting) {
-    return fbcStorage.settings[setting];
+    return megahardStorage.settings[setting];
   }
 
-  if (fbcStorage.settings) {
-    return fbcStorage.settings;
-  }
-
-  await browser.storage.local.set({
-    "settings": DEFAULT_SETTINGS
-  });
+  return megahardStorage.settings;
 
 }
 
@@ -88,7 +126,7 @@ async function isRelayAddonEnabled () {
     if (relayAddonInfo.enabled) {
       return true;
     }
-  } catch (e) {
+  } catch (_e) {
     return false;
   }
   return false;
@@ -101,7 +139,7 @@ async function isMACAddonEnabled () {
       sendJailedDomainsToMAC();
       return true;
     }
-  } catch (e) {
+  } catch (_e) {
     return false;
   }
   return false;
@@ -109,7 +147,7 @@ async function isMACAddonEnabled () {
 
 async function setupMACAddonListeners () {
   browser.runtime.onMessageExternal.addListener((message, sender) => {
-    if (sender.id !== "@testpilot-containers") {
+    if (sender.id !== MAC_ADDON_ID) {
       return;
     }
     switch (message.method) {
@@ -144,11 +182,11 @@ async function sendJailedDomainsToMAC () {
   try {
     return await browser.runtime.sendMessage(MAC_ADDON_ID, {
       method: "jailedDomains",
-      urls: FACEBOOK_DOMAINS.map((domain) => {
+      urls: MICROSOFT_DOMAINS.map((domain) => {
         return `https://${domain}/`;
       })
     });
-  } catch (e) {
+  } catch (_e) {
     // We likely might want to handle this case: https://github.com/mozilla/contain-facebook/issues/113#issuecomment-380444165
     return false;
   }
@@ -165,7 +203,7 @@ async function getMACAssignment (url) {
       url
     });
     return assignment;
-  } catch (e) {
+  } catch (_e) {
     return false;
   }
 }
@@ -213,14 +251,15 @@ function shouldCancelEarly (tab, options) {
   return false;
 }
 
-function generateFacebookHostREs () {
-  for (let facebookDomain of FACEBOOK_DOMAINS) {
-    facebookHostREs.push(new RegExp(`^(.*\\.)?${facebookDomain}$`));
+function generateMicrosoftHostREs () {
+  for (let microsoftDomain of MICROSOFT_DOMAINS) {
+    const escapedDomain = microsoftDomain.replace(/\./g, "\\.");
+    microsoftHostREs.push(new RegExp(`^(.*\\.)?${escapedDomain}$`));
   }
 }
 
-async function clearFacebookCookies () {
-  // Clear all facebook cookies
+async function clearMicrosoftCookies () {
+  // Clear all microsoft cookies
   const containers = await browser.contextualIdentities.query({});
   containers.push({
     cookieStoreId: "firefox-default"
@@ -228,78 +267,73 @@ async function clearFacebookCookies () {
 
   let macAssignments = [];
   if (macAddonEnabled) {
-    const promises = FACEBOOK_DOMAINS.map(async facebookDomain => {
-      const assigned = await getMACAssignment(`https://${facebookDomain}/`);
-      return assigned ? facebookDomain : null;
+    const promises = MICROSOFT_DOMAINS.map(async microsoftDomain => {
+      const assigned = await getMACAssignment(`https://${microsoftDomain}/`);
+      return assigned ? microsoftDomain : null;
     });
-    macAssignments = await Promise.all(promises);
+    macAssignments = (await Promise.all(promises)).filter(Boolean);
   }
 
-  FACEBOOK_DOMAINS.map(async facebookDomain => {
-    const facebookCookieUrl = `https://${facebookDomain}/`;
-
-    // dont clear cookies for facebookDomain if mac assigned (with or without www.)
+  await Promise.all(MICROSOFT_DOMAINS.map(async microsoftDomain => {
+    // dont clear cookies for microsoftDomain if mac assigned (with or without www.)
     if (macAddonEnabled &&
-        (macAssignments.includes(facebookDomain) ||
-         macAssignments.includes(`www.${facebookDomain}`))) {
+        (macAssignments.includes(microsoftDomain) ||
+         macAssignments.includes(`www.${microsoftDomain}`))) {
       return;
     }
 
-    containers.map(async container => {
+    await Promise.all(containers.map(async container => {
       const storeId = container.cookieStoreId;
-      if (storeId === facebookCookieStoreId) {
-        // Don't clear cookies in the Facebook Container
+      if (storeId === megahardCookieStoreId) {
+        // Don't clear cookies in the megahaRd Container
         return;
       }
 
       const cookies = await browser.cookies.getAll({
-        domain: facebookDomain,
+        domain: microsoftDomain,
         storeId
       });
 
-      cookies.map(cookie => {
-        browser.cookies.remove({
+      await Promise.all(cookies.map(cookie => {
+        // cookies.remove needs a URL matching the cookie path
+        const cookiePath = cookie.path || "/";
+        const cookieUrl = `https://${microsoftDomain}${cookiePath.startsWith("/") ? cookiePath : `/${cookiePath}`}`;
+        return browser.cookies.remove({
           name: cookie.name,
-          url: facebookCookieUrl,
+          url: cookieUrl,
           storeId
-        });
-      });
+        }).catch(() => false);
+      }));
       // Also clear Service Workers as it breaks detecting onBeforeRequest
-      await browser.browsingData.remove({hostnames: [facebookDomain]}, {serviceWorkers: true});
-    });
-  });
+      await browser.browsingData.remove({hostnames: [microsoftDomain]}, {serviceWorkers: true}).catch(() => false);
+    }));
+  }));
 }
 
 async function setupContainer () {
-  // Use existing Facebook container, or create one
+  // Use existing megahaRd container, or create one
 
-  const info = await browser.runtime.getBrowserInfo();
-  if (parseInt(info.version) < 67) {
-    FACEBOOK_CONTAINER_DETAILS.color = "blue";
-    FACEBOOK_CONTAINER_DETAILS.icon = "briefcase";
-  }
-
-  const contexts = await browser.contextualIdentities.query({name: FACEBOOK_CONTAINER_DETAILS.name});
+  const contexts = await browser.contextualIdentities.query({name: MEGAHRD_CONTAINER_DETAILS.name});
   if (contexts.length > 0) {
-    const facebookContext = contexts[0];
-    facebookCookieStoreId = facebookContext.cookieStoreId;
-    // Make existing Facebook container the "fence" icon if needed
-    if (facebookContext.color !== FACEBOOK_CONTAINER_DETAILS.color ||
-        facebookContext.icon !== FACEBOOK_CONTAINER_DETAILS.icon
+    const megahardContext = contexts[0];
+    megahardCookieStoreId = megahardContext.cookieStoreId;
+    // Make existing megahaRd container the "fence" icon if needed
+    if (megahardContext.color !== MEGAHRD_CONTAINER_DETAILS.color ||
+        megahardContext.icon !== MEGAHRD_CONTAINER_DETAILS.icon
     ) {
       await browser.contextualIdentities.update(
-        facebookCookieStoreId,
-        { color: FACEBOOK_CONTAINER_DETAILS.color, icon: FACEBOOK_CONTAINER_DETAILS.icon }
+        megahardCookieStoreId,
+        { color: MEGAHRD_CONTAINER_DETAILS.color, icon: MEGAHRD_CONTAINER_DETAILS.icon }
       );
     }
   } else {
-    const context = await browser.contextualIdentities.create(FACEBOOK_CONTAINER_DETAILS);
-    facebookCookieStoreId = context.cookieStoreId;
+    const context = await browser.contextualIdentities.create(MEGAHRD_CONTAINER_DETAILS);
+    megahardCookieStoreId = context.cookieStoreId;
   }
-  // Initialize domainsAddedToFacebookContainer if needed
-  const fbcStorage = await browser.storage.local.get();
-  if (!fbcStorage.domainsAddedToFacebookContainer) {
-    await browser.storage.local.set({"domainsAddedToFacebookContainer": []});
+  // Initialize domainsAddedToMegahardContainer if needed
+  const megahardStorage = await browser.storage.local.get();
+  if (!Array.isArray(megahardStorage.domainsAddedToMegahardContainer)) {
+    await browser.storage.local.set({"domainsAddedToMegahardContainer": []});
   }
 }
 
@@ -327,7 +361,11 @@ async function maybeReopenTab (url, tab, request) {
     index: tab.index,
     windowId: tab.windowId
   });
-  browser.tabs.remove(tab.id);
+  try {
+    await browser.tabs.remove(tab.id);
+  } catch (_e) {
+    // Tab may already be closed; reopen succeeded so ignore.
+  }
 
   return {cancel: true};
 }
@@ -335,45 +373,80 @@ async function maybeReopenTab (url, tab, request) {
 const rootDomainCache = {};
 
 function getRootDomain(url) {
-  if (url in rootDomainCache) {
-    // After storing 128 entries, it will delete the oldest each time.
-    const returnValue = rootDomainCache[url];
-    if (Object.keys(rootDomainCache).length > 128) {
-      delete rootDomainCache[(Object.keys(rootDomainCache)[0])];
+  let hostname = null;
+  try {
+    if (typeof url !== "string" || url === "") {
+      return null;
     }
-    return returnValue;
+    hostname = new URL(url).hostname;
+  } catch (_e) {
+    return null;
+  }
+  if (!hostname) { return null; }
+  if (hostname in rootDomainCache) {
+    return rootDomainCache[hostname];
   }
 
-  const urlObject = new URL(url);
-  if (urlObject.hostname === "") { return false; }
-  const parsedUrl = psl.parse(urlObject.hostname);
+  const parsedUrl = psl.parse(hostname);
+  const rootDomain = parsedUrl.domain || null;
 
-  rootDomainCache[url] = parsedUrl.domain;
-  return parsedUrl.domain;
+  rootDomainCache[hostname] = rootDomain;
+  // After storing 128 entries, delete the oldest each time.
+  const keys = Object.keys(rootDomainCache);
+  if (keys.length > 128) {
+    delete rootDomainCache[keys[0]];
+  }
+  return rootDomain;
 
 }
 
-function topFrameUrlIsFacebookApps(frameAncestorsArray) {
+function topFrameUrlIsMicrosoftApps(frameAncestorsArray) {
   if (!frameAncestorsArray || frameAncestorsArray.length === 0) {
     // No frame ancestor return false
     return false;
   }
 
-  const appsFacebookURL = "https://apps.facebook.com";
   const frameAncestorsURL = frameAncestorsArray[0].url;
+  if (typeof frameAncestorsURL !== "string") {
+    return false;
+  }
 
-  if (!frameAncestorsURL.startsWith(appsFacebookURL)) {
-    // Only allow frame ancestors that originate from apps.facebook.com
+  let ancestorHost = null;
+  try {
+    ancestorHost = new URL(frameAncestorsURL).hostname.toLowerCase();
+  } catch (_e) {
+    return false;
+  }
+
+  // Only allow frame ancestors that originate from apps.microsoft.com
+  // (exact host or subdomain). A startsWith check alone would also match
+  // apps.microsoft.com.evil.com, so compare the parsed hostname.
+  if (ancestorHost !== "apps.microsoft.com" && !ancestorHost.endsWith(".apps.microsoft.com")) {
     return false;
   }
 
   return frameAncestorsURL;
 }
 
-function isFacebookURL (url) {
-  const parsedUrl = new URL(url);
-  for (let facebookHostRE of facebookHostREs) {
-    if (facebookHostRE.test(parsedUrl.host)) {
+function safeParseUrl(url) {
+  try {
+    if (typeof url !== "string" || url === "") {
+      return null;
+    }
+    return new URL(url);
+  } catch (_e) {
+    return null;
+  }
+}
+
+function isMicrosoftURL (url) {
+  const parsedUrl = safeParseUrl(url);
+  if (!parsedUrl || !parsedUrl.host) {
+    return false;
+  }
+  const host = parsedUrl.host.toLowerCase();
+  for (let microsoftHostRE of microsoftHostREs) {
+    if (microsoftHostRE.test(host)) {
       return true;
     }
   }
@@ -381,46 +454,75 @@ function isFacebookURL (url) {
 }
 
 // TODO: refactor parsedUrl "up" so new URL doesn't have to be called so much
-// TODO: refactor fbcStorage "up" so browser.storage.local.get doesn't have to be called so much
-async function addDomainToFacebookContainer (url) {
-  const fbcStorage = await browser.storage.local.get();
+// TODO: refactor megahardStorage "up" so browser.storage.local.get doesn't have to be called so much
+async function addDomainToMegahardContainer (url) {
   const rootDomain = getRootDomain(url);
-  fbcStorage.domainsAddedToFacebookContainer.push(rootDomain);
-  await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+  if (!rootDomain) {
+    return false;
+  }
+  const megahardStorage = await browser.storage.local.get();
+  if (!Array.isArray(megahardStorage.domainsAddedToMegahardContainer)) {
+    megahardStorage.domainsAddedToMegahardContainer = [];
+  }
+  if (megahardStorage.domainsAddedToMegahardContainer.includes(rootDomain)) {
+    return false;
+  }
+  megahardStorage.domainsAddedToMegahardContainer.push(rootDomain);
+  await browser.storage.local.set({"domainsAddedToMegahardContainer": megahardStorage.domainsAddedToMegahardContainer});
+  return true;
 }
 
-async function removeDomainFromFacebookContainer (domain) {
-  const fbcStorage = await browser.storage.local.get();
-  const domainIndex = fbcStorage.domainsAddedToFacebookContainer.indexOf(domain);
-  fbcStorage.domainsAddedToFacebookContainer.splice(domainIndex, 1);
-  await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
+async function removeDomainFromMegahardContainer (domain) {
+  if (!domain) {
+    return false;
+  }
+  const megahardStorage = await browser.storage.local.get();
+  if (!Array.isArray(megahardStorage.domainsAddedToMegahardContainer)) {
+    return false;
+  }
+  const domainIndex = megahardStorage.domainsAddedToMegahardContainer.indexOf(domain);
+  if (domainIndex === -1) {
+    return false;
+  }
+  megahardStorage.domainsAddedToMegahardContainer.splice(domainIndex, 1);
+  await browser.storage.local.set({"domainsAddedToMegahardContainer": megahardStorage.domainsAddedToMegahardContainer});
+  return true;
 }
 
-async function isAddedToFacebookContainer (url) {
-  const fbcStorage = await browser.storage.local.get();
+async function isAddedToMegahardContainer (url) {
   const rootDomain = getRootDomain(url);
-  if (fbcStorage.domainsAddedToFacebookContainer.includes(rootDomain)) {
+  if (!rootDomain) {
+    return false;
+  }
+  const megahardStorage = await browser.storage.local.get();
+  if (!Array.isArray(megahardStorage.domainsAddedToMegahardContainer)) {
+    return false;
+  }
+  if (megahardStorage.domainsAddedToMegahardContainer.includes(rootDomain)) {
     return true;
   }
   return false;
 }
 
 async function shouldContainInto (url, tab) {
-  if (!url.startsWith("http")) {
+  if (typeof url !== "string" || !/^https?:\/\//i.test(url)) {
     // we only handle URLs starting with http(s)
     return false;
   }
+  if (!tab || typeof tab.cookieStoreId === "undefined") {
+    return false;
+  }
 
-  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
+  const hasBeenAddedToMegahardContainer = await isAddedToMegahardContainer(url);
 
-  if (isFacebookURL(url) || hasBeenAddedToFacebookContainer) {
-    if (tab.cookieStoreId !== facebookCookieStoreId) {
-      // Facebook-URL outside of Facebook Container Tab
-      // Should contain into Facebook Container
-      return facebookCookieStoreId;
+  if (isMicrosoftURL(url) || hasBeenAddedToMegahardContainer) {
+    if (tab.cookieStoreId !== megahardCookieStoreId) {
+      // Microsoft-URL outside of megahaRd Container Tab
+      // Should contain into megahaRd Container
+      return megahardCookieStoreId;
     }
-  } else if (tab.cookieStoreId === facebookCookieStoreId) {
-    // Non-Facebook-URL inside Facebook Container Tab
+  } else if (tab.cookieStoreId === megahardCookieStoreId) {
+    // Non-Microsoft-URL inside megahaRd Container Tab
     // Should contain into Default Container
     return "firefox-default";
   }
@@ -433,9 +535,11 @@ async function maybeReopenAlreadyOpenTabs () {
     if (changeInfo.url && tabsWaitingToLoad[tabId]) {
       // Tab we're waiting for switched it's url, maybe we reopen
       delete tabsWaitingToLoad[tabId];
-      maybeReopenTab(tab.url, tab);
+      if (tab && tab.url) {
+        maybeReopenTab(tab.url, tab).catch(() => false);
+      }
     }
-    if (tab.status === "complete" && tabsWaitingToLoad[tabId]) {
+    if (tab && tab.status === "complete" && tabsWaitingToLoad[tabId]) {
       // Tab we're waiting for completed loading
       delete tabsWaitingToLoad[tabId];
     }
@@ -447,7 +551,10 @@ async function maybeReopenAlreadyOpenTabs () {
 
   // Query for already open Tabs
   const tabs = await browser.tabs.query({});
-  tabs.map(async tab => {
+  tabs.map(tab => {
+    if (!tab || typeof tab.url !== "string") {
+      return;
+    }
     if (tab.url === "about:blank") {
       if (tab.status !== "loading") {
         return;
@@ -464,111 +571,128 @@ async function maybeReopenAlreadyOpenTabs () {
       }
     } else {
       // Tab already has an url, maybe we reopen
-      maybeReopenTab(tab.url, tab);
+      maybeReopenTab(tab.url, tab).catch(() => false);
     }
   });
 }
 
-function stripFbclid(url) {
-  const strippedUrl = new URL(url);
-  strippedUrl.searchParams.delete("fbclid");
-  return strippedUrl.href;
+function stripMsclkid(url) {
+  const parsed = safeParseUrl(url);
+  if (!parsed) {
+    return url;
+  }
+  parsed.searchParams.delete("msclkid");
+  return parsed.href;
 }
 
 async function getActiveTab () {
-  const [activeTab] = await browser.tabs.query({currentWindow: true, active: true});
-  return activeTab;
+  const tabs = await browser.tabs.query({currentWindow: true, active: true});
+  return tabs && tabs[0] ? tabs[0] : null;
 }
 
 async function windowFocusChangedListener (windowId) {
   if (windowId !== browser.windows.WINDOW_ID_NONE) {
     const activeTab = await getActiveTab();
-    updateBrowserActionIcon(activeTab);
+    if (activeTab) {
+      updateBrowserActionIcon(activeTab).catch(() => false);
+    }
   }
 }
 
 function tabUpdateListener (tabId, changeInfo, tab) {
-  updateBrowserActionIcon(tab);
-}
-
-/*
-async function areAllStringsTranslated () {
-  const browserUILanguage = browser.i18n.getUILanguage();
-  if (browserUILanguage && browserUILanguage.startsWith("en")) {
-    return true;
+  if (!tab) {
+    return;
   }
-  const enMessagesPath = browser.extension.getURL("_locales/en/messages.json");
-  const resp = await fetch(enMessagesPath);
-  const enMessages = await resp.json();
-
-  // TODO: Check Pontoon for available translations instead of checking
-  // messages files
-  for (const key of Object.keys(enMessages)){
-    // TODO: this doesn't check if the add-on messages are translated into
-    // any other browser.i18n.getAcceptedLanguages() options ... but then,
-    // I don't think browser.i18n let's us get messages in anything but the
-    // primary language anyway? Does browser.i18n.getMessage automatically
-    // check for secondary languages?
-    const enMessage = enMessages[key].message;
-    const translatedMessage = browser.i18n.getMessage(key);
-    if (translatedMessage == enMessage) {
-      return false;
-    }
+  if (changeInfo && (changeInfo.status || changeInfo.url)) {
+    updateBrowserActionIcon(tab).catch(() => false);
   }
-  return true;
 }
-*/
 
 async function updateBrowserActionIcon (tab) {
+  if (!tab) {
+    return;
+  }
 
-  browser.browserAction.setBadgeText({text: ""});
+  if (typeof tab.id !== "undefined") {
+    browser.browserAction.setBadgeText({text: "", tabId: tab.id});
+  } else {
+    browser.browserAction.setBadgeText({text: ""});
+  }
 
-  const url = tab.url;
-  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(url);
+  const url = typeof tab.url === "string" ? tab.url : "";
+  if (!url) {
+    await browser.storage.local.set({"CURRENT_PANEL": "no-trackers"});
+    return;
+  }
+  const hasBeenAddedToMegahardContainer = await isAddedToMegahardContainer(url);
   const aboutPageURLCheck = url.startsWith("about:");
 
-  if (isFacebookURL(url)) {
+  if (isMicrosoftURL(url)) {
     // TODO: change panel logic from browser.storage to browser.runtime.onMessage
     // so the panel.js can "ask" background.js which panel it should show
-    browser.storage.local.set({"CURRENT_PANEL": "on-facebook"});
-    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
-  } else if (hasBeenAddedToFacebookContainer) {
-    browser.storage.local.set({"CURRENT_PANEL": "in-fbc"});
+    await browser.storage.local.set({"CURRENT_PANEL": "on-microsoft"});
+    if (typeof tab.id !== "undefined") {
+      browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
+    }
+  } else if (hasBeenAddedToMegahardContainer) {
+    await browser.storage.local.set({"CURRENT_PANEL": "in-megahard"});
+    if (typeof tab.id !== "undefined") {
+      browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
+    }
   } else if (aboutPageURLCheck) {
     // Sets CURRENT_PANEL if current URL is an internal about: page
-    browser.storage.local.set({"CURRENT_PANEL": "about"});
+    await browser.storage.local.set({"CURRENT_PANEL": "about"});
+    if (typeof tab.id !== "undefined") {
+      browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
+    }
   } else {
     const tabState = tabStates[tab.id];
     const panelToShow = (tabState && tabState.trackersDetected) ? "trackers-detected" : "no-trackers";
-    browser.storage.local.set({"CURRENT_PANEL": panelToShow});
-    browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
-    browser.browserAction.setBadgeBackgroundColor({color: "#6200A4"});
+    await browser.storage.local.set({"CURRENT_PANEL": panelToShow});
+    if (typeof tab.id !== "undefined") {
+      browser.browserAction.setPopup({tabId: tab.id, popup: "./panel.html"});
+    }
+    browser.browserAction.setBadgeBackgroundColor({color: "#0078D4"});
     if ( panelToShow === "trackers-detected" ) {
       browser.browserAction.setBadgeText({text: "!"});
     }
   }
 }
 
-async function containFacebook (request) {
+async function containMicrosoft (request) {
+  if (!request || typeof request.tabId === "undefined") {
+    return;
+  }
   if (tabsWaitingToLoad[request.tabId]) {
     // Cleanup just to make sure we don't get a race-condition with startup reopening
     delete tabsWaitingToLoad[request.tabId];
   }
 
-  // Listen to requests and open Facebook into its Container,
+  // Listen to requests and open Microsoft into its Container,
   // open other sites into the default tab context
   if (request.tabId === -1) {
     // Request doesn't belong to a tab
     return;
   }
 
-  const tab = await browser.tabs.get(request.tabId);
-  updateBrowserActionIcon(tab);
+  let tab = null;
+  try {
+    tab = await browser.tabs.get(request.tabId);
+  } catch (_e) {
+    // Tab closed mid-flight
+    return;
+  }
+  if (!tab) {
+    return;
+  }
+  updateBrowserActionIcon(tab).catch(() => false);
 
-  const url = new URL(request.url);
-  const urlSearchParm = new URLSearchParams(url.search);
-  if (urlSearchParm.has("fbclid")) {
-    return {redirectUrl: stripFbclid(request.url)};
+  const parsedUrl = safeParseUrl(request.url);
+  if (!parsedUrl) {
+    return;
+  }
+  if (parsedUrl.searchParams.has("msclkid")) {
+    return {redirectUrl: stripMsclkid(request.url)};
   }
 
   return maybeReopenTab(request.url, tab, request);
@@ -576,7 +700,18 @@ async function containFacebook (request) {
 
 // Lots of this is borrowed from old blok code:
 // https://github.com/mozilla/blok/blob/main/src/js/background.js
-async function blockFacebookSubResources (requestDetails) {
+function notifyContentScript(tabId, message) {
+  try {
+    const result = browser.tabs.sendMessage(tabId, message);
+    if (result && typeof result.catch === "function") {
+      result.catch(() => false);
+    }
+  } catch (_e) {
+    // No content script in this tab (system pages, unloaded tabs, etc.)
+  }
+}
+
+async function blockMicrosoftSubResources (requestDetails) {
   if (requestDetails.type === "main_frame") {
     tabStates[requestDetails.tabId] = { trackersDetected: false };
     return {};
@@ -586,44 +721,44 @@ async function blockFacebookSubResources (requestDetails) {
     return {};
   }
 
-  const urlIsFacebook = isFacebookURL(requestDetails.url);
-  // If this request isn't going to Facebook, let's return {} ASAP
-  if (!urlIsFacebook) {
+  const urlIsMicrosoft = isMicrosoftURL(requestDetails.url);
+  // If this request isn't going to Microsoft, let's return {} ASAP
+  if (!urlIsMicrosoft) {
     return {};
   }
 
-  const originUrlIsFacebook = isFacebookURL(requestDetails.originUrl);
+  const originUrlIsMicrosoft = isMicrosoftURL(requestDetails.originUrl);
 
-  if (originUrlIsFacebook) {
-    const message = {msg: "facebook-domain"};
+  if (originUrlIsMicrosoft) {
+    const message = {msg: "microsoft-domain"};
     // Send the message to the content_script
-    browser.tabs.sendMessage(requestDetails.tabId, message);
+    notifyContentScript(requestDetails.tabId, message);
     return {};
   }
 
-  const frameAncestorUrlIsFacebookApps = topFrameUrlIsFacebookApps(requestDetails.frameAncestors);
+  const frameAncestorUrlIsMicrosoftApps = topFrameUrlIsMicrosoftApps(requestDetails.frameAncestors);
 
-  if (frameAncestorUrlIsFacebookApps) {
-    const message = {msg: "facebook-domain"};
+  if (frameAncestorUrlIsMicrosoftApps) {
+    const message = {msg: "microsoft-domain"};
     // Send the message to the content_script
-    browser.tabs.sendMessage(requestDetails.tabId, message);
+    notifyContentScript(requestDetails.tabId, message);
     return {};
   }
 
-  const hasBeenAddedToFacebookContainer = await isAddedToFacebookContainer(requestDetails.originUrl);
+  const hasBeenAddedToMegahardContainer = await isAddedToMegahardContainer(requestDetails.originUrl);
 
-  if ( urlIsFacebook && !originUrlIsFacebook ) {
-    if (!hasBeenAddedToFacebookContainer ) {
-      const message = {msg: "blocked-facebook-subresources"};
+  if ( urlIsMicrosoft && !originUrlIsMicrosoft ) {
+    if (!hasBeenAddedToMegahardContainer ) {
+      const message = {msg: "blocked-microsoft-subresources"};
       // Send the message to the content_script
-      browser.tabs.sendMessage(requestDetails.tabId, message);
+      notifyContentScript(requestDetails.tabId, message);
 
       tabStates[requestDetails.tabId] = { trackersDetected: true };
       return {cancel: true};
     } else {
-      const message = {msg: "allowed-facebook-subresources"};
+      const message = {msg: "allowed-microsoft-subresources"};
       // Send the message to the content_script
-      browser.tabs.sendMessage(requestDetails.tabId, message);
+      notifyContentScript(requestDetails.tabId, message);
       return {};
     }
   }
@@ -643,25 +778,32 @@ function setupWebRequestListeners() {
   },{urls: ["<all_urls>"], types: ["main_frame"]});
 
   // Add the main_frame request listener
-  browser.webRequest.onBeforeRequest.addListener(containFacebook, {urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
+  browser.webRequest.onBeforeRequest.addListener(containMicrosoft, {urls: ["<all_urls>"], types: ["main_frame"]}, ["blocking"]);
 
   // Add the sub-resource request listener
-  browser.webRequest.onBeforeRequest.addListener(blockFacebookSubResources, {urls: ["<all_urls>"]}, ["blocking"]);
+  browser.webRequest.onBeforeRequest.addListener(blockMicrosoftSubResources, {urls: ["<all_urls>"]}, ["blocking"]);
 }
 
 function setupWindowsAndTabsListeners() {
   browser.tabs.onUpdated.addListener(tabUpdateListener);
-  browser.tabs.onRemoved.addListener(tabId => delete tabStates[tabId] );
+  browser.tabs.onRemoved.addListener(tabId => {
+    delete tabStates[tabId];
+    delete canceledRequests[tabId];
+    delete tabsWaitingToLoad[tabId];
+  });
   browser.windows.onFocusChanged.addListener(windowFocusChangedListener);
 }
 
 async function checkIfTrackersAreDetected(sender) {
   const activeTab = await getActiveTab();
+  if (!activeTab || !sender || !sender.tab) {
+    return false;
+  }
   const tabState = tabStates[activeTab.id];
-  const trackersDetected = (tabState && tabState.trackersDetected);
+  const trackersDetected = Boolean(tabState && tabState.trackersDetected);
   const onActiveTab = (activeTab.id === sender.tab.id);
   // Check if trackers were blocked,scoped to the active tab.
-  return (onActiveTab && trackersDetected);  
+  return Boolean(onActiveTab && trackersDetected);
 }
 
 (async function init () {
@@ -673,47 +815,64 @@ async function checkIfTrackersAreDetected(sender) {
     await setupContainer();
   } catch (error) {
     // TODO: Needs backup strategy
-    // See https://github.com/mozilla/contain-facebook/issues/23
-    // Sometimes this add-on is installed but doesn't get a facebookCookieStoreId ?
-    // eslint-disable-next-line no-console
+    // Sometimes this add-on is installed but doesn't get a megahardCookieStoreId ?
     console.error(error);
     return;
   }
-  clearFacebookCookies();
-  generateFacebookHostREs();
+  clearMicrosoftCookies().catch(() => false);
+  generateMicrosoftHostREs();
   setupWebRequestListeners();
   setupWindowsAndTabsListeners();
 
   async function messageHandler(request, sender) {
+    if (!request || typeof request.message === "undefined") {
+      return undefined;
+    }
     switch (request.message) {
     case "what-sites-are-added":
-      return browser.storage.local.get().then(fbcStorage => fbcStorage.domainsAddedToFacebookContainer);
+      return browser.storage.local.get().then(megahardStorage => {
+        if (Array.isArray(megahardStorage.domainsAddedToMegahardContainer)) {
+          return megahardStorage.domainsAddedToMegahardContainer;
+        }
+        return [];
+      });
+    case "get-microsoft-domains":
+      // Single source of truth for the contained Microsoft-owned domains.
+      return [...MICROSOFT_DOMAINS].sort();
     case "remove-domain-from-list":
-      removeDomainFromFacebookContainer(request.removeDomain).then( results => results );
+      await removeDomainFromMegahardContainer(request.removeDomain);
       break;
-    case "add-domain-to-list":
-      addDomainToFacebookContainer(sender.url).then( results => results);
+    case "add-domain-to-list": {
+      // Prefer explicit page URL from the caller (extension iframes report
+      // their own moz-extension:// URL as sender.url). Fall back to the
+      // sender tab URL for backwards compatibility.
+      const pageUrl = request.url || (sender && sender.tab && sender.tab.url) || (sender && sender.url);
+      await addDomainToMegahardContainer(pageUrl);
       break;
+    }
     case "get-root-domain":
       return getRootDomain(request.url);
     case "get-relay-enabled":
       return relayAddonEnabled;
     case "update-settings":
-      updateSettings(request.settings);
+      await updateSettings(request.settings);
       break;
     case "check-settings":
-      return checkSettings();
+      return checkSettings(request.setting);
     case "are-trackers-detected":
       return await checkIfTrackersAreDetected(sender);
     default:
-      throw new Error("Unexpected message!");
+      console.warn("Unexpected message!", request && request.message);
+      return undefined;
     }
   }
 
   browser.runtime.onMessage.addListener(messageHandler);
 
-  maybeReopenAlreadyOpenTabs();
+  maybeReopenAlreadyOpenTabs().catch(() => false);
 
   const activeTab = await getActiveTab();
-  updateBrowserActionIcon(activeTab);
+  if (activeTab) {
+    updateBrowserActionIcon(activeTab).catch(() => false);
+  }
 })();

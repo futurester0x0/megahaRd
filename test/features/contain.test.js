@@ -1,19 +1,19 @@
 describe("Contain", () => {
-  let webExtension, background, facebookContainer;
+  let webExtension, background, megahardContainer;
 
   beforeEach(async () => {
     webExtension = await loadWebExtension();
     background = webExtension.background;
-    facebookContainer = webExtension.facebookContainer;
+    megahardContainer = webExtension.megahardContainer;
   });
 
-  describe("All requests stripped of fbclid param", () => {
+  describe("All requests stripped of msclkid param", () => {
     const responses = {};
     beforeEach(async () => {
     });
 
-    it("should redirect non-Facebook urls with fbclid stripped", async () => {
-      await background.browser.tabs._create({url: "https://github.com/?fbclid=123"}, {responses});
+    it("should redirect non-Microsoft urls with msclkid stripped", async () => {
+      await background.browser.tabs._create({url: "https://github.com/?msclkid=123"}, {responses});
       expect(background.browser.tabs.create).to.not.have.been.called;
       const [promise] = responses.webRequest.onBeforeRequest;
       const result = await promise;
@@ -21,36 +21,36 @@ describe("Contain", () => {
     });
 
     it("should preserve other url params", async () => {
-      await background.browser.tabs._create({url: "https://github.com/mozilla/contain-facebook/issues?q=is%3Aissue+is%3Aopen+track&fbclid=123"}, {responses});
+      await background.browser.tabs._create({url: "https://github.com/futurester0x0/megahaRd/issues?q=is%3Aissue+is%3Aopen+track&msclkid=123"}, {responses});
       expect(background.browser.tabs.create).to.not.have.been.called;
       const [promise] = responses.webRequest.onBeforeRequest;
       const result = await promise;
-      expect(result.redirectUrl).to.equal("https://github.com/mozilla/contain-facebook/issues?q=is%3Aissue+is%3Aopen+track");
+      expect(result.redirectUrl).to.equal("https://github.com/futurester0x0/megahaRd/issues?q=is%3Aissue+is%3Aopen+track");
     });
 
-    it("should redirect Facebook urls with fbclid stripped", async () => {
-      await background.browser.tabs._create({url: "https://www.facebook.com/help/securitynotice?fbclid=123"}, {responses});
+    it("should redirect Microsoft urls with msclkid stripped", async () => {
+      await background.browser.tabs._create({url: "https://www.microsoft.com/help/securitynotice?msclkid=123"}, {responses});
       expect(background.browser.tabs.create).to.not.have.been.called;
       const [promise] = responses.webRequest.onBeforeRequest;
       const result = await promise;
-      expect(result.redirectUrl).to.equal("https://www.facebook.com/help/securitynotice");
+      expect(result.redirectUrl).to.equal("https://www.microsoft.com/help/securitynotice");
     });
   });
 
-  describe("Incoming requests to Facebook Domains outside of Facebook Container", () => {
+  describe("Incoming requests to Microsoft Domains outside of megahaRd Container", () => {
     const responses = {};
     beforeEach(async () => {
       await background.browser.tabs._create({
-        url: "https://www.facebook.com"
+        url: "https://www.microsoft.com"
       }, {
         responses
       });
     });
 
-    it("should be reopened in Facebook Container", async () => {
+    it("should be reopened in megahaRd Container", async () => {
       expect(background.browser.tabs.create).to.have.been.calledWithMatch({
-        url: "https://www.facebook.com",
-        cookieStoreId: facebookContainer.cookieStoreId
+        url: "https://www.microsoft.com",
+        cookieStoreId: megahardContainer.cookieStoreId
       });
     });
 
@@ -61,12 +61,12 @@ describe("Contain", () => {
     });
   });
 
-  describe("Incoming requests to Non-Facebook Domains inside Facebook Container", () => {
+  describe("Incoming requests to Non-Microsoft Domains inside megahaRd Container", () => {
     const responses = {};
     beforeEach(async () => {
       await background.browser.tabs._create({
         url: "https://example.com",
-        cookieStoreId: facebookContainer.cookieStoreId
+        cookieStoreId: megahardContainer.cookieStoreId
       }, {
         responses
       });
@@ -91,7 +91,7 @@ describe("Contain", () => {
     const responses = {};
     beforeEach(async () => {
       await background.browser.tabs._create({
-        url: "ftp://www.facebook.com"
+        url: "ftp://www.microsoft.com"
       }, {
         responses
       });
@@ -110,7 +110,7 @@ describe("Contain", () => {
     const responses = {};
     beforeEach(async () => {
       await background.browser.tabs._create({
-        url: "https://www.facebook.com",
+        url: "https://www.microsoft.com",
         id: -1
       }, {
         responses

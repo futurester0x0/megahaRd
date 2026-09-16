@@ -1,29 +1,29 @@
 {
-  "in-fbc-subhead": {
-    "message": "$URL$ е во Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ е во megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "on-facebook-subhead": {
-    "message": "На Facebook и страници во границите на Facebook Container",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "На Microsoft и страници во границите на megahaRd",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "Користење на Facebook Container",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Користење на megahaRd",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "btn-allow": {
     "message": "Дозволи",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "Откажи",
@@ -46,20 +46,20 @@
     "description": "This is alternative text for the back arrow button."
   },
   "no-trackers-subhead": {
-    "message": "Не се откриени следачи на Facebook",
+    "message": "Не се откриени следачи на Microsoft",
     "description": ""
   },
   "learn-more": {
     "message": "Дознајте повеќе",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
   "trackers-detected-subhead": {
-    "message": "Ве заштитивме од Facebook.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "Ве заштитивме од Microsoft.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "sites-included": {
     "message": "ВКЛУЧЕНИ СТРАНИЦИ",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "Ниеден",
@@ -67,18 +67,18 @@
   },
   "sites-allowed": {
     "message": "ДОЗВОЛЕНИ СТРАНИЦИ",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "remove": {
     "message": "Отстрани",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Дозволете Facebook да ве следи тука?",
+    "message": "Дозволете Microsoft да ве следи тука?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Ако сакате да се логирате со Facebook, тогаш Facebook ќе може да ја следи вашата активност на оваа страница. Ова може да им помогне да изградат поцелосна слика за вашиот онлајн живот.",
+    "message": "Ако сакате да се логирате со Microsoft, тогаш Microsoft ќе може да ја следи вашата активност на оваа страница. Ова може да им помогне да изградат поцелосна слика за вашиот онлајн живот.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {

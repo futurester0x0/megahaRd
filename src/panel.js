@@ -1,7 +1,16 @@
-// TODO
-// Send message to background.js the first time that onboarding "Done" button is clicked and onboarding has been completed.
+// megahaRd dashboard panel — single-screen, no onboarding.
+//
+// background.js drives which status we show via storage CURRENT_PANEL:
+//   "on-microsoft" | "in-megahard" | "about" | "trackers-detected" | "no-trackers"
+// This file renders all of them as one scrollable dashboard:
+//   status card + current-site action + site lists + footer links.
+//
+// Message contract with background.js (must keep in sync):
+//   "what-sites-are-added" -> [domains]
+//   "remove-domain-from-list" {removeDomain}
+//   "get-root-domain" {url} -> root domain
+// Custom-site adds write storage directly (same shape background.js uses).
 
-// removes elements (if there are any) from the panel;
 const clearPanel = (wrapper) => {
   const wrapperHeight = wrapper.clientHeight;
   wrapper.style.minHeight = wrapperHeight;
@@ -11,67 +20,59 @@ const clearPanel = (wrapper) => {
   }
 };
 
-
-const setUpPanel = (panelId) => {
+const setUpPanel = () => {
   const page = document.body;
   clearPanel(page);
 
   const fragment = document.createDocumentFragment();
-  fragment["id"] = panelId;
 
   // Clear Panel Notification Dot
-  browser.browserAction.setBadgeText({text: ""});
+  try {
+    browser.browserAction.setBadgeText({text: ""});
+  } catch (_e) {
+    // Popup context may not allow badge updates; ignore.
+  }
 
   return { page, fragment };
 };
 
-
-// adds "Facebook Container" to top of all panels
+// Hero header: brand mark + localized "megahaRd" headline.
+// The logo img carries no uiMessage class so localization leaves it alone.
 const addHeader = (wrapper) => {
+  const hero = document.createElement("div");
+  hero.classList.add("dashboard-hero");
+  const logo = document.createElement("img");
+  logo.classList.add("dashboard-logo");
+  logo.src = browser.runtime.getURL("img/icon.svg");
+  logo.alt = "";
+  hero.appendChild(logo);
   const el = document.createElement("h1");
-  el["id"] = "facebookContainer";
-  setClassAndAppend(wrapper, el);
+  el.id = "megahardContainer";
+  el.classList.add("uiMessage", "dashboard-title");
+  hero.appendChild(el);
+  wrapper.appendChild(hero);
   return el;
 };
 
-
-// adds "uiMessage" class to element and appends.
-const setClassAndAppend = (wrapper, el) => {
-  el.classList.add("uiMessage");
-  wrapper.appendChild(el);
-};
-
-
-// add "uiMessage" class to element and appends.
 const addSubhead = (wrapper, panelId) => {
-  if (panelId === "about") { panelId = "no-trackers"; }
-  const elemId = `${panelId}-subhead`;
+  const normalizedPanelId = (panelId === "about") ? "no-trackers" : panelId;
+  const elemId = `${normalizedPanelId}-subhead`;
   const el = document.createElement("h2");
-  el["id"] = elemId;
-  setClassAndAppend(wrapper, el);
-  el.classList.add(elemId);
+  el.id = elemId;
+  // Subhead class drives the ::before fence icon in panel.css.
+  el.classList.add("uiMessage", elemId);
+  wrapper.appendChild(el);
   return el;
 };
 
-
-// makes lighter weight sub-heads for sites allowed and sites included lists
-const addLightSubhead = (wrapper, stringId) => {
-  const el = document.createElement("h3");
-  el["id"] = stringId;
-  setClassAndAppend(wrapper, el);
-  return el;
-};
-
-
-// adds a block of text to wrapper
 const addParagraph = (wrapper, stringId) => {
   const el = document.createElement("p");
-  el["id"] = stringId;
-  setClassAndAppend(wrapper, el);
+  el.id = stringId;
+  el.classList.add("uiMessage");
+  wrapper.appendChild(el);
+  return el;
 };
 
-
-// create and append div to panel wrapper
 const addDiv = (wrapper, className) => {
   const el = document.createElement("div");
   el.classList.add(className);
@@ -79,46 +80,21 @@ const addDiv = (wrapper, className) => {
   return el;
 };
 
-
-// creates grey Facebook text. Grey fence icon is set in CSS.
-const addFacebookAndIcon = async () => {
+// creates grey Microsoft text. Grey fence icon is set in CSS.
+const addMicrosoftAndIcon = async () => {
   const el = document.createElement("p");
-  el.innerText = "Facebook";
-  const browserInfo = await browser.runtime.getBrowserInfo();
-  if (parseInt(browserInfo.version) < 67) {
-    el.classList.add("Facebook-blue-text");
-    return el;
-  }
-  el.classList.add("Facebook-text");
+  el.innerText = "Microsoft";
+  el.classList.add("Microsoft-text");
   return el;
-};
-
-const addFullWidthButton = (fragment, listenerClass) => {
-  const button = document.createElement("button");
-  button.classList.add("highlight-on-hover", listenerClass);
-
-  let contentWrapper = addDiv(fragment, "fw-bottom-btn");
-  contentWrapper.appendChild(button);
-  return button;
-};
-
-const addTooltip = (wrapper, stringId) => {
-  const div = document.createElement("div");
-  div["id"] = stringId;
-  setClassAndAppend(wrapper, div);
-};
-
-
-const addSpan = (wrapper, stringId) => {
-  const span = document.createElement("span");
-  span["id"] = stringId;
-  setClassAndAppend(wrapper, span);
 };
 
 const getActiveRootDomainFromBackground = async() => {
   // Get active page URL
   const tabsQueryResult = await browser.tabs.query({currentWindow: true, active: true});
-  const currentActiveTab = tabsQueryResult[0];
+  const currentActiveTab = tabsQueryResult && tabsQueryResult[0];
+  if (!currentActiveTab || typeof currentActiveTab.url !== "string") {
+    return null;
+  }
 
   // Send request to background to parse URL via PSL
   const backgroundResp = await browser.runtime.sendMessage({
@@ -130,8 +106,8 @@ const getActiveRootDomainFromBackground = async() => {
 };
 
 const isSiteInContainer = async(panelId) => {
-  if (panelId === "on-facebook") {
-    // Site is on default FBC domain. Show the "remove site" button, in a disabled state.
+  if (panelId === "on-microsoft") {
+    // Site is on a default megahaRd domain. Show the "remove site" button, in a disabled state.
     return true;
   }
 
@@ -139,163 +115,167 @@ const isSiteInContainer = async(panelId) => {
     message: "what-sites-are-added"
   });
 
+  if (!Array.isArray(addedSitesList)) {
+    return false;
+  }
+
   const activeRootDomain = await getActiveRootDomainFromBackground();
+  if (!activeRootDomain) {
+    return false;
+  }
 
   if (addedSitesList.includes(activeRootDomain)) {
     return true;
   }
+  return false;
 };
 
-const addLearnHowFBCWorksButton = async (fragment) => {
-  let button = addFullWidthButton (fragment, "open-onboarding");
-  addSpan(button, "how-fbc-works");
-
-  button = addFullWidthButton(fragment, "open-allowed-sites");
-  addSpan(button, "sites-added-subhead");
-};
-
-const addCustomSiteButton = async (fragment, panelId) => {
-  const shouldShowRemoveSiteButton = await isSiteInContainer(panelId);
-  let button;
-  if (shouldShowRemoveSiteButton) {
-    button = addFullWidthButton(fragment, "remove-site-from-container");
-    addSpan(button, "button-remove-site");
-    addTooltip(button, "button-remove-site-tooltip");
+const addSiteToContainer = async () => {
+  const activeRootDomain = await getActiveRootDomainFromBackground();
+  if (!activeRootDomain) {
+    window.close();
     return;
   }
-  button = addFullWidthButton(fragment, "add-site-to-container");
-  addSpan(button, "button-allow-site");
+  const megahardStorage = await browser.storage.local.get();
+  const list = Array.isArray(megahardStorage.domainsAddedToMegahardContainer)
+    ? megahardStorage.domainsAddedToMegahardContainer
+    : [];
+  if (!list.includes(activeRootDomain)) {
+    list.push(activeRootDomain);
+    await browser.storage.local.set({"domainsAddedToMegahardContainer": list});
+  }
+  browser.tabs.reload();
+  window.close();
 };
 
-const setCustomSiteButtonEvent = async (panelId) => {
-  const shouldShowRemoveSiteButton = await isSiteInContainer(panelId);
-
-  if (panelId === "on-facebook") {
-    const removeSiteFromContainerLink = document.querySelector(".remove-site-from-container");
-    removeSiteFromContainerLink.classList.add("disabled-button");
-    return;
+const removeSiteFromContainer = async (siteName) => {
+  let domainToRemove = siteName;
+  if (!domainToRemove) {
+    domainToRemove = await getActiveRootDomainFromBackground();
   }
-
-  if (shouldShowRemoveSiteButton) {
-    const removeSiteFromContainerLink = document.querySelector(".remove-site-from-container");
-    removeSiteFromContainerLink.addEventListener(
-      "click", async () => {
-        const activeRootDomain = await getActiveRootDomainFromBackground();
-        buildRemoveSitePanel(activeRootDomain);
-      }
-    );
-    return;
-  }
-
-  const addSiteToContainerLink = document.querySelector(".add-site-to-container");
-
-  if (panelId === "about") {
-    // If on internal About: page, set button to disabled.
-    addSiteToContainerLink.classList.add("disabled-button");
-    return;
-  }
-
-  // Active site is eligable to be added to the container
-  addSiteToContainerLink.addEventListener("click", async () => buildAddSitePanel());
-};
-
-// adds bottom navigation buttons to onboarding panels
-const setNavButtons = (wrapper, button1Id, button2Id, panelId) => {
-  const buttonWrapper = addDiv(wrapper, "bottom-btns");
-  buttonWrapper.classList.add(panelId);
-
-  [button1Id, button2Id].forEach(id => {
-    const button = document.createElement("button");
-    button.classList.add("uiMessage", "bottom-btn");
-    button["id"] = id;
-    buttonWrapper.appendChild(button);
-  });
-};
-
-
-// attaches click listeners to all ".open-onboarding" elements.
-const addOnboardingListeners = (res) => {
-  document.querySelectorAll(".bottom-btn, .btn-return").forEach(btn => {
-    btn.addEventListener("click", (e) => {
-      handleOnboardingClicks(e, res);
+  if (domainToRemove) {
+    await browser.runtime.sendMessage({
+      message: "remove-domain-from-list",
+      removeDomain: domainToRemove
     });
-  });
-};
-
-
-// attaches click listeners to all ".site-added" elements.
-const addDeleteSiteListeners = () => {
-  document.querySelectorAll(".site-added").forEach(btn => {
-    btn.addEventListener("click", async (e) => {
-      // TODO: refactor to remove the domain straight from browser.storage.local?
-
-      await browser.runtime.sendMessage({
-        message: "remove-domain-from-list",
-        removeDomain: e.dataset.domain
-      });
-    });
-  });
+  }
+  browser.tabs.reload();
+  window.close();
 };
 
 const addLearnMoreLink = (fragment) => {
   const link = document.createElement("a");
-  link["id"] = "learn-more";
-  link.classList.add("open-sumo");
-  link["rel"] = "noopener noreferrer";
-  link["href"] = "https://support.mozilla.org/kb/facebook-container-prevent-facebook-tracking";
-  // need Facebook Container SUMO url. // need UTM params? // open in new or same window?
-  setClassAndAppend(fragment, link);
+  link.id = "learn-more";
+  link.classList.add("uiMessage", "open-sumo");
+  link.rel = "noopener noreferrer";
+  link.href = "https://support.mozilla.org/kb/containers";
+  fragment.appendChild(link);
   link.addEventListener("click", (e) => {
     e.preventDefault();
     browser.tabs.create({
-      url: "https://support.mozilla.org/kb/facebook-container-prevent-facebook-tracking"
+      url: "https://support.mozilla.org/kb/containers"
     });
     window.close();
   });
 };
 
-
-// onboarding panel navigation
-const handleOnboardingClicks = async(e, res) => {
-  const el = e.target;
-  const buttonId = el.id;
-
-  if (buttonId === "btn-cancel") {
+const addRepoLink = (fragment) => {
+  const link = document.createElement("a");
+  link.classList.add("dashboard-footer-link");
+  link.rel = "noopener noreferrer";
+  link.href = "https://github.com/futurester0x0/megahaRd";
+  link.textContent = "futurester0x0/megahaRd";
+  fragment.appendChild(link);
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    browser.tabs.create({
+      url: "https://github.com/futurester0x0/megahaRd"
+    });
     window.close();
-  }
+  });
+};
 
-  if (buttonId === "btn-done") {
-    // send message to background.js that onboarding has been completed.
-    window.close();
-  }
+// Fallback when the background page cannot be reached (should not happen in
+// production; containment itself is driven by MICROSOFT_DOMAINS in
+// background.js, exposed via the "get-microsoft-domains" message).
+const FALLBACK_MICROSOFT_SITES = [
+  "microsoft.com",
+  "outlook.com",
+  "office.com",
+  "github.com",
+  "xbox.com",
+  "linkedin.com",
+];
 
-  if (buttonId === "btn-next") {
-    buildOnboardingPanel(res + 1);
-  }
-
-  if (buttonId === "btn-back") {
-    if (res === 4) {
-      // This accounts for the skipped Panel #3
-      buildOnboardingPanel(2);
-      return;
+const getMicrosoftDomainsFromBackground = async() => {
+  try {
+    const domains = await browser.runtime.sendMessage({
+      message: "get-microsoft-domains"
+    });
+    if (Array.isArray(domains) && domains.length > 0) {
+      return domains.filter((domain) => typeof domain === "string" && domain);
     }
-    buildOnboardingPanel(res - 1);
+  } catch (_e) {
+    // Fall through to the bundled fallback list.
   }
+  return [...FALLBACK_MICROSOFT_SITES];
+};
 
-  // go back to origin panel
-  if (el.classList.contains("btn-return")) {
-    let currentPanel = await browser.storage.local.get("CURRENT_PANEL");
-    currentPanel = currentPanel["CURRENT_PANEL"];
-    await buildPanel(currentPanel);
+// Deterministic hue per domain so each site row gets a stable avatar color
+// without fetching remote favicons (which would leak panel opens).
+const domainAvatarHue = (site) => {
+  let hash = 0;
+  for (let i = 0; i < site.length; i++) {
+    hash = (hash * 31 + site.charCodeAt(i)) % 360;
+  }
+  return hash;
+};
+
+const addSiteAvatar = (row, site) => {
+  const iconDiv = addDiv(row, "allowed-site-icon");
+  iconDiv.classList.add("site-avatar");
+  iconDiv.textContent = site.charAt(0).toUpperCase();
+  iconDiv.style.background = `hsl(${domainAvatarHue(site)} 55% 42%)`;
+  return iconDiv;
+};
+
+const appendSiteRow = (listsWrapper, site, removable) => {
+  const row = addDiv(listsWrapper, "allowed-site-wrapper");
+  if (!removable) {
+    row.classList.add("default-allowed-site");
+  }
+  addSiteAvatar(row, site);
+  const siteSpan = document.createElement("span");
+  siteSpan.classList.add("site-name");
+  siteSpan.textContent = site;
+  row.appendChild(siteSpan);
+  if (removable) {
+    const button = document.createElement("button");
+    button.classList.add("remove-site");
+    button.setAttribute("aria-label", `Remove ${site}`);
+    button.dataset.sitename = site;
+    button.addEventListener("click", () => removeSiteFromContainer(site));
+    row.appendChild(button);
   }
 };
 
+const makeSiteList = (listsWrapper, siteList, {removable} = {removable: false}) => {
+  if (!Array.isArray(siteList) || siteList.length === 0) {
+    const emptyWrapper = addDiv(listsWrapper, "allowed-site-wrapper");
+    const emptySpan = document.createElement("span");
+    emptySpan.id = "no-sites-added";
+    emptySpan.classList.add("uiMessage");
+    emptyWrapper.appendChild(emptySpan);
+    return;
+  }
 
-const appendFragmentAndSetHeight = (page, fragment) => {
-  page.appendChild(fragment);
-  page.style.minHeight = 0;
+  for (const site of siteList) {
+    if (typeof site !== "string" || !site) {
+      continue;
+    }
+    appendSiteRow(listsWrapper, site, removable);
+  }
 };
-
 
 // Breaks strings with nested bold words out into separate spans
 // and appends these to the wrapping paragraph element so that we
@@ -303,14 +283,22 @@ const appendFragmentAndSetHeight = (page, fragment) => {
 
 // Bold text must extend to the end of the string.
 const formatText = (text, el) => {
+  if (typeof text !== "string") {
+    return;
+  }
   const textChunks = text.split("*SPANSTART");
+  if (textChunks.length < 2) {
+    const span = document.createElement("span");
+    span.textContent = text;
+    el.appendChild(span);
+    return;
+  }
 
   let span = document.createElement("span");
   span.textContent = textChunks[0];
   el.appendChild(span);
 
-  let nestedBoldText = textChunks[1];
-  nestedBoldText = nestedBoldText.replace("*SPANEND", "");
+  let nestedBoldText = textChunks[1].replace("*SPANEND", "");
 
   span = document.createElement("span");
   span.textContent = nestedBoldText;
@@ -318,20 +306,29 @@ const formatText = (text, el) => {
   el.appendChild(span);
 };
 
-
 const getLocalizedStrings = async() => {
   const tabsQueryResult = await browser.tabs.query({currentWindow: true, active: true});
-  const currentActiveTab = tabsQueryResult[0];
-  const currentActiveURL = new URL(currentActiveTab.url);
+  const currentActiveTab = tabsQueryResult && tabsQueryResult[0];
+  let currentHostname = "";
+  if (currentActiveTab && typeof currentActiveTab.url === "string") {
+    try {
+      currentHostname = new URL(currentActiveTab.url).hostname;
+    } catch (_e) {
+      currentHostname = "";
+    }
+  }
 
   const uiMessages = document.querySelectorAll(".uiMessage");
 
   for (const el of uiMessages) {
-    if (el.id.endsWith("Header") && currentActiveURL.hostname == "") {
+    if (!el.id) {
+      continue;
+    }
+    if (el.id.endsWith("Header") && currentHostname === "") {
       el.textContent = browser.i18n.getMessage("onUnknownSiteHeader");
       continue;
     }
-    const text = browser.i18n.getMessage(el.id, currentActiveURL.hostname);
+    const text = browser.i18n.getMessage(el.id, currentHostname) || "";
     if (text.includes("*SPAN")) {
       formatText(text, el);
     } else {
@@ -340,295 +337,132 @@ const getLocalizedStrings = async() => {
   }
 };
 
+const appendFragmentAndSetHeight = (page, fragment) => {
+  page.appendChild(fragment);
+  page.style.minHeight = 0;
+};
 
-document.addEventListener("DOMContentLoaded", async () => {
-  const storage = await browser.storage.local.get();
-  const currentPanel = storage.CURRENT_PANEL;
-
-  const onboarding = (currentPanel.includes("onboarding"));
-  if (!onboarding) {
-    return buildPanel(currentPanel);
+// Single-screen dashboard for every CURRENT_PANEL value.
+const VALID_PANELS = ["on-microsoft", "in-megahard", "about", "trackers-detected", "no-trackers"];
+const buildDashboardPanel = async(panelId) => {
+  if (!VALID_PANELS.includes(panelId)) {
+    panelId = "no-trackers";
   }
-  buildOnboardingPanel(1);
-});
-
-
-// Build non-onboarding panel
-const buildPanel = async(panelId) => {
-  const { page, fragment } = setUpPanel(panelId);
+  const { page, fragment } = setUpPanel();
+  page.id = panelId;
   addHeader(fragment);
 
-  const contentWrapper = addDiv(fragment, "main-content-wrapper");
-  addSubhead(contentWrapper, panelId);
+  // ---- Status card ----
+  const statusCard = addDiv(fragment, "dashboard-card");
+  statusCard.classList.add("dashboard-status-card");
+  const statusDot = addDiv(statusCard, "dashboard-status-dot");
+  if (["on-microsoft", "in-megahard"].includes(panelId)) {
+    statusDot.classList.add("dashboard-status-contained");
+    statusCard.classList.add("is-contained");
+  } else if (panelId === "trackers-detected") {
+    statusDot.classList.add("dashboard-status-blocked");
+    statusCard.classList.add("is-blocked");
+  } else {
+    statusDot.classList.add("dashboard-status-clear");
+    statusCard.classList.add("is-clear");
+  }
+  addSubhead(statusCard, panelId);
 
-  if (panelId === "on-facebook") {
-    let el = await addFacebookAndIcon(contentWrapper);
-    contentWrapper.appendChild(el);
+  if (panelId === "on-microsoft") {
+    const el = await addMicrosoftAndIcon(statusCard);
+    statusCard.appendChild(el);
   }
 
   // Because strings are named based on CURRENT_PANEL/panelID, this adds the
   // same paragraph No Trackers Detected pages get for About: pages.
   if (panelId === "about") {
-    addParagraph(contentWrapper, "no-trackers-p1");
+    addParagraph(statusCard, "no-trackers-p1");
   } else {
-    addParagraph(contentWrapper, `${panelId}-p1`);
+    addParagraph(statusCard, `${panelId}-p1`);
   }
 
-  if (panelId === "on-facebook") {
-    addParagraph(contentWrapper, `${panelId}-p2`);
+  if (panelId === "on-microsoft") {
+    addParagraph(statusCard, `${panelId}-p2`);
   }
 
-  if (["trackers-detected", "in-fbc"].includes(panelId)) {
-    addLearnMoreLink(contentWrapper);
-    const imgDiv = addDiv(contentWrapper, panelId);
-    imgDiv.classList.add("img");
+  if (["trackers-detected", "in-megahard", "no-trackers"].includes(panelId)) {
+    addLearnMoreLink(statusCard);
   }
 
-  await addLearnHowFBCWorksButton(fragment);
-
-  if (panelId === "no-trackers") {
-    addLearnMoreLink(contentWrapper);
-    await addCustomSiteButton(fragment, panelId);
+  // ---- Current site action ----
+  const actionCard = addDiv(fragment, "dashboard-card");
+  const siteRow = addDiv(actionCard, "dashboard-site-row");
+  const siteName = document.createElement("span");
+  siteName.classList.add("site-name", "dashboard-current-site");
+  try {
+    siteName.textContent = (await getActiveRootDomainFromBackground()) || "";
+  } catch (_e) {
+    siteName.textContent = "";
   }
+  siteRow.appendChild(siteName);
 
-  await addCustomSiteButton(fragment, panelId);
+  const actionButton = document.createElement("button");
+  actionButton.classList.add("uiMessage", "dashboard-btn");
+  actionCard.appendChild(actionButton);
 
-  getLocalizedStrings();
-  appendFragmentAndSetHeight(page, fragment);
-  page.id = panelId;
-
-  const onboardingLinks = document.querySelectorAll(".open-onboarding");
-  const allowedSitesLink = document.querySelector(".open-allowed-sites");
-
-  allowedSitesLink.addEventListener("click", () => buildAllowedSitesPanel("sites-allowed"));
-
-  await setCustomSiteButtonEvent(panelId);
-
-  onboardingLinks.forEach(link => {
-    link.addEventListener("click", () => buildOnboardingPanel(1));
-  });
-};
-
-const buildOnboardingPanel = async (panelId) => {
-
-  if (panelId === 3) {
-    // This panel has been depricated, but due to the pagination logic and localization
-    // string ID naming conventions, this number is preserved and skipped over.
-    panelId++;
-  }
-
-
-  const stringId = `onboarding${panelId}`;
-  const { page, fragment } = setUpPanel(stringId);
-
-  addHeaderWithBackArrow(fragment);
-
-  const contentWrapper = addDiv(fragment, "main-content-wrapper");
-  const h2 = addSubhead(contentWrapper, stringId);
-  addParagraph(contentWrapper, `${stringId}-p1`);
-
-  if (panelId === 1) {
-    setNavButtons(fragment, "btn-cancel", "btn-next", stringId);
-  }
-
-  if (panelId === 2) {
-    let el = await addFacebookAndIcon();
-    h2.parentNode.insertBefore(el, h2.nextSibling);
-    setNavButtons(fragment, "btn-back", "btn-next", stringId);
-  }
-
-  if (panelId === 4) {
-    const imgDiv = addDiv(contentWrapper, stringId);
-    imgDiv.classList.add("img");
-    setNavButtons(fragment, "btn-back", "btn-next", stringId);
-  }
-
-  if (panelId === 5) {
-    const imgDiv = addDiv(contentWrapper, stringId);
-    imgDiv.classList.add("img");
-    setNavButtons(fragment, "btn-back", "btn-done", stringId);
-  }
-
-  if (panelId !== 4) {
-    addParagraph(contentWrapper, `${stringId}-p2`);
-  }
-
-  getLocalizedStrings();
-
-  appendFragmentAndSetHeight(page, fragment);
-  page.id = panelId;
-
-  addOnboardingListeners(panelId);
-  addDeleteSiteListeners();
-};
-
-
-const addHeaderWithBackArrow = (fragment) => {
-  let el = addHeader(fragment);
-  el = document.createElement("button");
-  el.classList.add("btn-return", "arrow-left");
-  fragment.appendChild(el);
-  return fragment;
-};
-
-
-// Add additional domains that need to be shown in the "Sites Allowed" panel here
-const defaultAllowedSites = [
-  "facebook.com",
-  "instagram.com",
-  "messenger.com",
-  // "whatsapp.com",
-  // "workplace.com",
-];
-
-
-const makeSiteList = async(fragment, siteList, sitesAllowed=false, addX=false) => {
-
-  // if no sites have been added to the container, show "None"
-  if (siteList.length === 0) {
-    const allowedSiteWrapper = addDiv(fragment, "allowed-site-wrapper");
-    addSpan(allowedSiteWrapper, "no-sites-added");
-    return;
-  }
-
-  for (const site of siteList) {
-    const allowedSiteWrapper = addDiv(fragment, "allowed-site-wrapper");
-    if (!addX) {
-      allowedSiteWrapper.classList.add("default-allowed-site");
+  const siteInContainer = await isSiteInContainer(panelId);
+  if (siteInContainer) {
+    actionButton.id = "button-remove-site";
+    if (panelId === "on-microsoft") {
+      // Microsoft-owned sites cannot leave the container.
+      actionButton.classList.add("disabled-button");
+      const tip = document.createElement("div");
+      tip.id = "button-remove-site-tooltip";
+      tip.classList.add("uiMessage");
+      actionCard.appendChild(tip);
+    } else {
+      actionButton.addEventListener("click", () => removeSiteFromContainer());
     }
-
-    let iconDiv = addDiv(allowedSiteWrapper, "allowed-site-icon");
-    if (sitesAllowed) {
-      // should we repeatedly grab these images or download and save them?
-      // need a different place to scoop them up, wondering where activity stream gets their favicons?
-      iconDiv.style.backgroundImage = `url(https://${site}/favicon.ico`;
+  } else {
+    actionButton.id = "button-allow-site";
+    if (panelId === "about") {
+      // Internal pages cannot be added.
+      actionButton.classList.add("disabled-button");
+    } else {
+      actionButton.addEventListener("click", addSiteToContainer);
     }
-    if (!sitesAllowed) {
-      const domainClass = site.replace(".com", "");
-      iconDiv.classList.add(`favi-${domainClass}`);
-    }
-    const siteSpan = document.createElement("span");
-    siteSpan.classList.add("site-name");
-    siteSpan.textContent = site;
-    if (addX) {
-      const button = document.createElement("button");
-      button.dataset["sitename"] = site;
-      button.classList.add("remove-site");
-      allowedSiteWrapper.appendChild(button);
-      // add aria labeling for button;
-    }
-    allowedSiteWrapper.appendChild(siteSpan);
   }
-};
 
+  // ---- Site lists ----
+  const listsCard = addDiv(fragment, "dashboard-card");
+  const includedHead = document.createElement("h3");
+  includedHead.id = "sites-included";
+  includedHead.classList.add("uiMessage");
+  listsCard.appendChild(includedHead);
+  makeSiteList(listsCard, await getMicrosoftDomainsFromBackground(), {removable: false});
 
-const buildAllowedSitesPanel = async(panelId) => {
-  const { page, fragment } = setUpPanel(panelId);
-
-  addHeaderWithBackArrow(fragment);
-
-  const contentWrapper = addDiv(fragment, "main-content-wrapper");
-
-  addSubhead(contentWrapper, "sites-added");
-  addParagraph(contentWrapper, "sites-added-p1");
-
-  const listsWrapper = addDiv(fragment, "site-lists-wrapper");
-  addLightSubhead(listsWrapper, "sites-included");
-  makeSiteList(listsWrapper, defaultAllowedSites);
-
-  const siteList = await browser.runtime.sendMessage({
-    message: "what-sites-are-added"
-  });
-  const sitesAllowedSubhead = addLightSubhead(listsWrapper, "sites-allowed");
-  sitesAllowedSubhead.classList.add("sites-allowed");
-  makeSiteList(listsWrapper, siteList, true, true); // (...sitesAllowed=true, addX=true)
-
-  appendFragmentAndSetHeight(page, fragment);
-  page.classList.add("remove-site-list");
-  page.id = panelId;
-
-  const removeSiteButtons = document.querySelectorAll(".remove-site");
-  removeSiteButtons.forEach(btn => {
-    btn.addEventListener("click", (e) => {
-      const removeButton = e.target;
-      buildRemoveSitePanel(removeButton.dataset.sitename);
+  const allowedHead = document.createElement("h3");
+  allowedHead.id = "sites-allowed";
+  allowedHead.classList.add("uiMessage", "sites-allowed");
+  listsCard.appendChild(allowedHead);
+  let customSites = [];
+  try {
+    const storedSites = await browser.runtime.sendMessage({
+      message: "what-sites-are-added"
     });
-  });
-
-  addOnboardingListeners(panelId);
-  getLocalizedStrings();
-};
-
-const addSiteToContainer = async () => {
-  const activeRootDomain = await getActiveRootDomainFromBackground();
-  const fbcStorage = await browser.storage.local.get();
-  fbcStorage.domainsAddedToFacebookContainer.push(activeRootDomain);
-  await browser.storage.local.set({"domainsAddedToFacebookContainer": fbcStorage.domainsAddedToFacebookContainer});
-  browser.tabs.reload();
-  window.close();
-};
-
-const buildAddSitePanel = async (siteName) => {
-  if (!siteName) {
-    siteName = await getActiveRootDomainFromBackground();
+    if (Array.isArray(storedSites)) {
+      customSites = storedSites;
+    }
+  } catch (_e) {
+    customSites = [];
   }
+  makeSiteList(listsCard, customSites, {removable: true});
 
-  const panelId = "add-site";
-  const { page, fragment } = setUpPanel(panelId);
+  // ---- Footer ----
+  const footer = addDiv(fragment, "dashboard-footer");
+  addRepoLink(footer);
 
-  addHeaderWithBackArrow(fragment);
-
-  const contentWrapper = addDiv(fragment, "main-content-wrapper");
-  contentWrapper.classList.add("remove-site-panel");
-
-  addSubhead(contentWrapper, "add-site");
-  makeSiteList(contentWrapper, [siteName], true, false); // (..., sitesAllowed=true, addX=false )
-  addParagraph(contentWrapper, `${panelId}-p1`);
-  let blueRemoveButton = document.createElement("button");
-  blueRemoveButton.classList.add("uiMessage", "allow-btn");
-  blueRemoveButton.id = "btn-allow";
-  blueRemoveButton.addEventListener("click", async() => {
-    addSiteToContainer(siteName);
-  });
-
-  fragment.appendChild(blueRemoveButton);
-
-  getLocalizedStrings();
-
+  getLocalizedStrings().catch(() => false);
   appendFragmentAndSetHeight(page, fragment);
-  addOnboardingListeners(siteName);
 };
 
-
-const buildRemoveSitePanel = (siteName) => {
-  const panelId = "remove-site";
-  const { page, fragment } = setUpPanel(panelId);
-
-  addHeaderWithBackArrow(fragment);
-
-  const contentWrapper = addDiv(fragment, "main-content-wrapper");
-  contentWrapper.classList.add("remove-site-panel");
-
-  addSubhead(contentWrapper, "remove-site");
-  makeSiteList(contentWrapper, [siteName], true, false); // (..., sitesAllowed=true, addX=false )
-  addParagraph(contentWrapper, `${panelId}-p1`);
-  addParagraph(contentWrapper, `${panelId}-p2`);
-  let blueRemoveButton = document.createElement("button");
-  blueRemoveButton.classList.add("uiMessage", "remove-btn");
-  blueRemoveButton.id = "remove";
-  blueRemoveButton.addEventListener("click", async() => {
-    await browser.runtime.sendMessage({
-      message: "remove-domain-from-list",
-      removeDomain: siteName
-    });
-    browser.tabs.reload();
-    window.close();
-  });
-
-  fragment.appendChild(blueRemoveButton);
-
-  getLocalizedStrings();
-
-  appendFragmentAndSetHeight(page, fragment);
-  addOnboardingListeners(siteName);
-};
+document.addEventListener("DOMContentLoaded", async () => {
+  const storage = await browser.storage.local.get();
+  const currentPanel = storage.CURRENT_PANEL || "no-trackers";
+  return buildDashboardPanel(currentPanel);
+});

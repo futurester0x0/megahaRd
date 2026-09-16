@@ -1,39 +1,39 @@
 {
   "extensionDescription": {
     "message": "تیسری پارٹی کی کوکیز کے ذریعے فیس بک کو ویب سائٹ سے باہر آپ کو ٹریک کرنے سے روکنے کے لئے فیس بک کنٹینر آپ کی فیس بک کی سرگرمی کو آپ کی باقی ویب سرگرمی سے الگ کرتا ہے۔",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
+  "in-megahard-subhead": {
     "message": "$URL$ فیس بک کنٹینر میں ہے۔",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
+  "in-megahard-p1": {
     "message": "فیس بک اب آپ کو اس سائٹ پر ٹریک کرسکتا ہے۔ اس سائٹ کو فیس بک کنٹینر سے ہٹانے کے لئے ، فیس بک کنٹینر میں اجازت شدہ سائٹیں منتخب کریں اور اسے فہرست سے ہٹائیں۔"
   },
   "onUnknownSiteHeader": {
-    "message": "یہ سائٹ Facebook کنٹینر میں نہیں ہے۔",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "یہ سائٹ Microsoft کنٹینر میں نہیں ہے۔",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "Facebook Container استعمال کر رہے ہیں",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "megahaRd استعمال کر رہے ہیں",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "Facebook کنٹینر باڑ کا آئکن",
+    "message": "Microsoft کنٹینر باڑ کا آئکن",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding4-subhead": {
-    "message": "Facebook کے باہر",
+    "message": "Microsoft کے باہر",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding5-subhead": {
@@ -42,7 +42,7 @@
   },
   "btn-allow": {
     "message": "اجازت دیں",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "منسوخ کریں",
@@ -65,28 +65,28 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "Facebook Container کیسے کام کرتا ہے پر واپس جائیں ",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "megahaRd کیسے کام کرتا ہے پر واپس جائیں ",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "کوئی Facebook ٹریکرز نہیں ملا",
+    "message": "کوئی Microsoft ٹریکرز نہیں ملا",
     "description": ""
   },
   "learn-more": {
     "message": "مزید سیکھیں",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "Facebook Container کے کام کرنے کا طریقا",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "megahaRd کے کام کرنے کا طریقا",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "ہم نے آپ کو Facebook سے محفوظ رکھا ہے۔",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "ہم نے آپ کو Microsoft سے محفوظ رکھا ہے۔",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "sites-included": {
     "message": "سائٹیں شامل ہیں",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "کوئی نہیں",
@@ -97,19 +97,19 @@
     "description": ""
   },
   "button-allow-site": {
-    "message": "Facebook Container میں سائٹ کو اجازت دیں",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "megahaRd میں سائٹ کو اجازت دیں",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "Facebook Container سے سائٹ کو ہٹا دیں",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "megahaRd سے سائٹ کو ہٹا دیں",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "remove-site-subhead": {
-    "message": "Facebook Container سے سائٹ کو ہٹا دیں؟",
+    "message": "megahaRd سے سائٹ کو ہٹا دیں؟",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Facebook کو یہاں آپ کو ٹریک کرنے کی اجازت دیں؟",
+    "message": "Microsoft کو یہاں آپ کو ٹریک کرنے کی اجازت دیں؟",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -117,11 +117,11 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "اگر آپ اس بٹن پر کلک کرتے ہیں تو ، Facebook اس سائٹ پر آپ کے دورے کا سراغ لگانے کے قابل ہوگا۔",
+    "message": "اگر آپ اس بٹن پر کلک کرتے ہیں تو ، Microsoft اس سائٹ پر آپ کے دورے کا سراغ لگانے کے قابل ہوگا۔",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "Facebook کو یہاں آپ کو ٹریک کرنے کی اجازت دیں؟",
+    "message": "Microsoft کو یہاں آپ کو ٹریک کرنے کی اجازت دیں؟",
     "description": ""
   },
   "btn-relay-dismiss": {

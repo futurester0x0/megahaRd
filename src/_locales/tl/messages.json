@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
-    "message": "Ang Facebook container ay inihihiwalay ang iyong mga aktibidad sa Facebook sa iba mong aktibidad sa web upang maiwasan ang Facebook na subaybayan ka sa labas ng kanilang website gamit ang mga third party cookies.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "Ang Microsoft container ay inihihiwalay ang iyong mga aktibidad sa Microsoft sa iba mong aktibidad sa web upang maiwasan ang Microsoft na subaybayan ka sa labas ng kanilang website gamit ang mga third party cookies.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ ay nasa Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ ay nasa megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "Maaari nang i-track ng Facebook ang site na ito. Para alisin sa Facebook Container ang site na ito, piliin ang Sites Allowed sa Facebook Container at alisin ito mula sa listahan."
+  "in-megahard-p1": {
+    "message": "Maaari nang i-track ng Microsoft ang site na ito. Para alisin sa megahaRd ang site na ito, piliin ang Sites Allowed sa megahaRd at alisin ito mula sa listahan."
   },
-  "on-facebook-subhead": {
-    "message": "Nasa Facebook at Sites na sakop ng Facebook Container",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "Nasa Microsoft at Sites na sakop ng megahaRd",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "Ang icon na ito ay makikita sa address bar ng Firefox kung ikaw ay bibisita ng mga site na pag-aari ng Facebook o mga site na dinagdag mo sa Facebook Container.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "Ang icon na ito ay makikita sa address bar ng Firefox kung ikaw ay bibisita ng mga site na pag-aari ng Microsoft o mga site na dinagdag mo sa megahaRd.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
-    "message": "Ang mga site na ito ay nangangailangan ng access sa iyong pagkakakilanlan sa Facebook (o kung sino ikaw) para gumana. Nangangahulugan din ito na pwedeng subaybayan ng Facebook ang lahat ng ginagawa mo sa mga site na ito.",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  "on-microsoft-p2": {
+    "message": "Ang mga site na ito ay nangangailangan ng access sa iyong pagkakakilanlan sa Microsoft (o kung sino ikaw) para gumana. Nangangahulugan din ito na pwedeng subaybayan ng Microsoft ang lahat ng ginagawa mo sa mga site na ito.",
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
-    "message": "$URL$ ay wala sa Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "$URL$ ay wala sa megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,61 +38,61 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "Ang site na ito ay nasa labas ng Facebook Container. Ginawa nitong mas mahirap para sa Facebook na subaybayan ka sa web.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "Ang site na ito ay nasa labas ng megahaRd. Ginawa nitong mas mahirap para sa Microsoft na subaybayan ka sa web.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "Ang site na ito ay wala sa Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "Ang site na ito ay wala sa megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "Paggamit ng Facebook Container",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Paggamit ng megahaRd",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "Maaaring subaybayan ng Facebook ang iyong browsing lampas pa sa loob ng Facebook.com. Sa pamamagitan ng Facebook Like at Share buttons, halimbawa, ay maaring masubaybayan kung nasaan ka — kahit sa mga pahinang hindi mo nai-like or share.",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Maaaring subaybayan ng Microsoft ang iyong browsing lampas pa sa loob ng Microsoft.com. Sa pamamagitan ng Microsoft Like at Share buttons, halimbawa, ay maaring masubaybayan kung nasaan ka — kahit sa mga pahinang hindi mo nai-like or share.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
-    "message": "Ang Facebook Container ay gumagawa ng hangganan sa paggitan ng mga Facebook site at iba pang nasa web para mahirapan ang Facebook na subaybayan ka online.",
-    "description": "Please do not translate \"Facebook Container\""
+    "message": "Ang megahaRd ay gumagawa ng hangganan sa paggitan ng mga Microsoft site at iba pang nasa web para mahirapan ang Microsoft na subaybayan ka online.",
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "Nasa Facebook at Sites na sakop ng Facebook Container",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Nasa Microsoft at Sites na sakop ng megahaRd",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "Ang bakod na icon ng Facebook Container",
+    "message": "Ang bakod na icon ng megahaRd",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Ang icon na ito ay lilitaw sa Firefox address bar kapag binisita mo ang mga sites, tulad ng Facebook.com, na nasa hangganan ng Facebook Container.",
+    "message": "Ang icon na ito ay lilitaw sa Firefox address bar kapag binisita mo ang mga sites, tulad ng Microsoft.com, na nasa hangganan ng megahaRd.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "Ang mga site na ito ay nangangailangan ng access sa iyong pakakakilanlan sa Facebook (o malaman kung sino ka) upang gumana. Nangangahulugan din ito na maaaring nakasubaybay ang Facebook sa lahat ng ginagawa mo sa mga site na ito.",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Ang mga site na ito ay nangangailangan ng access sa iyong pakakakilanlan sa Microsoft (o malaman kung sino ka) upang gumana. Nangangahulugan din ito na maaaring nakasubaybay ang Microsoft sa lahat ng ginagawa mo sa mga site na ito.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
-    "message": "Sa labas ng Facebook",
+    "message": "Sa labas ng Microsoft",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-img": {
-    "message": "Ang imahe na ito ay nagpapakita kung paano magpapakita ang Facebook Containers fence icon katabi ng Facebook Like button.",
+    "message": "Ang imahe na ito ay nagpapakita kung paano magpapakita ang megahaRds fence icon katabi ng Microsoft Like button.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "Pinapayagan ka nito na mag-login gamit ang Facebook, ngunit masusubaybayan ka ng Facebook sa iyong aktibidad sa site na iyon.",
+    "message": "Pinapayagan ka nito na mag-login gamit ang Microsoft, ngunit masusubaybayan ka ng Microsoft sa iyong aktibidad sa site na iyon.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Payagan",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "Kanselahin",
@@ -115,44 +115,44 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "Pumunta sa Kung paano gamitin ang Facebook Container",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "Pumunta sa Kung paano gamitin ang megahaRd",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Walang natuklasan na mga trackers ng Facebook",
+    "message": "Walang natuklasan na mga trackers ng Microsoft",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Ang Facebook Container ay walang nakitang mga Facebook trackers sa pahina. Subalit, maaaring may mga ibang tracker sa pahina.",
+    "message": "Ang megahaRd ay walang nakitang mga Microsoft trackers sa pahina. Subalit, maaaring may mga ibang tracker sa pahina.",
     "description": ""
   },
   "learn-more": {
     "message": "Matuto ng higit pa",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "Paano gumagana ang Facebook Container",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "Paano gumagana ang megahaRd",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "Protektado ka namin mula sa Facebook.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "Protektado ka namin mula sa Microsoft.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p2": {
-    "message": "Hinahadlangan ng Facebook Container ang mga tracker na ito. Gayunpaman, kung nag-click ka sa anuman sa mga pindutang ito ay masusubaybayan ka ng Facebook.",
+    "message": "Hinahadlangan ng megahaRd ang mga tracker na ito. Gayunpaman, kung nag-click ka sa anuman sa mga pindutang ito ay masusubaybayan ka ng Microsoft.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "Bakod ng Facebook Container na may shield.",
+    "message": "Bakod ng megahaRd na may shield.",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "Mga sites na pinapayagan sa Facebook Container",
+    "message": "Mga sites na pinapayagan sa megahaRd",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "SITES INCLUDED",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "Wala",
@@ -160,34 +160,34 @@
   },
   "sites-allowed": {
     "message": "MGA SITE NA PINAYAGAN MO",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "remove": {
     "message": "Alisin",
     "description": ""
   },
   "button-allow-site": {
-    "message": "Payagan ang Site sa Facebook Container",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "Payagan ang Site sa megahaRd",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "Tanggalin ang Site mula sa Facebook Container",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "Tanggalin ang Site mula sa megahaRd",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Dahil ito ay isang site na pagmamay-ari ng Facebook, hindi ito maaaring tanggalin mula sa Facebook Container.",
+    "message": "Dahil ito ay isang site na pagmamay-ari ng Microsoft, hindi ito maaaring tanggalin mula sa megahaRd.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Alisin ang site mula sa Facebook Container?",
+    "message": "Alisin ang site mula sa megahaRd?",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Payagan ang Pagsubaybay ng Facebook sa site na ito?",
+    "message": "Payagan ang Pagsubaybay ng Microsoft sa site na ito?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Payagan ang Facebook na subaybayan ka rito?",
+    "message": "Payagan ang Microsoft na subaybayan ka rito?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {

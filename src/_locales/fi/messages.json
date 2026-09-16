@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container eristää Facebook-toimintasi muusta verkkotoiminnastasi, jotta Facebook ei pystyisi seuraamaan tekemisiäsi Facebook-sivuston ulkopuolella kolmansien osapuolten evästeitä hyödyntämällä.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "megahaRd eristää Microsoft-toimintasi muusta verkkotoiminnastasi, jotta Microsoft ei pystyisi seuraamaan tekemisiäsi Microsoft-sivuston ulkopuolella kolmansien osapuolten evästeitä hyödyntämällä.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ on Facebook-eristystilassa.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ on Microsoft-eristystilassa.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "Facebook voi nyt seurata sinua tällä sivustolla. Poista tämä sivusto Facebook-eristystilasta valitsemalla ”Sallitut sivustot” Facebook-eristystilasta ja poistamalla sivusto listalta."
+  "in-megahard-p1": {
+    "message": "Microsoft voi nyt seurata sinua tällä sivustolla. Poista tämä sivusto Microsoft-eristystilasta valitsemalla ”Sallitut sivustot” Microsoft-eristystilasta ja poistamalla sivusto listalta."
   },
-  "on-facebook-subhead": {
-    "message": "Facebookissa ja sivustoissa, jotka kuuluvat Facebook-eristystilaan",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "Microsoftissa ja sivustoissa, jotka kuuluvat Microsoft-eristystilaan",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "Tämä kuvake ilmestyy Firefoxin osoitepalkkiin, kun käyt Facebookin omistamilla sivustoilla tai sivustoilla, jotka olet lisännyt Facebook-eristystilaan.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "Tämä kuvake ilmestyy Firefoxin osoitepalkkiin, kun käyt Microsoftin omistamilla sivustoilla tai sivustoilla, jotka olet lisännyt Microsoft-eristystilaan.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
-    "message": "Nämä sivustot vaativat toimiakseen pääsyn Facebook-henkilöyteesi (tai niiden tulee tietää, kuka olet). Tämä tarkoittaa myös, että Facebook kykenee seuraamaan kaikkea tekemääsi näillä sivustoilla.",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  "on-microsoft-p2": {
+    "message": "Nämä sivustot vaativat toimiakseen pääsyn Microsoft-henkilöyteesi (tai niiden tulee tietää, kuka olet). Tämä tarkoittaa myös, että Microsoft kykenee seuraamaan kaikkea tekemääsi näillä sivustoilla.",
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
-    "message": "$URL$ ei ole Facebook-eristystilassa.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "$URL$ ei ole Microsoft-eristystilassa.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,77 +38,77 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "Tämä sivusto on Facebook-eristystilan ulkopuolella. Sen vuoksi Facebookin on hankalampaa seurata sinua verkossa.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "Tämä sivusto on Microsoft-eristystilan ulkopuolella. Sen vuoksi Microsoftin on hankalampaa seurata sinua verkossa.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "Tämä sivusto ei ole Facebook-eristystilassa.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "Tämä sivusto ei ole Microsoft-eristystilassa.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook-eristystila",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "Microsoft-eristystila",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "Facebook-eristystilan käyttäminen",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Microsoft-eristystilan käyttäminen",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "Facebook voi seurata selaamistasi myös Facebook.comin ulkopuolella. Esimerkiksi Facebookin Tykkää- ja Jaa-painikkeet voivat seurata selaushistoriaasi – myös niillä sivuilla, joista et ole tykännyt tai jakanut muille.",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Microsoft voi seurata selaamistasi myös Microsoft.comin ulkopuolella. Esimerkiksi Microsoftin Tykkää- ja Jaa-painikkeet voivat seurata selaushistoriaasi – myös niillä sivuilla, joista et ole tykännyt tai jakanut muille.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
-    "message": "Facebook-eristystila luo rajan Facebook-sivustojen ja muun verkon välille, jotta Facebookin olisi aiempaa vaikeampaa seurata tekemisiäsi verkossa.",
-    "description": "Please do not translate \"Facebook Container\""
+    "message": "Microsoft-eristystila luo rajan Microsoft-sivustojen ja muun verkon välille, jotta Microsoftin olisi aiempaa vaikeampaa seurata tekemisiäsi verkossa.",
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "Facebookissa ja sivustoissa, jotka kuuluvat Facebook-eristystilaan",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Microsoftissa ja sivustoissa, jotka kuuluvat Microsoft-eristystilaan",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "Facebook-eristystilan kuvake",
+    "message": "Microsoft-eristystilan kuvake",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Tämä kuvake ilmestyy Firefoxin osoitepalkkiin käydessäsi sivustoilla, kuten Facebook.com, jotka ovat Facebook-eristystilan sisällä.",
+    "message": "Tämä kuvake ilmestyy Firefoxin osoitepalkkiin käydessäsi sivustoilla, kuten Microsoft.com, jotka ovat Microsoft-eristystilan sisällä.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "Nämä sivustot vaativat toimiakseen pääsyn Facebook-henkilöyteesi (tai niiden tulee tietää, kuka olet). Tämä tarkoittaa myös, että Facebook kykenee seuraamaan kaikkea tekemääsi näillä sivustoilla.",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Nämä sivustot vaativat toimiakseen pääsyn Microsoft-henkilöyteesi (tai niiden tulee tietää, kuka olet). Tämä tarkoittaa myös, että Microsoft kykenee seuraamaan kaikkea tekemääsi näillä sivustoilla.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
-    "message": "Facebookin ulkopuolella",
+    "message": "Microsoftin ulkopuolella",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Vaikka et ole Facebookissa, Facebook voi seurata sinua verkossa. Painikkeet, joiden avulla voit lähettää asioita Facebookiin tai kirjautua verkkosivustoille Facebook-tilisi avulla, sisältävät seuraimia. Facebook-eristystila estää nämä seuraimet ja näyttää aitakuvakkeen osoittaakseen, mistä seuraimet poistettiin.",
+    "message": "Vaikka et ole Microsoftissa, Microsoft voi seurata sinua verkossa. Painikkeet, joiden avulla voit lähettää asioita Microsoftiin tai kirjautua verkkosivustoille Microsoft-tilisi avulla, sisältävät seuraimia. Microsoft-eristystila estää nämä seuraimet ja näyttää aitakuvakkeen osoittaakseen, mistä seuraimet poistettiin.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
-    "message": "Tämä kuva esittää, kuinka Facebook-eristystilan aitakuvake ilmenee sivun sisällä Facebookin Tykkää-painikkeen vieressä.",
+    "message": "Tämä kuva esittää, kuinka Microsoft-eristystilan aitakuvake ilmenee sivun sisällä Microsoftin Tykkää-painikkeen vieressä.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-subhead": {
-    "message": "Sisäänkirjautuminen Facebookilla muilla sivustoilla",
+    "message": "Sisäänkirjautuminen Microsoftilla muilla sivustoilla",
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "Käyttääksesi Facebook-kirjautumista muilla sivustoilla, sinun tulee siirtää ne rajojen sisään. Napsauta aitakuvaketta ja valitse \"Salli sivusto Facebook-eristystilassa\" alhaalta.",
+    "message": "Käyttääksesi Microsoft-kirjautumista muilla sivustoilla, sinun tulee siirtää ne rajojen sisään. Napsauta aitakuvaketta ja valitse \"Salli sivusto Microsoft-eristystilassa\" alhaalta.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
-    "message": "Tämä kuva esittää, miltä sivuston Facebook-eristystilaan lisäävä kuvake näyttää paneelissa.",
+    "message": "Tämä kuva esittää, miltä sivuston Microsoft-eristystilaan lisäävä kuvake näyttää paneelissa.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "Tämä mahdollistaa sisäänkirjautumisen Facebookilla, mutta antaa Facebookille mahdollisuuden seurata tekemisiäsi kyseisellä sivustolla.",
+    "message": "Tämä mahdollistaa sisäänkirjautumisen Microsoftilla, mutta antaa Microsoftille mahdollisuuden seurata tekemisiäsi kyseisellä sivustolla.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Salli",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "Peruuta",
@@ -131,48 +131,48 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "Siirry ”Kuinka Facebook-eristystila toimii” -esittelyyn",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "Siirry ”Kuinka Microsoft-eristystila toimii” -esittelyyn",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Facebook-seuraimia ei havaittu",
+    "message": "Microsoft-seuraimia ei havaittu",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook-eristystila ei havainnut Facebook-seuraimia tällä sivulla. Tämä sivu sattaa silti sisältää muita seuraimia.",
+    "message": "Microsoft-eristystila ei havainnut Microsoft-seuraimia tällä sivulla. Tämä sivu sattaa silti sisältää muita seuraimia.",
     "description": ""
   },
   "learn-more": {
     "message": "Lue lisää",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "Miten Facebook-eristystila toimii",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "Miten Microsoft-eristystila toimii",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "Olemme suojanneet sinut Facebookilta.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "Olemme suojanneet sinut Microsoftilta.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
-    "message": "Facebook-painikkeet, jotka ovat näkyvissä verkkokaupoissa, uutissivuilla ja muilla sivustoilla, sisältävät seuraimia, jotka kertovat Facebookille mitä sivuja olet selannut verkossa. Vaikka et koskaan käyttäisi näitä painikkeita tykkäämiseen tai jakamiseen, seuraimet keräävät tietoja selaamiseesi liittyen. Facebook-eristystila estää nämä seuraimet.",
+    "message": "Microsoft-painikkeet, jotka ovat näkyvissä verkkokaupoissa, uutissivuilla ja muilla sivustoilla, sisältävät seuraimia, jotka kertovat Microsoftille mitä sivuja olet selannut verkossa. Vaikka et koskaan käyttäisi näitä painikkeita tykkäämiseen tai jakamiseen, seuraimet keräävät tietoja selaamiseesi liittyen. Microsoft-eristystila estää nämä seuraimet.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook-eristystila estää nämä seuraimet. Jos kuitenkin napsautat mitä tahansa näistä painikkeista, Facebook kykenee seuraamaan sinua.",
+    "message": "Microsoft-eristystila estää nämä seuraimet. Jos kuitenkin napsautat mitä tahansa näistä painikkeista, Microsoft kykenee seuraamaan sinua.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "Facebook-eristystilan aita kilven kera.",
+    "message": "Microsoft-eristystilan aita kilven kera.",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "Facebook-eristystilassa sallitut sivustot",
+    "message": "Microsoft-eristystilassa sallitut sivustot",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "SISÄLLYTETYT SIVUSTOT",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "Ei mitään",
@@ -180,61 +180,61 @@
   },
   "sites-allowed": {
     "message": "SALLIMASI SIVUSTOT",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Facebook-eristystila asettaa Facebookin omistamat sivustot eristystilaan. Voit sallia sivustoja eristystilan sisään, mutta tämä sallii Facebookin seurata tekemisiäsi verkossa aiempaa enemmän."
+    "message": "Microsoft-eristystila asettaa Microsoftin omistamat sivustot eristystilaan. Voit sallia sivustoja eristystilan sisään, mutta tämä sallii Microsoftin seurata tekemisiäsi verkossa aiempaa enemmän."
   },
   "remove": {
     "message": "Poista",
     "description": ""
   },
   "button-allow-site": {
-    "message": "Salli sivusto Facebook-eristystilassa",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "Salli sivusto Microsoft-eristystilassa",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "Poista sivusto Facebook-eristystilasta",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "Poista sivusto Microsoft-eristystilasta",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Koska tämä on Facebookin omistama sivusto, sitä ei voi poistaa Facebook-eristystilasta.",
+    "message": "Koska tämä on Microsoftin omistama sivusto, sitä ei voi poistaa Microsoft-eristystilasta.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Sivuston poistaminen Facebook-eristystilasta",
+    "message": "Sivuston poistaminen Microsoft-eristystilasta",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "Tämän sivuston poistaminen Facebook-eristystilasta tarkoittaa, ettei ”Kirjaudu Facebookilla” -ominaisuus enää toimi ja Facebookin seurainevästeet poistetaan.",
+    "message": "Tämän sivuston poistaminen Microsoft-eristystilasta tarkoittaa, ettei ”Kirjaudu Microsoftilla” -ominaisuus enää toimi ja Microsoftin seurainevästeet poistetaan.",
     "description": ""
   },
   "remove-site-p2": {
-    "message": " Jos haluat käyttää ”Kirjaudu Facebookilla” -ominaisuutta uudestaan, sinun tulee lisätä takaisin se Facebook-eristystilaan.",
+    "message": " Jos haluat käyttää ”Kirjaudu Microsoftilla” -ominaisuutta uudestaan, sinun tulee lisätä takaisin se Microsoft-eristystilaan.",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Sallitaanko Facebook-seuranta tällä sivustolla?",
+    "message": "Sallitaanko Microsoft-seuranta tällä sivustolla?",
     "description": ""
   },
   "add-site-p1": {
-    "message": "Tämä mahdollistaa sisäänkirjautumisen Facebookilla, mutta antaa Facebookille mahdollisuuden seurata mitä teet tällä sivustolla.",
+    "message": "Tämä mahdollistaa sisäänkirjautumisen Microsoftilla, mutta antaa Microsoftille mahdollisuuden seurata mitä teet tällä sivustolla.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook-eristystila on poistanut tämän painikkeen käytöstä ja estänyt Facebookia seuraamasta vierailuasi tälle sivustolle.",
+    "message": "Microsoft-eristystila on poistanut tämän painikkeen käytöstä ja estänyt Microsoftia seuraamasta vierailuasi tälle sivustolle.",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook-eristystila on estänyt Facebook-seuraimet. Jos käytät ”Kirjaudu Facebookilla” -ominaisuutta tällä sivustolla, Facebook kykenee seuraamaan sinua.",
+    "message": "Microsoft-eristystila on estänyt Microsoft-seuraimet. Jos käytät ”Kirjaudu Microsoftilla” -ominaisuutta tällä sivustolla, Microsoft kykenee seuraamaan sinua.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Haluatko sallia Facebookin seuraavan sinua täällä?",
+    "message": "Haluatko sallia Microsoftin seuraavan sinua täällä?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Jos haluat käyttää ”Kirjaudu Facebookilla” -ominaisuutta, Facebook kykenee seuraamaan tekemisiäsi tällä sivustolla. Seuranta mahdollistaa Facebookin rakentavan aiempaa kattavamman profiilin verkossa tekemistäsi asioista.",
+    "message": "Jos haluat käyttää ”Kirjaudu Microsoftilla” -ominaisuutta, Microsoft kykenee seuraamaan tekemisiäsi tällä sivustolla. Seuranta mahdollistaa Microsoftin rakentavan aiempaa kattavamman profiilin verkossa tekemistäsi asioista.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -242,19 +242,19 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "Jos napsautat tätä painiketta, Facebook voi seurata vierailuasi tällä sivustolla.",
+    "message": "Jos napsautat tätä painiketta, Microsoft voi seurata vierailuasi tällä sivustolla.",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "Jos käytät oikeaa sähköpostiosoitettasi täällä, Facebook saattaa pystyä seuraamaan sinua. Napsauta saadaksesi lisätietoja.",
+    "message": "Jos käytät oikeaa sähköpostiosoitettasi täällä, Microsoft saattaa pystyä seuraamaan sinua. Napsauta saadaksesi lisätietoja.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "Haluatko sallia Facebookin seuraavan sinua täällä?",
+    "message": "Haluatko sallia Microsoftin seuraavan sinua täällä?",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Tämä sivusto voi jakaa sähköpostiosoitteesi Facebookin kanssa, jolloin Facebook voi seurata sinua. Käytä Firefox Relayn kaltaista palvelua piilottaaksesi todellisen sähköpostiosoitteesi.",
+    "message": "Tämä sivusto voi jakaa sähköpostiosoitteesi Microsoftin kanssa, jolloin Microsoft voi seurata sinua. Käytä Firefox Relayn kaltaista palvelua piilottaaksesi todellisen sähköpostiosoitteesi.",
     "description": ""
   },
   "btn-relay-dismiss": {

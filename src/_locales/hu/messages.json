@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
-    "message": "A Facebook Container elkülöníti a facebookos tevékenységét a többi webes tevékenységtől annak érdekében, hogy megakadályozza, hogy a Facebook a webhelyén kívül is követhesse Önt a harmadik féltől származó sütik révén.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "A megahaRd elkülöníti a microsoftos tevékenységét a többi webes tevékenységtől annak érdekében, hogy megakadályozza, hogy a Microsoft a webhelyén kívül is követhesse Önt a harmadik féltől származó sütik révén.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "A(z) $URL$ a Facebook Containerben van.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "A(z) $URL$ a megahaRdben van.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "A Facebook mostantól nyomon tudja követni Önt ezen az oldalon. Az oldal eltávolításához a Facebook Containerből válassza az engedélyezett webhelyek lehetőséget a Facebook Containerben, és távolítsa el a listáról."
+  "in-megahard-p1": {
+    "message": "A Microsoft mostantól nyomon tudja követni Önt ezen az oldalon. Az oldal eltávolításához a megahaRdből válassza az engedélyezett webhelyek lehetőséget a megahaRdben, és távolítsa el a listáról."
   },
-  "on-facebook-subhead": {
-    "message": "A Facebookon és a Facebook Container által körülhatárolt webhelyeken",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "A Microsofton és a megahaRd által körülhatárolt webhelyeken",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "Ez az ikon a Firefox címsorában jelenik meg, ha a Facebook tulajdonában lévő webhelyeket látogat meg, vagy olyan webhelyeket, melyeket a Facebook Containerhez adott.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "Ez az ikon a Firefox címsorában jelenik meg, ha a Microsoft tulajdonában lévő webhelyeket látogat meg, vagy olyan webhelyeket, melyeket a megahaRdhez adott.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
-    "message": "Ezen webhelyek működéséhez hozzá kell férniük a Facebook-azonosítójához (vagy tudniuk kell, hogy ki Ön). Ez azt is jelenti, hogy a Facebook nyomon tudja követni mindazt, amit ezeken a webhelyeken tesz.",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  "on-microsoft-p2": {
+    "message": "Ezen webhelyek működéséhez hozzá kell férniük a Microsoft-azonosítójához (vagy tudniuk kell, hogy ki Ön). Ez azt is jelenti, hogy a Microsoft nyomon tudja követni mindazt, amit ezeken a webhelyeken tesz.",
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
-    "message": "A(z) $URL$ nincs a Facebook Containerben.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "A(z) $URL$ nincs a megahaRdben.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,77 +38,77 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "Ez a webhely a Facebook Containeren kívül található. Ez megnehezíti a Facebook számára, hogy követhesse Önt a weben.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "Ez a webhely a megahaRden kívül található. Ez megnehezíti a Microsoft számára, hogy követhesse Önt a weben.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "Ez a webhely nem a Facebook Containerben található.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "Ez a webhely nem a megahaRdben található.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "A Facebook Container használata",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "A megahaRd használata",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "A Facebook közel sem csak a Facebook.com weboldalon tudja követni a böngészését. A Facebook Tetszik és Megosztás gombjai például bárhol nyomon követhetik, bárhová is megy – még akkor is, ha sosem használja ezeket a gombokat.",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "A Microsoft közel sem csak a Microsoft.com weboldalon tudja követni a böngészését. A Microsoft Tetszik és Megosztás gombjai például bárhol nyomon követhetik, bárhová is megy – még akkor is, ha sosem használja ezeket a gombokat.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
-    "message": "A Facebook Container elhatárolja a facebookos oldalakat a web többi részétől, így megnehezíti a Facebooknak az online nyomkövetést.",
-    "description": "Please do not translate \"Facebook Container\""
+    "message": "A megahaRd elhatárolja a microsoftos oldalakat a web többi részétől, így megnehezíti a Microsoftnak az online nyomkövetést.",
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "A Facebookon és a Facebook Container által körülhatárolt webhelyeken",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "A Microsofton és a megahaRd által körülhatárolt webhelyeken",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "A Facebook Container kerítés ikonja",
+    "message": "A megahaRd kerítés ikonja",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Ez az ikon a Firefox címsorában jelenik meg, ha olyan webhelyeket látogat meg, mint a Facebook.com, melyeket a Facebook Container elkülönít.",
+    "message": "Ez az ikon a Firefox címsorában jelenik meg, ha olyan webhelyeket látogat meg, mint a Microsoft.com, melyeket a megahaRd elkülönít.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "Ezen webhelyek működéséhez hozzá kell férniük a Facebook-azonosítójához (vagy tudniuk kell, hogy ki Ön). Ez azt is jelenti, hogy a Facebook nyomon tudja követni mindazt, amit ezeken a webhelyeken tesz.",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Ezen webhelyek működéséhez hozzá kell férniük a Microsoft-azonosítójához (vagy tudniuk kell, hogy ki Ön). Ez azt is jelenti, hogy a Microsoft nyomon tudja követni mindazt, amit ezeken a webhelyeken tesz.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
-    "message": "A Facebookon kívül",
+    "message": "A Microsofton kívül",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Még akkor is, ha nincs a Facebookon, a Facebook követheti Önt online. A gombok, amelyekkel közzétehet dolgokat a Facebookon vagy bejelentkezhet weboldalakra, követőket tartalmaznak. A Facebook Container blokkolja ezeket a követőket, és egy kerítést ikont jelenít meg, hogy jelezze, hol távolított el követőket.",
+    "message": "Még akkor is, ha nincs a Microsofton, a Microsoft követheti Önt online. A gombok, amelyekkel közzétehet dolgokat a Microsofton vagy bejelentkezhet weboldalakra, követőket tartalmaznak. A megahaRd blokkolja ezeket a követőket, és egy kerítést ikont jelenít meg, hogy jelezze, hol távolított el követőket.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
-    "message": "Ez a kép azt mutatja, hogy a Facebook Container kerítés ikonja megjelenik az oldalon belül a Facebook Tetszik gombja mellett.",
+    "message": "Ez a kép azt mutatja, hogy a megahaRd kerítés ikonja megjelenik az oldalon belül a Microsoft Tetszik gombja mellett.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-subhead": {
-    "message": "Bejelentkezés a Facebookon keresztül más oldalakon",
+    "message": "Bejelentkezés a Microsofton keresztül más oldalakon",
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "Ahhoz hogy a Facebook bejelentkezést használja más oldalakon, át kell helyeznie azokat a korláton belülre. Kattintson a kerítés ikonra, és válassza a „Webhely engedélyezése a Facebook Containerben” lehetőséget.",
+    "message": "Ahhoz hogy a Microsoft bejelentkezést használja más oldalakon, át kell helyeznie azokat a korláton belülre. Kattintson a kerítés ikonra, és válassza a „Webhely engedélyezése a megahaRdben” lehetőséget.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
-    "message": "Ez a kép bemutatja, hogyan jelenik meg a panelen egy webhely Facebook Containerhez hozzáadásának gombja.",
+    "message": "Ez a kép bemutatja, hogyan jelenik meg a panelen egy webhely megahaRdhez hozzáadásának gombja.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "Ezzel lehetővé válik a Facebookkal történő bejelentkezés, de így a Facebook képes követni a tevékenységét az oldalon.",
+    "message": "Ezzel lehetővé válik a Microsoftkal történő bejelentkezés, de így a Microsoft képes követni a tevékenységét az oldalon.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Engedélyezés",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "Mégse",
@@ -131,48 +131,48 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "Ugrás ide: Hogyan működik a Facebook Container",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "Ugrás ide: Hogyan működik a megahaRd",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Nem találhatóak facebookos nyomkövetők",
+    "message": "Nem találhatóak microsoftos nyomkövetők",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "A Facebook Container nem talált facebookos nyomkövetőt ezen az oldalon. Viszont az oldal tartalmazhat más típusú nyomkövetőket is.",
+    "message": "A megahaRd nem talált microsoftos nyomkövetőt ezen az oldalon. Viszont az oldal tartalmazhat más típusú nyomkövetőket is.",
     "description": ""
   },
   "learn-more": {
     "message": "További tudnivalók",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "Hogyan működik a Facebook Container",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "Hogyan működik a megahaRd",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "Megvédtük Önt a Facebooktól.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "Megvédtük Önt a Microsofttól.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
-    "message": "A vásárló-, hír- és más oldalakon megjelenő Facebook gombok olyan nyomkövetőket tartalmaznak, amelyek megmondják a Facebooknak, hogy hol volt az interneten. Még akkor is, ha sose használja ezeket a gombokat, hogy tetszését fejezze ki vagy tartalmakat osszon meg, a nyomkövetők akkor is böngészési adatokat gyűjthetnek. A Facebook Container blokkolja ezeket a nyomkövetőket.",
+    "message": "A vásárló-, hír- és más oldalakon megjelenő Microsoft gombok olyan nyomkövetőket tartalmaznak, amelyek megmondják a Microsoftnak, hogy hol volt az interneten. Még akkor is, ha sose használja ezeket a gombokat, hogy tetszését fejezze ki vagy tartalmakat osszon meg, a nyomkövetők akkor is böngészési adatokat gyűjthetnek. A megahaRd blokkolja ezeket a nyomkövetőket.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "A Facebook Container blokkolja ezeket a nyomkövetőket. Viszont ha bármelyik gombra kattint, akkor a Facebook továbbra is képes lesz nyomon követni Önt.",
+    "message": "A megahaRd blokkolja ezeket a nyomkövetőket. Viszont ha bármelyik gombra kattint, akkor a Microsoft továbbra is képes lesz nyomon követni Önt.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "Facebook Container kerítés pajzzsal.",
+    "message": "megahaRd kerítés pajzzsal.",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "A Facebook Containerben engedélyezett webhelyek",
+    "message": "A megahaRdben engedélyezett webhelyek",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "HATÁROLT OLDALOK",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "Nincs",
@@ -180,61 +180,61 @@
   },
   "sites-allowed": {
     "message": "ENGEDÉLYEZETT OLDALAK",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "A Facebook Container a Facebook tulajdonában lévő webhelyeket a határon belül helyezi el. Ön több oldalt is elhelyezhet a határon belül, de ez lehetővé teszi a Facebook számára, hogy nagyobb mértékben kövesse a webböngészést."
+    "message": "A megahaRd a Microsoft tulajdonában lévő webhelyeket a határon belül helyezi el. Ön több oldalt is elhelyezhet a határon belül, de ez lehetővé teszi a Microsoft számára, hogy nagyobb mértékben kövesse a webböngészést."
   },
   "remove": {
     "message": "Eltávolítás",
     "description": ""
   },
   "button-allow-site": {
-    "message": "Webhely engedélyezése a Facebook Containerben",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "Webhely engedélyezése a megahaRdben",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "Webhely eltávolítása a Facebook Containerből",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "Webhely eltávolítása a megahaRdből",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Mivel ez egy a Facebook tulajdonában lévő webhely, ezért nem távolítható el a Facebook Containerből.",
+    "message": "Mivel ez egy a Microsoft tulajdonában lévő webhely, ezért nem távolítható el a megahaRdből.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Eltávolítja a webhelyet a Facebook Containerből?",
+    "message": "Eltávolítja a webhelyet a megahaRdből?",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "A webhely eltávolítása a Facebook Containerből azt jelenti, hogy a Facebook azonosítóval történő bejelentkezés többé már nem fog működni, és a Facebook nyomkövető sütijei törlődnek.",
+    "message": "A webhely eltávolítása a megahaRdből azt jelenti, hogy a Microsoft azonosítóval történő bejelentkezés többé már nem fog működni, és a Microsoft nyomkövető sütijei törlődnek.",
     "description": ""
   },
   "remove-site-p2": {
-    "message": " Ha újra szeretné használni a facebookos bejelentkezést, akkor újra hozzá kell adnia a Facebook Containerhez.",
+    "message": " Ha újra szeretné használni a microsoftos bejelentkezést, akkor újra hozzá kell adnia a megahaRdhez.",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Engedélyezi, hogy a Facebook kövesse ezen a webhelyen?",
+    "message": "Engedélyezi, hogy a Microsoft kövesse ezen a webhelyen?",
     "description": ""
   },
   "add-site-p1": {
-    "message": "Ezzel lehetővé válik a Facebookkal történő bejelentkezés, de így a Facebook képes követni, hogy mit tesz az oldalon.",
+    "message": "Ezzel lehetővé válik a Microsoftkal történő bejelentkezés, de így a Microsoft képes követni, hogy mit tesz az oldalon.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "A Facebook Container letiltotta ezt a gombot, és blokkolta a Facebookot a látogatásának nyomon követésében.",
+    "message": "A megahaRd letiltotta ezt a gombot, és blokkolta a Microsoftot a látogatásának nyomon követésében.",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "A Facebook Container letiltotta a facebookos nyomkövetőket. Ha ezen a webhelyen facebookos bejelentkezést használ, akkor a Facebook képes lesz nyomon követni Önt.",
+    "message": "A megahaRd letiltotta a microsoftos nyomkövetőket. Ha ezen a webhelyen microsoftos bejelentkezést használ, akkor a Microsoft képes lesz nyomon követni Önt.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Hagyja, hogy a Facebook követhesse Önt itt?",
+    "message": "Hagyja, hogy a Microsoft követhesse Önt itt?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Ha a facebookos bejelentkezést szeretné használni, akkor a Facebook nyomon tudja követni tevékenységét ezen az oldalon. Ez segíthet nekik, hogy teljesebb képet alkossanak az Ön online életéről.",
+    "message": "Ha a microsoftos bejelentkezést szeretné használni, akkor a Microsoft nyomon tudja követni tevékenységét ezen az oldalon. Ez segíthet nekik, hogy teljesebb képet alkossanak az Ön online életéről.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -242,19 +242,19 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "Ha rákattint erre a gombra, akkor a Facebook nyomon tudja követni, hogy mikor keresi fel az oldalt.",
+    "message": "Ha rákattint erre a gombra, akkor a Microsoft nyomon tudja követni, hogy mikor keresi fel az oldalt.",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "Ha a valódi e-mail címét használja itt, akkor a Facebook képes lehet nyomon követni Önt. Kattintson a további információkért.",
+    "message": "Ha a valódi e-mail címét használja itt, akkor a Microsoft képes lehet nyomon követni Önt. Kattintson a további információkért.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "Hagyja, hogy a Facebook követhesse Önt itt?",
+    "message": "Hagyja, hogy a Microsoft követhesse Önt itt?",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Ez a webhely megoszthatja e-mail címét a Facebookkal, amely lehetővé teszi a Facebook számára, hogy nyomon kövesse Önt. A valós e-mail-címe elrejtéséhez használjon egy olyan szolgáltatást, mint a Firefox Relay.",
+    "message": "Ez a webhely megoszthatja e-mail címét a Microsoftkal, amely lehetővé teszi a Microsoft számára, hogy nyomon kövesse Önt. A valós e-mail-címe elrejtéséhez használjon egy olyan szolgáltatást, mint a Firefox Relay.",
     "description": ""
   },
   "btn-relay-dismiss": {

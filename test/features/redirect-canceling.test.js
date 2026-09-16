@@ -10,10 +10,10 @@ describe("Redirect Canceling", () => {
     it("should not open two tabs", async () => {
       const responses = {};
       await background.browser.tabs._create({
-        url: "http://facebook.com"
+        url: "http://microsoft.com"
       }, {
         options: {
-          webRequestRedirects: ["https://www.facebook.com"],
+          webRequestRedirects: ["https://www.microsoft.com"],
           instantRedirects: true
         },
         responses
@@ -36,14 +36,14 @@ describe("Redirect Canceling", () => {
     const responses = {};
     const redirectedRequest = async (options = {}) => {
       tab = await background.browser.tabs._create({
-        url: "http://facebook.com"
+        url: "http://microsoft.com"
       }, {
         options: Object.assign({
           webRequestRedirects: [
-            "https://facebook.com",
-            "https://www.facebook.com",
+            "https://microsoft.com",
+            "https://www.microsoft.com",
             {
-              url: "https://www.facebook.com",
+              url: "https://www.microsoft.com",
               webRequest: {
                 requestId: 2
               }
@@ -82,7 +82,7 @@ describe("Redirect Canceling", () => {
       // we create a tab with the same id and use the same request id to see if uncanceled
       await background.browser.tabs._create({
         id: tab.id,
-        url: "https://www.facebook.com/foo"
+        url: "https://www.microsoft.com/foo"
       }, {
         options: {
           webRequest: {
@@ -101,7 +101,7 @@ describe("Redirect Canceling", () => {
       // we create a tab with the same id and use the same request id to see if uncanceled
       await background.browser.tabs._create({
         id: tab.id,
-        url: "https://www.facebook.com/foo"
+        url: "https://www.microsoft.com/foo"
       }, {
         options: {
           webRequest: {
@@ -115,24 +115,27 @@ describe("Redirect Canceling", () => {
 
     it("should uncancel after 2 seconds", async () => {
       const clock = sinon.useFakeTimers();
-      const webRequestDontYield = ["onCompleted", "onErrorOccurred"];
-      await redirectedRequest({webRequestDontYield});
-      clock.tick(2000);
-      background.browser.tabs.create.resetHistory();
-      // we create a tab with the same id and use the same request id to see if uncanceled
-      await background.browser.tabs._create({
-        id: tab.id,
-        url: "https://www.facebook.com/foo"
-      }, {
-        options: {
-          webRequest: {
-            requestId: responses.webRequest.request.requestId
+      try {
+        const webRequestDontYield = ["onCompleted", "onErrorOccurred"];
+        await redirectedRequest({webRequestDontYield});
+        clock.tick(2000);
+        background.browser.tabs.create.resetHistory();
+        // we create a tab with the same id and use the same request id to see if uncanceled
+        await background.browser.tabs._create({
+          id: tab.id,
+          url: "https://www.microsoft.com/foo"
+        }, {
+          options: {
+            webRequest: {
+              requestId: responses.webRequest.request.requestId
+            }
           }
-        }
-      });
+        });
 
-      expect(background.browser.tabs.create).to.have.been.calledOnce;
-      clock.restore();
+        expect(background.browser.tabs.create).to.have.been.calledOnce;
+      } finally {
+        clock.restore();
+      }
     });
   });
 });

@@ -6,23 +6,23 @@ describe("Block SubResources", () => {
     background = webExtension.background;
   });
 
-  describe("origin url is not facebook", () => {
+  describe("origin url is not microsoft", () => {
     it("should block subresources", async () => {
       const promise = background.browser.webRequest.onBeforeRequest.addListener.secondCall.yield({
-        url: "https://fbcdn.net",
+        url: "https://msecnd.net",
         originUrl: "https://example.com"
       });
 
       expect(await promise).to.deep.equal({cancel: true});
     });
 
-    it("should not block subresources if origin url is added to facebook container", async () => {
+    it("should not block subresources if origin url is added to megahaRd container", async () => {
       background.browser.storage.local.set({
-        domainsAddedToFacebookContainer: ["example.com"]
+        domainsAddedToMegahardContainer: ["example.com"]
       });
 
       const promise = background.browser.webRequest.onBeforeRequest.addListener.secondCall.yield({
-        url: "https://fbcdn.net",
+        url: "https://msecnd.net",
         originUrl: "https://example.com"
       });
 
@@ -30,11 +30,11 @@ describe("Block SubResources", () => {
     });
   });
 
-  describe("origin url is facebook", () => {
+  describe("origin url is microsoft", () => {
     it("should not block subresources", async () => {
       const promise = background.browser.webRequest.onBeforeRequest.addListener.secondCall.yield({
-        url: "https://fbcdn.net",
-        originUrl: "https://www.facebook.com"
+        url: "https://msecnd.net",
+        originUrl: "https://www.microsoft.com"
       });
 
       expect(await promise).to.deep.equal({});
@@ -44,7 +44,7 @@ describe("Block SubResources", () => {
   describe("origin url undefined", () => {
     it("should not block subresources", async () => {
       const promise = background.browser.webRequest.onBeforeRequest.addListener.secondCall.yield({
-        url: "https://fbcdn.net",
+        url: "https://msecnd.net",
         originUrl: undefined
       });
 
@@ -52,7 +52,7 @@ describe("Block SubResources", () => {
     });
   });
 
-  describe("request url is not facebook", () => {
+  describe("request url is not microsoft", () => {
     it("should not block subresources", async () => {
       const promise = background.browser.webRequest.onBeforeRequest.addListener.secondCall.yield({
         url: "https://www.example.com",

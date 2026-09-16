@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
-    "message": "Facebook-gámurinn einangrar athafnir þínar á Facebook frá annarri virkni þinni á vefnum til að koma í veg fyrir að Facebook geti með utanaðkomandi vefkökum rakið ferðir þínar á vefsvæðum utan Facebook.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "Microsoft-gámurinn einangrar athafnir þínar á Microsoft frá annarri virkni þinni á vefnum til að koma í veg fyrir að Microsoft geti með utanaðkomandi vefkökum rakið ferðir þínar á vefsvæðum utan Microsoft.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ er í Facebook-gámnum.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ er í Microsoft-gámnum.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "Facebook getur núna fylgst með þér á þessu vefsvæði. Til að fjarlægja þetta vefsvæði úr Facebook-gámum skaltu velja 'Leyfð vefsvæði' í Facebook-gámi og fjarlægja vefsvæðið af listanum."
+  "in-megahard-p1": {
+    "message": "Microsoft getur núna fylgst með þér á þessu vefsvæði. Til að fjarlægja þetta vefsvæði úr Microsoft-gámum skaltu velja 'Leyfð vefsvæði' í Microsoft-gámi og fjarlægja vefsvæðið af listanum."
   },
-  "on-facebook-subhead": {
-    "message": "Um Facebook og vefsvæði innan Facebook-gámagirðingar",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "Um Microsoft og vefsvæði innan Microsoft-gámagirðingar",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "Þetta tákn birtist á veffangastikunni í Firefox þegar þú heimsækir síður í eigu Facebook eða síður sem þú hefur bætt í Facebook-gáminn.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "Þetta tákn birtist á veffangastikunni í Firefox þegar þú heimsækir síður í eigu Microsoft eða síður sem þú hefur bætt í Microsoft-gáminn.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
-    "message": "Þessi vefsvæði þurfa að fá aðgang að Facebook-auðkenni þínu (eða vita hver þú ert) til að virka. Þetta þýðir líka að Facebook getur fylgst með öllu því sem þú gerir á þessum vefsvæðum.",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  "on-microsoft-p2": {
+    "message": "Þessi vefsvæði þurfa að fá aðgang að Microsoft-auðkenni þínu (eða vita hver þú ert) til að virka. Þetta þýðir líka að Microsoft getur fylgst með öllu því sem þú gerir á þessum vefsvæðum.",
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
-    "message": "$URL$ er ekki í Facebook-gámnum.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "$URL$ er ekki í Microsoft-gámnum.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,77 +38,77 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "Þessi vefslóð er utan Facebook gámsins. Það gerir Facebook erfiðara að rekja ferðir þínar á veraldarvefnum.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "Þessi vefslóð er utan Microsoft gámsins. Það gerir Microsoft erfiðara að rekja ferðir þínar á veraldarvefnum.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "Þessi vefslóð er ekki í Facebook gámnum.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "Þessi vefslóð er ekki í Microsoft gámnum.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook-gámur",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "Microsoft-gámur",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "Notkun á Facebook-gámnum",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Notkun á Microsoft-gámnum",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "Facebook getur fylgst með vafranum þínum langt út fyrir Facebook.com. Til dæmis geta 'Like' og 'Share'-hnappar Facebook fylgst með hvar þú hefur verið - jafnvel á vefsvæðum sem þér líkar aldrei við eða deilir.",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Microsoft getur fylgst með vafranum þínum langt út fyrir Microsoft.com. Til dæmis geta 'Like' og 'Share'-hnappar Microsoft fylgst með hvar þú hefur verið - jafnvel á vefsvæðum sem þér líkar aldrei við eða deilir.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
-    "message": "Facebook-gámurinn útbýr mörk á milli Facebook-vefsvæða og afgangsins af vefnum þannig að það verður erfiðara fyrir Facebook að rekja ferðir þínar á netinu.",
-    "description": "Please do not translate \"Facebook Container\""
+    "message": "Microsoft-gámurinn útbýr mörk á milli Microsoft-vefsvæða og afgangsins af vefnum þannig að það verður erfiðara fyrir Microsoft að rekja ferðir þínar á netinu.",
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "Um Facebook og vefsvæði innan Facebook-gámagirðingar",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Um Microsoft og vefsvæði innan Microsoft-gámagirðingar",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "Girðingartákn Facebook-gámsins",
+    "message": "Girðingartákn Microsoft-gámsins",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Þetta tákn birtist á veffangastikunni í Firefox þegar þú heimsækir síður, eins og Facebook.com, sem eru innan Facebook-gámagirðingar.",
+    "message": "Þetta tákn birtist á veffangastikunni í Firefox þegar þú heimsækir síður, eins og Microsoft.com, sem eru innan Microsoft-gámagirðingar.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "Þessi vefsvæði þurfa að fá aðgang að Facebook-auðkenni þínu (eða vita hver þú ert) til að virka. Þetta þýðir líka að Facebook getur fylgst með öllu því sem þú gerir á þessum vefsvæðum.",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Þessi vefsvæði þurfa að fá aðgang að Microsoft-auðkenni þínu (eða vita hver þú ert) til að virka. Þetta þýðir líka að Microsoft getur fylgst með öllu því sem þú gerir á þessum vefsvæðum.",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
-    "message": "Utan við Facebook",
+    "message": "Utan við Microsoft",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "Jafnvel þegar þú ert ekki á Facebook getur Facebook fylgst með þér á netinu. Hnappar sem gera þér kleift að senda inn á Facebook eða skrá þig inn á vefsíður með Facebook-reikningnum þínum innihalda rekjara. Facebook-gámurinn mun loka fyrir þessa rekjara og birta girðingartáknið til að sýna þér hvar rekjarar hafi verið fjarlægðir.",
+    "message": "Jafnvel þegar þú ert ekki á Microsoft getur Microsoft fylgst með þér á netinu. Hnappar sem gera þér kleift að senda inn á Microsoft eða skrá þig inn á vefsíður með Microsoft-reikningnum þínum innihalda rekjara. Microsoft-gámurinn mun loka fyrir þessa rekjara og birta girðingartáknið til að sýna þér hvar rekjarar hafi verið fjarlægðir.",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
-    "message": "Þessi mynd sýnir hvernig girðingartákn Facebook-gámsins mun birtast á síðu við hlið Facebook 'Like'-hnapps.",
+    "message": "Þessi mynd sýnir hvernig girðingartákn Microsoft-gámsins mun birtast á síðu við hlið Microsoft 'Like'-hnapps.",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-subhead": {
-    "message": "Innskráning með Facebook á öðrum vefsvæðum",
+    "message": "Innskráning með Microsoft á öðrum vefsvæðum",
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "Til að nota Facebook-innskráningu þína á öðrum vefsvæðum þarftu að færa þau inn fyrir mörkin. Smelltu á girðingartáknið og veldu neðst „Leyfa vefsvæði í Facebook-gámnum“.",
+    "message": "Til að nota Microsoft-innskráningu þína á öðrum vefsvæðum þarftu að færa þau inn fyrir mörkin. Smelltu á girðingartáknið og veldu neðst „Leyfa vefsvæði í Microsoft-gámnum“.",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
-    "message": "Þessi mynd sýnir hvernig hnappurinn til að bæta vefsíðu í Facebook-gáminn birtist á spjaldinu.",
+    "message": "Þessi mynd sýnir hvernig hnappurinn til að bæta vefsíðu í Microsoft-gáminn birtist á spjaldinu.",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "Þetta gerir þér kleift að skrá þig inn með Facebook, en gefur líka Facebook færi á að fylgjast með virkni þinni á því vefsvæði.",
+    "message": "Þetta gerir þér kleift að skrá þig inn með Microsoft, en gefur líka Microsoft færi á að fylgjast með virkni þinni á því vefsvæði.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Leyfa",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "Hætta við",
@@ -131,48 +131,48 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "Farðu í hvernig Facebook-gámur virkar",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "Farðu í hvernig Microsoft-gámur virkar",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Engir Facebook rekjarar fundust",
+    "message": "Engir Microsoft rekjarar fundust",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container fann enga Facebook-rekjara á þessari síðu. Hins vegar gæti síðan samt innihaldið aðrar gerðir af rekjurum.",
+    "message": "megahaRd fann enga Microsoft-rekjara á þessari síðu. Hins vegar gæti síðan samt innihaldið aðrar gerðir af rekjurum.",
     "description": ""
   },
   "learn-more": {
     "message": "Frekari upplýsingar",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "Hvernig Facebook-gámur virkar",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "Hvernig Microsoft-gámur virkar",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "Við höfum verndað þig fyrir Facebook.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "Við höfum verndað þig fyrir Microsoft.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
-    "message": "Facebook-hnapparnir sem birtast á verslunarvefjum, fréttasíðum og öðrum vefsvæðum innihalda rekjara sem segja Facebook hvar þú hefur verið á vefnum. Jafnvel þó þú notir aldrei þessa hnappa til að líka við eða deila, þá geta rekjarar safnað gögnum um vafurvenjur þína. Facebook-gámur lokar á þessa rekjara.",
+    "message": "Microsoft-hnapparnir sem birtast á verslunarvefjum, fréttasíðum og öðrum vefsvæðum innihalda rekjara sem segja Microsoft hvar þú hefur verið á vefnum. Jafnvel þó þú notir aldrei þessa hnappa til að líka við eða deila, þá geta rekjarar safnað gögnum um vafurvenjur þína. Microsoft-gámur lokar á þessa rekjara.",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook-gámur lokar á þessa rekjara. Hins vegar, ef þú smellir á einhvern af þessum hnöppum mun Facebook geta fylgst með þér.",
+    "message": "Microsoft-gámur lokar á þessa rekjara. Hins vegar, ef þú smellir á einhvern af þessum hnöppum mun Microsoft geta fylgst með þér.",
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "Facebook-gámagirðing með skjöld.",
+    "message": "Microsoft-gámagirðing með skjöld.",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "Leyfð vefsvæði í Facebook-gámnum",
+    "message": "Leyfð vefsvæði í Microsoft-gámnum",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "MEÐFYLGJANDI VEFSVÆÐI",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "Ekkert",
@@ -180,61 +180,61 @@
   },
   "sites-allowed": {
     "message": "VEFSVÆÐI SEM ÞÚ HEFUR LEYFT",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Facebook-gámur setur síður í eigu Facebook innan markanna. Þú getur hleypt öðrum síðum inn fyrir mörkin, en það mun gera Facebook kleift að fylgjast með meira af vafrinu þínu."
+    "message": "Microsoft-gámur setur síður í eigu Microsoft innan markanna. Þú getur hleypt öðrum síðum inn fyrir mörkin, en það mun gera Microsoft kleift að fylgjast með meira af vafrinu þínu."
   },
   "remove": {
     "message": "Fjarlægja",
     "description": ""
   },
   "button-allow-site": {
-    "message": "Leyfa vefsvæði í Facebook-gámnum",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "Leyfa vefsvæði í Microsoft-gámnum",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "Fjarlægja vefsvæði úr Facebook-gámnum",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "Fjarlægja vefsvæði úr Microsoft-gámnum",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Þar sem þetta er vefsvæði í eigu Facebook er ekki hægt að fjarlægja það úr Facebook-gámnum.",
+    "message": "Þar sem þetta er vefsvæði í eigu Microsoft er ekki hægt að fjarlægja það úr Microsoft-gámnum.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Fjarlægja vefsvæði úr Facebook-gámnum?",
+    "message": "Fjarlægja vefsvæði úr Microsoft-gámnum?",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "Sé þessi síða fjarlægð úr Facebook-gámnum mun innskráning með Facebook-reikningi ekki lengur virka og um leið verður Facebook-rakningarkökum eytt.",
+    "message": "Sé þessi síða fjarlægð úr Microsoft-gámnum mun innskráning með Microsoft-reikningi ekki lengur virka og um leið verður Microsoft-rakningarkökum eytt.",
     "description": ""
   },
   "remove-site-p2": {
-    "message": "Ef þú vilt geta skráð inn aftur með Facebook þarftu að bæta vefsvæðinu aftur í Facebook-gáminn.",
+    "message": "Ef þú vilt geta skráð inn aftur með Microsoft þarftu að bæta vefsvæðinu aftur í Microsoft-gáminn.",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Leyfa Facebook-rakningu á þessu vefsvæði?",
+    "message": "Leyfa Microsoft-rakningu á þessu vefsvæði?",
     "description": ""
   },
   "add-site-p1": {
-    "message": "Þetta gerir þér kleift að skrá þig inn með Facebook, en gefur líka Facebook færi á að fylgjast með því sem þú gerir á þessu vefsvæði.",
+    "message": "Þetta gerir þér kleift að skrá þig inn með Microsoft, en gefur líka Microsoft færi á að fylgjast með því sem þú gerir á þessu vefsvæði.",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook -gámurinn hefur gert þennan hnapp óvirkan og hindrar Facebook í að fylgjast með heimsókn þinni á þessa síðu.",
+    "message": "Microsoft -gámurinn hefur gert þennan hnapp óvirkan og hindrar Microsoft í að fylgjast með heimsókn þinni á þessa síðu.",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook-gámurinn hefur lokað á Facebook-rekjara. Ef þú notar innskráningu með Facebook á þessu vefsvæði mun Facebook geta fylgst með þér.",
+    "message": "Microsoft-gámurinn hefur lokað á Microsoft-rekjara. Ef þú notar innskráningu með Microsoft á þessu vefsvæði mun Microsoft geta fylgst með þér.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Leyfa Facebook að fylgjast með þér hér?",
+    "message": "Leyfa Microsoft að fylgjast með þér hér?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "Ef þú vilt nota innskráningu með Facebook þá mun Facebook geta fylgst með virkni þinni á þessu vefsvæði. Þetta getur hjálpað þeim að byggja upp nákvæmari mynd af lífi þínu á netinu.",
+    "message": "Ef þú vilt nota innskráningu með Microsoft þá mun Microsoft geta fylgst með virkni þinni á þessu vefsvæði. Þetta getur hjálpað þeim að byggja upp nákvæmari mynd af lífi þínu á netinu.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -242,19 +242,19 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "Ef þú smellir á þennan hnapp mun Facebook geta fylgst með heimsókn þinni á þessu vefsvæði.",
+    "message": "Ef þú smellir á þennan hnapp mun Microsoft geta fylgst með heimsókn þinni á þessu vefsvæði.",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "Ef þú notar raunverulegt tölvupóstfang þitt hér gæti Facebook rakið ferðir þínar. Smelltu til að vita meira um þetta.",
+    "message": "Ef þú notar raunverulegt tölvupóstfang þitt hér gæti Microsoft rakið ferðir þínar. Smelltu til að vita meira um þetta.",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "Leyfa Facebook að fylgjast með þér hér?",
+    "message": "Leyfa Microsoft að fylgjast með þér hér?",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "Þetta vefsvæði getur deilt tölvupóstfanginu þínu með Facebook, sem gerir Facebook kleift að fylgjast með þér. Notaðu þjónustu á borð við Firefox Relay til að fela raunverulega tölvupóstfangið þitt.",
+    "message": "Þetta vefsvæði getur deilt tölvupóstfanginu þínu með Microsoft, sem gerir Microsoft kleift að fylgjast með þér. Notaðu þjónustu á borð við Firefox Relay til að fela raunverulega tölvupóstfangið þitt.",
     "description": ""
   },
   "btn-relay-dismiss": {

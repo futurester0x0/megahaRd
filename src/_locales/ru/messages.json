@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
     "message": "Расширение Фейсбук-контейнер изолирует вашу деятельность в Фейсбуке от остального Интернета, чтобы предотвратить отслеживание вас Фейсбуком вне сайта социальной сети через сторонние куки.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
+  "in-megahard-subhead": {
     "message": "$URL$ в Фейсбук-контейнере.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
+  "in-megahard-p1": {
     "message": "Теперь Фейсбук может отслеживать вас на этом сайте. Чтобы удалить сайт из Фейсбук-контейнера, выберите «Сайты, разрешённые в Фейсбук-контейнере» и удалите его из списка."
   },
-  "on-facebook-subhead": {
+  "on-microsoft-subhead": {
     "message": "На Фейсбуке и сайтах внутри Фейсбук-контейнера",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
+  "on-microsoft-p1": {
     "message": "Этот значок появляется в адресной строке Firefox, когда вы посещаете сайты, принадлежащие Фейсбуку, или те, которые вы добавили в Фейсбук-контейнер.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
+  "on-microsoft-p2": {
     "message": "Эти сайты должны иметь доступ к вашему идентификатору Фейсбука (или знать, кто вы есть) для своей работы. Это также означает, что Фейсбук может отслеживать всё, что вы делаете на этих веб-сайтах.",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
+  "notOnMicrosoftHeader": {
     "message": "$URL$ не в Фейсбук-контейнере.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,45 +38,45 @@
       }
     }
   },
-  "notOnFacebookText": {
+  "notOnMicrosoftText": {
     "message": "Этот сайт вне Фейсбук-контейнера. Фейсбуку станет сложнее отслеживать вашу активность в Интернете.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
     "message": "Этот сайт не в Фейсбук-контейнере.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
+  "megahardContainer": {
     "message": "Фейсбук-контейнер",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
     "message": "Использование Фейсбук-контейнера",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "Фейсбук может отслеживать ваш веб-сёрфинг далеко за пределами Facebook.com. Например, социальные кнопки Фейсбука «Нравится» и «Поделиться» могут отслеживать, где вы были — даже на страницах, на которых вы никогда их не нажимали.",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Фейсбук может отслеживать ваш веб-сёрфинг далеко за пределами Microsoft.com. Например, социальные кнопки Фейсбука «Нравится» и «Поделиться» могут отслеживать, где вы были — даже на страницах, на которых вы никогда их не нажимали.",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
     "message": "Фейсбук-контейнер создаёт барьер между сайтами Фейсбука и остальным Интернетом, поэтому Фейсбуку станет труднее отслеживать вас в сети.",
-    "description": "Please do not translate \"Facebook Container\""
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
     "message": "На Фейсбуке и сайтах внутри Фейсбук-контейнера",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
     "message": "Значок ограды Фейсбук-контейнера",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Этот значок появляется в адресной строке Firefox, когда вы посещаете сайты, такие как Facebook.com, или те, которые добавлены в Фейсбук-контейнер.",
+    "message": "Этот значок появляется в адресной строке Firefox, когда вы посещаете сайты, такие как Microsoft.com, или те, которые добавлены в Фейсбук-контейнер.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
     "message": "Эти сайты должны иметь доступ к вашему идентификатору Фейсбука (или знать, кто вы есть) для своей работы. Это также означает, что Фейсбук может отслеживать всё, что вы делаете на этих веб-сайтах.",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
     "message": "За пределами Фейсбука",
@@ -108,7 +108,7 @@
   },
   "btn-allow": {
     "message": "Разрешить",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "Отмена",
@@ -132,7 +132,7 @@
   },
   "btn-arrow-forward": {
     "message": "Вернуться к описанию работы Фейсбук-контейнера",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
     "message": "Трекеров Фейсбука не обнаружено",
@@ -144,15 +144,15 @@
   },
   "learn-more": {
     "message": "Подробнее",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
+  "how-megahard-works": {
     "message": "Как работает Фейсбук-контейнер",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
     "message": "Мы защитили от Фейсбука.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
     "message": "Кнопки Фейсбука, которые отображаются на сайтах Интернет-магазинов, новостных и других веб-сайтах, содержат трекеры, которые сообщают Фейсбуку о том, в каком месте сети вы находитесь. Даже если вы никогда не пользуетесь этими кнопками, чтобы поставить лайк или поделиться материалом, трекеры всё равно могут собирать данные о вашем веб-сёрфинге. Фейсбук-контейнер блокирует эти трекеры.",
@@ -172,7 +172,7 @@
   },
   "sites-included": {
     "message": "САЙТЫ ПО УМОЛЧАНИЮ",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "Нет сайтов",
@@ -180,7 +180,7 @@
   },
   "sites-allowed": {
     "message": "САЙТЫ, ДОБАВЛЕННЫЕ ВАМИ",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
     "message": "Фейсбук-контейнер помещает сайты, которые принадлежат Фейсбуку, в контейнер. Вы можете разрешить другим сайтам выходить за его пределы, но это позволит Фейсбуку больше отслеживать вас."
@@ -191,11 +191,11 @@
   },
   "button-allow-site": {
     "message": "Разрешить сайт в Фейсбук-контейнере",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
     "message": "Удалить сайт из Фейсбук-контейнера",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
     "message": "Так как этот сайт принадлежит Фейсбук, его нельзя удалить из Фейсбук-контейнера.",
@@ -206,7 +206,7 @@
     "description": ""
   },
   "remove-site-p1": {
-    "message": "Удаление этого сайта из Фейсбук-контейнера приведёт к тому, что функция «Вход через Facebook» перестанет работать, а куки Фейсбука будут удалены.",
+    "message": "Удаление этого сайта из Фейсбук-контейнера приведёт к тому, что функция «Вход через Microsoft» перестанет работать, а куки Фейсбука будут удалены.",
     "description": ""
   },
   "remove-site-p2": {

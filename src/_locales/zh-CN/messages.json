@@ -1,36 +1,36 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container 将您的 Facebook 活动与其他网络活动隔离开来，以防止 Facebook 通过第三方 Cookie 在其以外的网站跟踪您。",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "megahaRd 将您的 Microsoft 活动与其他网络活动隔离开来，以防止 Microsoft 通过第三方 Cookie 在其以外的网站跟踪您。",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ 在 Facebook Container 中。",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ 在 megahaRd 中。",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "Facebook 会在此网站跟踪您。若要从 Facebook Container 移除，请选择“允许在 Facebook Container 中运行的网站”并将其从列表中移除。"
+  "in-megahard-p1": {
+    "message": "Microsoft 会在此网站跟踪您。若要从 megahaRd 移除，请选择“允许在 megahaRd 中运行的网站”并将其从列表中移除。"
   },
-  "on-facebook-subhead": {
-    "message": "Facebook 与 Facebook Container 边界内的网站",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "Microsoft 与 megahaRd 边界内的网站",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "当您访问 Facebook 相关网站，或添加到 Facebook Container 的网站时，此图标会显示于 Firefox 地址栏。",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "当您访问 Microsoft 相关网站，或添加到 megahaRd 的网站时，此图标会显示于 Firefox 地址栏。",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p2": {
-    "message": "这些网站需要使用您的 Facebook 身份（或需知道你是谁）才能正常工作。这也代表 Facebook 可以跟踪您在这些网站的任何行为。",
-    "description": "This is shown in the body of the panel pop up when the user is on Facebook."
+  "on-microsoft-p2": {
+    "message": "这些网站需要使用您的 Microsoft 身份（或需知道你是谁）才能正常工作。这也代表 Microsoft 可以跟踪您在这些网站的任何行为。",
+    "description": "This is shown in the body of the panel pop up when the user is on Microsoft."
   },
-  "notOnFacebookHeader": {
-    "message": "$URL$ 不在 Facebook Container 中。",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "$URL$ 不在 megahaRd 中。",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -38,77 +38,77 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "此网站位于 Facebook Container 之外，这使得 Facebook 更难以在网上跟踪您。",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "此网站位于 megahaRd 之外，这使得 Microsoft 更难以在网上跟踪您。",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "此网站不在 Facebook Container 中。",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "此网站不在 megahaRd 中。",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "使用 Facebook Container",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "使用 megahaRd",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p1": {
-    "message": "Facebook 不仅能跟踪您在 Facebook.com 上的浏览​​行为，更可通过其他各网站上的 Facebook “赞”与“分享”按钮，跟踪您曾经去过哪里。就算没有真正点过赞或分享过也会知晓。",
-    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Microsoft 不仅能跟踪您在 Microsoft.com 上的浏览​​行为，更可通过其他各网站上的 Microsoft “赞”与“分享”按钮，跟踪您曾经去过哪里。就算没有真正点过赞或分享过也会知晓。",
+    "description": "This is the first paragraph of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
-    "message": "Facebook Container 可为 Facebook 的各网站与网络上的其他网站建立界线，使 Facebook 更难以在网上跟踪您。",
-    "description": "Please do not translate \"Facebook Container\""
+    "message": "megahaRd 可为 Microsoft 的各网站与网络上的其他网站建立界线，使 Microsoft 更难以在网上跟踪您。",
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "Facebook 与 Facebook Container 边界内的网站",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Microsoft 与 megahaRd 边界内的网站",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "Facebook Container 篱笆图标",
+    "message": "megahaRd 篱笆图标",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "当您访问 Facebook Container 中的相关网站时，例如 Facebook.com 时，将会在 Firefox 地址栏显示此图标。",
+    "message": "当您访问 megahaRd 中的相关网站时，例如 Microsoft.com 时，将会在 Firefox 地址栏显示此图标。",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding2-p2": {
-    "message": "这些网站需要使用您的 Facebook 身份（或需知道你是谁）才能正常工作。这也代表 Facebook 可以跟踪您在这些网站的任何行为。",
-    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "这些网站需要使用您的 Microsoft 身份（或需知道你是谁）才能正常工作。这也代表 Microsoft 可以跟踪您在这些网站的任何行为。",
+    "description": "This is the second paragraph of the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding4-subhead": {
-    "message": "Facebook 之外",
+    "message": "Microsoft 之外",
     "description": "This is the subhead for the fourth onboarding panel."
   },
   "onboarding4-p1": {
-    "message": "用于发布文章到 Facebook、以 Facebook 账户登录其他网站的按钮都包含跟踪器。即使您不在 Facebook，它还是能在网络中跟踪您。Facebook Container 会拦截它们并显示篱笆图标，表示已移除这些跟踪器。",
+    "message": "用于发布文章到 Microsoft、以 Microsoft 账户登录其他网站的按钮都包含跟踪器。即使您不在 Microsoft，它还是能在网络中跟踪您。megahaRd 会拦截它们并显示篱笆图标，表示已移除这些跟踪器。",
     "description": "This is the first paragraph of the fourth onboarding panel."
   },
   "onboarding4-img": {
-    "message": "此图片演示了 Facebook Container 的篱笆图标会如何出现于网页中的 Facebook “赞”按钮旁边。",
+    "message": "此图片演示了 megahaRd 的篱笆图标会如何出现于网页中的 Microsoft “赞”按钮旁边。",
     "description": "This is alternative text for the image shown in the fourth onboarding panel."
   },
   "onboarding5-subhead": {
-    "message": "在其他网站使用 Facebook 账户登录",
+    "message": "在其他网站使用 Microsoft 账户登录",
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p1": {
-    "message": "若要使用您的 Facebook 账户登录其他网站，就也需要将那些网站放到容器内。请点击篱笆图标，并选择底部的“允许网站在 Facebook Container 中运行”。",
+    "message": "若要使用您的 Microsoft 账户登录其他网站，就也需要将那些网站放到容器内。请点击篱笆图标，并选择底部的“允许网站在 megahaRd 中运行”。",
     "description": "This is the first paragraph of the fifth onboarding panel."
   },
   "onboarding5-img": {
-    "message": "此图片演示了如何在面板中显示将网站添加到 Facebook Container 的按钮。",
+    "message": "此图片演示了如何在面板中显示将网站添加到 megahaRd 的按钮。",
     "description": "This is alternative text for the image shown in the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "该功能让您可以使用 Facebook 账户登录，但也让 Facebook 可以跟踪您在该网站的活动。",
+    "message": "该功能让您可以使用 Microsoft 账户登录，但也让 Microsoft 可以跟踪您在该网站的活动。",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "允许",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "取消",
@@ -131,48 +131,48 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "前往 Facebook Container 工作原理",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "前往 megahaRd 工作原理",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "未检测到 Facebook 跟踪器",
+    "message": "未检测到 Microsoft 跟踪器",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container 未在此页面检测到任何 Facebook 跟踪器。但该页面可能仍有其他类型的跟踪器。",
+    "message": "megahaRd 未在此页面检测到任何 Microsoft 跟踪器。但该页面可能仍有其他类型的跟踪器。",
     "description": ""
   },
   "learn-more": {
     "message": "详细了解",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "Facebook Container 工作原理",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "megahaRd 工作原理",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "我们保护您不受 Facebook 跟踪。",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "我们保护您不受 Microsoft 跟踪。",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-p1": {
-    "message": "显示在电商、新闻等网站的 Facebook 按钮都包含跟踪器，可告诉 Facebook 您曾经去过这些网站，就算您从未点击或使用这些按钮，跟踪器还是会收集您的浏览数据。 Facebook Container 会拦截这些跟踪器。",
+    "message": "显示在电商、新闻等网站的 Microsoft 按钮都包含跟踪器，可告诉 Microsoft 您曾经去过这些网站，就算您从未点击或使用这些按钮，跟踪器还是会收集您的浏览数据。 megahaRd 会拦截这些跟踪器。",
     "description": ""
   },
   "trackers-detected-p2": {
-    "message": "Facebook Container 会拦截这些跟踪器，可是若您点击了任一按钮，Facebook 还是可以跟踪您。",
+    "message": "megahaRd 会拦截这些跟踪器，可是若您点击了任一按钮，Microsoft 还是可以跟踪您。",
     "description": ""
   },
   "trackers-detected-fence-alt": {
-    "message": "Facebook Container 盾牌篱笆图标。",
+    "message": "megahaRd 盾牌篱笆图标。",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "允许在 Facebook Container 中运行的网站",
+    "message": "允许在 megahaRd 中运行的网站",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "网站包括",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "无",
@@ -180,61 +180,61 @@
   },
   "sites-allowed": {
     "message": "您允许的网站",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "sites-added-p1": {
-    "message": "Facebook Container 会将 Facebook 拥有的相关网站置于容器内。您可以允许其他网站进入该容器，但也会使 Facebook 更易跟踪您的网络浏览。"
+    "message": "megahaRd 会将 Microsoft 拥有的相关网站置于容器内。您可以允许其他网站进入该容器，但也会使 Microsoft 更易跟踪您的网络浏览。"
   },
   "remove": {
     "message": "移除",
     "description": ""
   },
   "button-allow-site": {
-    "message": "允许网站在 Facebook Container 中运行",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "允许网站在 megahaRd 中运行",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "将网站从 Facebook Container 中移除",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "将网站从 megahaRd 中移除",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "此为 Facebook 自有网站，无法将其从 Facebook Container 中移除。",
+    "message": "此为 Microsoft 自有网站，无法将其从 megahaRd 中移除。",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "要将网站从 Facebook Container 移除吗？",
+    "message": "要将网站从 megahaRd 移除吗？",
     "description": ""
   },
   "remove-site-p1": {
-    "message": "将此网站从 Facebook Container 移除，意味着“使用 Facebook 账号登录”功能将不再有效，也将清除 Facebook 的跟踪 Cookie。",
+    "message": "将此网站从 megahaRd 移除，意味着“使用 Microsoft 账号登录”功能将不再有效，也将清除 Microsoft 的跟踪 Cookie。",
     "description": ""
   },
   "remove-site-p2": {
-    "message": " 若您想再次使用“使用 Facebook 账号登录”功能，则需将其添加回 Facebook Container。",
+    "message": " 若您想再次使用“使用 Microsoft 账号登录”功能，则需将其添加回 megahaRd。",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "要允许 Facebook 在此网站进行跟踪吗？",
+    "message": "要允许 Microsoft 在此网站进行跟踪吗？",
     "description": ""
   },
   "add-site-p1": {
-    "message": "该功能让您可以使用 Facebook 账户登录，但也让 Facebook 可以跟踪您在该网站的活动。",
+    "message": "该功能让您可以使用 Microsoft 账户登录，但也让 Microsoft 可以跟踪您在该网站的活动。",
     "description": ""
   },
   "inPageUI-tooltip-button-share": {
-    "message": "Facebook Container 已禁用此按钮，并阻止 Facebook 跟踪您对此页面的访问。",
+    "message": "megahaRd 已禁用此按钮，并阻止 Microsoft 跟踪您对此页面的访问。",
     "description": ""
   },
   "inPageUI-tooltip-button-login": {
-    "message": "Facebook Container 已拦截来自 Facebook 的跟踪器。若您使用此网站的“使用 Facebook 账号登录”功能，Facebook 还是能够跟踪您。",
+    "message": "megahaRd 已拦截来自 Microsoft 的跟踪器。若您使用此网站的“使用 Microsoft 账号登录”功能，Microsoft 还是能够跟踪您。",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "要允许 Facebook 在此跟踪您？",
+    "message": "要允许 Microsoft 在此跟踪您？",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p2": {
-    "message": "若您想要使用 Facebook 账号登录此网站，Facebook 就可以跟踪您在此网站的活动。这样会导致他们对您的网络生活了如指掌。",
+    "message": "若您想要使用 Microsoft 账号登录此网站，Microsoft 就可以跟踪您在此网站的活动。这样会导致他们对您的网络生活了如指掌。",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
@@ -242,19 +242,19 @@
     "description": ""
   },
   "inPageUI-tooltip-button-share-passive": {
-    "message": "若点击此按钮，Facebook 将能够跟踪您对该网站的访问。",
+    "message": "若点击此按钮，Microsoft 将能够跟踪您对该网站的访问。",
     "description": ""
   },
   "inPageUI-tooltip-button-email": {
-    "message": "若在此输入真实邮箱地址，Facebook 可能还是能够跟踪您。点击此处了解更多信息。",
+    "message": "若在此输入真实邮箱地址，Microsoft 可能还是能够跟踪您。点击此处了解更多信息。",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p1": {
-    "message": "要允许 Facebook 在此跟踪您？",
+    "message": "要允许 Microsoft 在此跟踪您？",
     "description": ""
   },
   "inPageUI-tooltip-email-prompt-p2": {
-    "message": "此网站会与 Facebook 共享您的电子邮件地址，这将使得 Facebook 能够跟踪您。可使用如 Firefox Relay 的服务隐藏您的真实电子邮件地址。",
+    "message": "此网站会与 Microsoft 共享您的电子邮件地址，这将使得 Microsoft 能够跟踪您。可使用如 Firefox Relay 的服务隐藏您的真实电子邮件地址。",
     "description": ""
   },
   "btn-relay-dismiss": {

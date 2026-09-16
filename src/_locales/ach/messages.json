@@ -1,32 +1,32 @@
 {
   "extensionDescription": {
-    "message": "Facebook Container koyo tic mamegi me Facebook ki ii tic mamegi me kakube mukene ni wek ogeng Facebook ki i lubo kor in woko ki i kakube me Facebook kun woto ki angija pa ngat mukene.",
-    "description": "Description of the extension. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "megahaRd koyo tic mamegi me Microsoft ki ii tic mamegi me kakube mukene ni wek ogeng Microsoft ki i lubo kor in woko ki i kakube me Microsoft kun woto ki angija pa ngat mukene.",
+    "description": "Description of the extension. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "in-fbc-subhead": {
-    "message": "$URL$ tye i Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "in-megahard-subhead": {
+    "message": "$URL$ tye i megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
-        "example": "www.facebook.com"
+        "example": "www.microsoft.com"
       }
     }
   },
-  "in-fbc-p1": {
-    "message": "Facebook dong twero lubo kori i kakube man. Me kwanyo woko kakube man ki i Facebook Container, yer Kakube ma ki yee ki i Facebook Container ka i kwany woko."
+  "in-megahard-p1": {
+    "message": "Microsoft dong twero lubo kori i kakube man. Me kwanyo woko kakube man ki i megahaRd, yer Kakube ma ki yee ki i megahaRd ka i kwany woko."
   },
-  "on-facebook-subhead": {
-    "message": "Iye Facebook ka Kakube i Wang kigingi me Facebook Container",
-    "description": "This is shown at the top of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-subhead": {
+    "message": "Iye Microsoft ka Kakube i Wang kigingi me megahaRd",
+    "description": "This is shown at the top of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "on-facebook-p1": {
-    "message": "Cal man nyute i lanyut me kanonge pa Firefox ka ilimo kakube ma Facebook aye loyo onyo kakube ma imedo i Facebook Container.",
-    "description": "This is shown in the body of the panel pop-up when the user is on a Facebook website, which has been automatically opened into Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "on-microsoft-p1": {
+    "message": "Cal man nyute i lanyut me kanonge pa Firefox ka ilimo kakube ma Microsoft aye loyo onyo kakube ma imedo i megahaRd.",
+    "description": "This is shown in the body of the panel pop-up when the user is on a Microsoft website, which has been automatically opened into megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "notOnFacebookHeader": {
-    "message": "$URL$ pe tye ii Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\".",
+  "notOnMicrosoftHeader": {
+    "message": "$URL$ pe tye ii megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\".",
     "placeholders": {
       "url": {
         "content": "$1",
@@ -34,49 +34,49 @@
       }
     }
   },
-  "notOnFacebookText": {
-    "message": "Kakube man tye woko pa Facebook Container. Man weko bedo tek ki Facebook me lubo kor in ii kakube.",
-    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Facebook website, which has been automatically opened OUTSIDE Facebook Container. DO NOT TRANSLATE \"Facebook Container\"."
+  "notOnMicrosoftText": {
+    "message": "Kakube man tye woko pa megahaRd. Man weko bedo tek ki Microsoft me lubo kor in ii kakube.",
+    "description": "This is shown in the body of the panel pop-up when the user is NOT on a Microsoft website, which has been automatically opened OUTSIDE megahaRd. DO NOT TRANSLATE \"megahaRd\"."
   },
   "onUnknownSiteHeader": {
-    "message": "Kakube man pe tye ii Facebook Container.",
-    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"Facebook Container\"."
+    "message": "Kakube man pe tye ii megahaRd.",
+    "description": "This is shown at the top of the panel pop-up when the user is on an \"unknown\" website - e.g., about:newtab. DO NOT TRANSLATE \"megahaRd\"."
   },
-  "facebookContainer": {
-    "message": "Facebook Container",
-    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"Facebook Container\"."
+  "megahardContainer": {
+    "message": "megahaRd",
+    "description": "This is the name of the extension, and appears at the top of all onboarding panels. Please do not translate \"megahaRd\"."
   },
   "onboarding1-subhead": {
-    "message": "Tic ki Facebook Container",
-    "description": "This is the subhead of onboarding panel 1. Please do not translate \"Facebook Container\""
+    "message": "Tic ki megahaRd",
+    "description": "This is the subhead of onboarding panel 1. Please do not translate \"megahaRd\""
   },
   "onboarding1-p2": {
-    "message": "Facebook Container keto kigingi ikin kakube me Facebook ki kakube mukene wek obed tek kato ki Facebook me lubo kori iwiyamo.",
-    "description": "Please do not translate \"Facebook Container\""
+    "message": "megahaRd keto kigingi ikin kakube me Microsoft ki kakube mukene wek obed tek kato ki Microsoft me lubo kori iwiyamo.",
+    "description": "Please do not translate \"megahaRd\""
   },
   "onboarding2-subhead": {
-    "message": "Iye Facebook ka Kakube i Wang kigingi me Facebook Container",
-    "description": "This is the subhead for the second onboarding panel. Please do not translate \"Facebook Container\""
+    "message": "Iye Microsoft ka Kakube i Wang kigingi me megahaRd",
+    "description": "This is the subhead for the second onboarding panel. Please do not translate \"megahaRd\""
   },
   "onboarding2-alt": {
-    "message": "Cal me cel Facebook Container",
+    "message": "Cal me cel megahaRd",
     "description": "This is alternative text for the icon in the second onboarding panel"
   },
   "onboarding2-p1": {
-    "message": "Cal man nyute i lanyut me kanonge pa Facebook ka ilimo kakube, calo Facebook.com, ma tye i wang kigingi me Facebook Container.",
+    "message": "Cal man nyute i lanyut me kanonge pa Microsoft ka ilimo kakube, calo Microsoft.com, ma tye i wang kigingi me megahaRd.",
     "description": "This is the first paragraph of the second onboarding panel."
   },
   "onboarding5-subhead": {
-    "message": "Dony iyie Ki Facebook i Kakube Mukene",
+    "message": "Dony iyie Ki Microsoft i Kakube Mukene",
     "description": "This is the subhead for the fifth onboarding panel."
   },
   "onboarding5-p2": {
-    "message": "Man weko i donyo iyie ki Facebook, ento yee ki Facebook me lubo kor tic mamegi i kakube meno.",
+    "message": "Man weko i donyo iyie ki Microsoft, ento yee ki Microsoft me lubo kor tic mamegi i kakube meno.",
     "description": "This is the second paragraph on the fifth onboarding panel."
   },
   "btn-allow": {
     "message": "Yee",
-    "description": "This is a button to allows users to whitelist the domain, adding it to the Facebook container."
+    "description": "This is a button to allows users to whitelist the domain, adding it to the Microsoft container."
   },
   "btn-cancel": {
     "message": "Juki",
@@ -99,40 +99,40 @@
     "description": "This is alternative text for the back arrow button."
   },
   "btn-arrow-forward": {
-    "message": "Cit ii Kit ma Facebook Container Tiyo kwede",
-    "description": "This is alternative text for the arrow icon next to the \"How Facebook Container Works\" link"
+    "message": "Cit ii Kit ma megahaRd Tiyo kwede",
+    "description": "This is alternative text for the arrow icon next to the \"How megahaRd Works\" link"
   },
   "no-trackers-subhead": {
-    "message": "Pe kinongo Lulub kor me Facebook",
+    "message": "Pe kinongo Lulub kor me Microsoft",
     "description": ""
   },
   "no-trackers-p1": {
-    "message": "Facebook Container pe onongo lulub kor mo me Facebook i potbuk man. Ento, potbuk ne pud twero bedo ki lulub kor mukene.",
+    "message": "megahaRd pe onongo lulub kor mo me Microsoft i potbuk man. Ento, potbuk ne pud twero bedo ki lulub kor mukene.",
     "description": ""
   },
   "learn-more": {
     "message": "Nong ngec mapol",
-    "description": "This is a link that opens a page with more information about Facebook Container."
+    "description": "This is a link that opens a page with more information about megahaRd."
   },
-  "how-fbc-works": {
-    "message": "Kit ma Facebook Container Tiyo kwede",
-    "description": "This is a button that opens the Facebook Container onboarding flow."
+  "how-megahard-works": {
+    "message": "Kit ma megahaRd Tiyo kwede",
+    "description": "This is a button that opens the megahaRd onboarding flow."
   },
   "trackers-detected-subhead": {
-    "message": "Wagwoki ki ikom Facebook.",
-    "description": "This is a subhead, and it means that the add on has protected the user by blocking Facebook trackers."
+    "message": "Wagwoki ki ikom Microsoft.",
+    "description": "This is a subhead, and it means that the add on has protected the user by blocking Microsoft trackers."
   },
   "trackers-detected-fence-alt": {
-    "message": "Cel me Facebook Container ki kwot.",
+    "message": "Cel me megahaRd ki kwot.",
     "description": "This is alternative text describing the container fence icon."
   },
   "sites-added-subhead": {
-    "message": "Kakube ma ki yee i Facebook Container",
+    "message": "Kakube ma ki yee i megahaRd",
     "description": "This is a panel subhead."
   },
   "sites-included": {
     "message": "KAKUBE MA KIKETO",
-    "description": "This is a header for the list of websites that are in the Facebook Container by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
+    "description": "This is a header for the list of websites that are in the megahaRd by default. Capitalized letters are preferred if that makes sense/is feasible for the language."
   },
   "no-sites-added": {
     "message": "Pe",
@@ -140,42 +140,42 @@
   },
   "sites-allowed": {
     "message": "KAKUBE MA I YEE",
-    "description": "This is the header for the list of sites the user has manually added into the Facebook Container. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
+    "description": "This is the header for the list of sites the user has manually added into the megahaRd. Capitalized letters are preferred if that makes sense/is feasible for the lanaguage."
   },
   "remove": {
     "message": "Kwany",
     "description": ""
   },
   "button-allow-site": {
-    "message": "Yee Kakube i Facebook Container",
-    "description": "Button text that allows sites to be added to the Facebook Container"
+    "message": "Yee Kakube i megahaRd",
+    "description": "Button text that allows sites to be added to the megahaRd"
   },
   "button-remove-site": {
-    "message": "Kwany Kakube ki i Facebook Container",
-    "description": "Button text that removes an already-added site from the Facebook Container to the default container"
+    "message": "Kwany Kakube ki i megahaRd",
+    "description": "Button text that removes an already-added site from the megahaRd to the default container"
   },
   "button-remove-site-tooltip": {
-    "message": "Pien man obedo kakube ma Facebook aye loyo, pe kitwero kwanyo ne ki i Facebook Container.",
+    "message": "Pien man obedo kakube ma Microsoft aye loyo, pe kitwero kwanyo ne ki i megahaRd.",
     "description": "Tooltip that is displayed when hovering over the remove site button"
   },
   "remove-site-subhead": {
-    "message": "Kwany kakube ki i Facebook Container?",
+    "message": "Kwany kakube ki i megahaRd?",
     "description": ""
   },
   "remove-site-p2": {
-    "message": "Kacce imito tic ki Dony iyie ki Facebook doki, bi mite ki yin me dwoko ne cen i Facebook Container.",
+    "message": "Kacce imito tic ki Dony iyie ki Microsoft doki, bi mite ki yin me dwoko ne cen i megahaRd.",
     "description": ""
   },
   "add-site-subhead": {
-    "message": "Yee ki Lubo kor me Facebook i Kakube man?",
+    "message": "Yee ki Lubo kor me Microsoft i Kakube man?",
     "description": ""
   },
   "add-site-p1": {
-    "message": "Man weko i donyo iyie ki Facebook, ento yee ki Facebook me lubo ngo ma itimo i kakube man.",
+    "message": "Man weko i donyo iyie ki Microsoft, ento yee ki Microsoft me lubo ngo ma itimo i kakube man.",
     "description": ""
   },
   "inPageUI-tooltip-prompt-p1": {
-    "message": "Yee ki Facebook me lubo kor yin kany?",
+    "message": "Yee ki Microsoft me lubo kor yin kany?",
     "description": ""
   },
   "inPageUI-tooltip-prompt-checkbox": {
