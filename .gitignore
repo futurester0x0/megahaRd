@@ -3,4 +3,6 @@
 /.nyc_output
 /coverage
 /build
+.env
+.env.*
 .DS_Store

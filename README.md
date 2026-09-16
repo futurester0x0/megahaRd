@@ -1,5 +1,7 @@
 # megahaRd
 
+[![CI](https://github.com/futurester0x0/megahaRd/actions/workflows/ci.yml/badge.svg)](https://github.com/futurester0x0/megahaRd/actions/workflows/ci.yml)
+
 **Prevent Microsoft from tracking your visits to other websites**
 
 megahaRd is an add-on you can install on Firefox to prevent Microsoft from tracking your activity on other websites, so you can continue to use Microsoft while protecting your privacy.
@@ -90,4 +92,5 @@ for just the linter
 - [Privacy](./PRIVACY.md)
 - [Contributing](./CONTRIBUTING.md)
 - [Code Of Conduct](./CODE_OF_CONDUCT.md)
+- [Security](./SECURITY.md)
 - Upstream: https://github.com/mozilla/contain-facebook
